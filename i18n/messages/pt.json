@@ -1,0 +1,337 @@
+{
+  "home": {
+    "label": "Uma crescente suíte de ferramentas rápidas e confiáveis",
+    "subLabel": "Construído para simplicidade e desempenho. Novas ferramentas são adicionadas regularmente para ajudar os usuários a se manterem produtivos e realizarem tarefas—sem distrações ou desordem",
+    "title": "Ferramentas online gratuitas",
+    "description": "Explore ferramentas online rápidas e gratuitas para tarefas do dia a dia. Rivine Tools oferece uma experiência perfeita com utilitários web focados em privacidade—constantemente expandindo para atender às suas necessidades.",
+    "exploreTools": "Explorar Ferramentas",
+    "keywords": {
+      "0": "Ferramentas online",
+      "1": "Ferramentas web",
+      "2": "Editor de Imagens",
+      "3": "Editor de Texto",
+      "4": "Ferramentas do Instagram",
+      "5": "Ferramentas do Facebook",
+      "6": "Coleção de ferramentas"
+    }
+  },
+  "general": {
+    "download": "Baixar",
+    "about": "Sobre",
+    "home": "Início",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "upload": "Carregar",
+    "clear": "Limpar"
+  },
+  "tools": {
+    "qrCodeGenerator": {
+      "title": "Gerador de QR Code Gratuito",
+      "label": "Gerador de QR Code",
+      "navDescription": "Crie códigos QR para URLs, texto, números de telefone e mais.",
+      "subLabel": "Suite de Gerador de QR Code",
+      "subNavDescription": "Gere todos os tipos de códigos QR em um só lugar.",
+      "description": "Gere códigos QR instantaneamente com nosso gerador de QR Code online gratuito. Personalize com cores, logotipos e downloads de alta qualidade.",
+      "keywords": {
+        "0": "Gerador de QR Code",
+        "1": "Criador de QR Code Gratuito",
+        "2": "QR Code Personalizado",
+        "3": "Criar QR Code",
+        "4": "Gerar QR Code",
+        "5": "QR Code de Texto",
+        "6": "Gerar QR Code Online"
+      },
+      "autoGenerationMessage": "Seu QR Code será gerado automaticamente",
+      "url": {
+        "label": "URL",
+        "navDescription": "Gere códigos QR para links.",
+        "title": "Gerador de QR Code Gratuito | Gere Códigos QR Personalizados Online",
+        "description": "Gere e personalize facilmente códigos QR para URLs. Ideal para compartilhar conteúdo online, direcionar tráfego ou aprimorar materiais impressos. Rápido, gratuito e sem necessidade de cadastro.",
+        "input": "Insira o URL do seu site aqui"
+      },
+      "text": {
+        "label": "Texto",
+        "navDescription": "Codifique texto simples em códigos QR.",
+        "title": "Gerador de QR Code Gratuito para Texto | Crie Códigos QR de Texto Personalizados",
+        "description": "Gere e personalize facilmente códigos QR para mensagens de texto. Perfeito para compartilhar informações de forma rápida e eficiente. Rápido, gratuito e sem necessidade de cadastro.",
+        "input": "Insira sua mensagem de texto aqui"
+      },
+      "phone": {
+        "label": "Telefone",
+        "navDescription": "Gere códigos QR para discar um número.",
+        "title": "Gerador de QR Code Gratuito para Números de Telefone | Crie Códigos QR de Telefone Personalizados",
+        "description": "Gere e personalize facilmente códigos QR para números de telefone. Ideal para compartilhar informações de contato instantaneamente. Rápido, gratuito e sem necessidade de cadastro.",
+        "input": "Insira seu número de telefone aqui"
+      }
+    },
+    "clock": {
+      "title": "Relógio",
+      "label": "Relógio",
+      "navDescription": "Defina temporizadores para uma variedade de tarefas e atividades.",
+      "subLabel": "Suite de Relógio",
+      "subNavDescription": "Gerencie seu tempo de forma eficiente com nosso temporizador online abrangente.",
+      "description": "Utilize nosso versátil temporizador online para acompanhar o tempo de tarefas, exercícios e mais. Personalize alertas e durações para atender às suas necessidades."
+    },
+    "timer": {
+      "title": "Temporizador Online",
+      "label": "Temporizador",
+      "navDescription": "Defina temporizadores para várias tarefas e atividades.",
+      "subLabel": "Suite de Ferramentas de Temporizador",
+      "subNavDescription": "Gerencie seu tempo de forma eficaz com nosso temporizador online.",
+      "description": "Use nosso temporizador online gratuito para acompanhar o tempo de tarefas, exercícios e mais. Personalize alertas e durações.",
+      "page": {
+        "paused": "Pausado",
+        "running": "Em execução"
+      },
+      "dialog": {
+        "title": "Configurações do Temporizador",
+        "presets": "Predefinições",
+        "custom": "Duração Personalizada",
+        "pomodoro": "Pomodoro",
+        "short": "Pausa Curta",
+        "focus": "Foco",
+        "hours": "Horas",
+        "min": "Minutos",
+        "sec": "Segundos",
+        "error": "Por favor, defina uma duração de tempo"
+      },
+      "keywords": {
+        "0": "Temporizador Online",
+        "1": "Temporizador Gratuito",
+        "2": "Temporizador de Tarefas",
+        "3": "Temporizador de Exercícios",
+        "4": "Definir Temporizador",
+        "5": "Temporizador de Contagem Regressiva",
+        "6": "Temporizador Online"
+      }
+    },
+    "passwordGenerator": {
+      "title": "Gerador de Senhas Gratuito",
+      "label": "Gerador de Senhas",
+      "navDescription": "Crie senhas seguras e aleatórias para proteger suas contas.",
+      "subLabel": "Suite de Gerador de Senhas",
+      "subNavDescription": "Gere instantaneamente senhas fortes e únicas.",
+      "description": "Use nosso gerador de senhas online gratuito para criar senhas seguras e aleatórias. Personalize o comprimento e os caracteres para atender às suas necessidades de segurança.",
+      "keywords": {
+        "0": "Gerador de Senhas",
+        "1": "Senhas Seguras",
+        "2": "Criar Senha",
+        "3": "Senha Aleatória",
+        "4": "Gerar Senha",
+        "5": "Senha Forte",
+        "6": "Gerador de Senhas Online"
+      },
+      "page": {
+        "description": "Gere senhas fortes e únicas",
+        "generatePwd": "Regenerar Senha",
+        "strong": {
+          "label": "Forte",
+          "message": "Excelente escolha!"
+        },
+        "moderate": {
+          "label": "Moderada",
+          "message": "Não é ruim, mas não é Fort Knox também."
+        },
+        "weak": {
+          "label": "Fraca",
+          "message": "Precisa de melhorias."
+        },
+        "pwLength": "Comprimento da senha",
+        "form": {
+          "uppercase": "Incluir letras maiúsculas",
+          "lowercase": "Incluir letras minúsculas",
+          "numbers": "Incluir números",
+          "symbols": "Incluir símbolos"
+        }
+      },
+      "autoGenerationMessage": "Sua senha será gerada automaticamente",
+      "length": {
+        "label": "Comprimento",
+        "navDescription": "Selecione o comprimento da senha.",
+        "title": "Gerador de Senhas Seguras | Personalize o Comprimento da Senha",
+        "description": "Escolha o comprimento da sua senha para garantir segurança adequada. Recomendado: pelo menos 12 caracteres.",
+        "input": "Insira o comprimento da senha aqui"
+      },
+      "characters": {
+        "label": "Caracteres",
+        "navDescription": "Selecione os tipos de caracteres a serem incluídos.",
+        "title": "Gerador de Senhas Seguras | Personalize os Caracteres da Senha",
+        "description": "Selecione os tipos de caracteres que deseja incluir em sua senha: letras, números, símbolos.",
+        "input": "Selecione os caracteres desejados"
+      }
+    },
+    "textToHandwriting": {
+      "title": "Texto para Caligrafia Gratuito",
+      "label": "Texto para Caligrafia",
+      "navDescription": "Converta texto em caligrafia realista.",
+      "subLabel": "Suite de Ferramentas de Caligrafia",
+      "subNavDescription": "Transforme seu texto em uma bela caligrafia.",
+      "description": "Use nossa ferramenta para converter texto em estilos de caligrafia realistas. Personalize fontes e tamanhos.",
+      "keywords": {
+        "0": "Texto para Caligrafia",
+        "1": "Conversor de Caligrafia",
+        "2": "Caligrafia Realista",
+        "3": "Estilos de Caligrafia",
+        "4": "Conversor de Texto",
+        "5": "Caligrafia Online",
+        "6": "Caligrafia Personalizada"
+      }
+    },
+    "text": {
+      "title": "Suite de Texto",
+      "label": "Texto",
+      "navDescription": "Acesse uma suíte abrangente de ferramentas de texto para todas as suas necessidades de processamento de texto.",
+      "subLabel": "Suite de Texto Abrangente",
+      "subNavDescription": "Explore uma variedade de ferramentas para gerenciar, comparar e analisar texto.",
+      "description": "Nossa Suite de Ferramentas de Texto oferece uma ampla gama de utilitários para lidar com tarefas de processamento de texto de forma eficiente. De comparação a análise, personalize sua experiência para atender aos seus requisitos específicos."
+    },
+    "textCompare": {
+      "title": "Comparação de Texto Gratuita",
+      "label": "Comparação de Texto",
+      "navDescription": "Compare dois textos para identificar diferenças e semelhanças.",
+      "subLabel": "Suite de Comparação de Texto",
+      "subNavDescription": "Compare e analise diferenças de texto sem esforço.",
+      "description": "Use nossa ferramenta de comparação de texto online gratuita para identificar diferenças entre dois textos. Personalize as configurações para destacar mudanças e semelhanças.",
+      "keywords": {
+        "0": "Comparação de Texto",
+        "1": "Comparar Textos",
+        "2": "Diferenças de Texto",
+        "3": "Semelhanças de Texto",
+        "4": "Comparação de Texto Online",
+        "5": "Análise de Texto",
+        "6": "Comparar Documentos"
+      },
+      "page": {
+        "description": "Compare e analise diferenças de texto",
+        "compareText": "Comparar Textos",
+        "select": {
+          "char": "Caractere por Caractere",
+          "word": "Palavra por Palavra",
+          "line": "Linha por Linha"
+        },
+        "identical": "Os dois textos são idênticos",
+        "diff": "diferenças encontradas",
+        "textPlaceholder": "Digite ou cole o texto aqui...",
+        "mergeL": "Mesclar à Esquerda",
+        "mergeR": "Mesclar à Direita",
+        "compare": "Comparar",
+        "left": "Texto da Esquerda",
+        "right": "Texto da Direita",
+        "realTime": "Visualização em tempo real"
+      }
+    },
+    "json": {
+      "title": "JSON",
+      "label": "Ferramentas JSON",
+      "navDescription": "Suite abrangente para todas as suas necessidades de JSON.",
+      "subLabel": "Suite Completa de JSON",
+      "subNavDescription": "Lide, edite e formate dados JSON sem esforço.",
+      "description": "Explore nossa suíte abrangente de ferramentas JSON online gratuitas para editar, formatar, validar e analisar dados JSON. Personalize as configurações para melhorar sua experiência de manipulação de JSON."
+    },
+    "jsonEditor": {
+      "title": "Editor de JSON Gratuito",
+      "label": "Editor de JSON",
+      "navDescription": "Edite e formate dados JSON com facilidade.",
+      "subLabel": "Suite de Editor de JSON",
+      "subNavDescription": "Edite e formate dados JSON sem esforço.",
+      "description": "Use nossa ferramenta de editor de JSON online gratuita para editar e formatar dados JSON. Personalize as configurações para melhorar sua experiência de edição de JSON.",
+      "keywords": {
+        "0": "Editor de JSON",
+        "1": "Editar JSON",
+        "2": "Formatador de JSON",
+        "3": "Embelezador de JSON",
+        "4": "Editor de JSON Online",
+        "5": "Validador de JSON",
+        "6": "Analisador de JSON",
+        "7": "Verificador de Sintaxe JSON",
+        "8": "Visualizador de JSON",
+        "9": "Minificador de JSON",
+        "10": "Impressão Bonita de JSON"
+      }
+    },
+    "image": {
+      "title": "Suite de Imagens",
+      "label": "Imagem",
+      "navDescription": "Acesse uma suíte abrangente de ferramentas de imagem para todas as suas necessidades de processamento de imagens.",
+      "subLabel": "Suite de Imagens Abrangente",
+      "subNavDescription": "Explore uma variedade de ferramentas para gerenciar, editar e analisar imagens.",
+      "description": "Nossa Suite de Ferramentas de Imagem oferece uma ampla gama de utilitários para lidar com tarefas de processamento de imagens de forma eficiente. De edição a análise, personalize sua experiência para atender aos seus requisitos específicos."
+    },
+    "imageMerge": {
+      "title": "Ferramenta de Mesclagem de Imagens",
+      "label": "Mesclagem de Imagens",
+      "navDescription": "Combine várias imagens em uma única imagem sem esforço.",
+      "subLabel": "Suite de Mesclagem de Imagens",
+      "subNavDescription": "Mescle facilmente várias imagens em uma.",
+      "description": "Use nossa Ferramenta de Mesclagem de Imagens para combinar várias imagens em uma única imagem de forma contínua. Personalize as configurações para melhorar sua experiência de mesclagem de imagens.",
+      "keywords": {
+        "0": "Mesclagem de Imagens",
+        "1": "Combinar Imagens",
+        "2": "Combinador de Imagens",
+        "3": "Mesclar Fotos",
+        "4": "Mesclagem de Imagens Online",
+        "5": "Costura de Imagens",
+        "6": "Colagem de Fotos",
+        "7": "Unidor de Imagens",
+        "8": "Mesclagem de Imagens",
+        "9": "Fusão de Imagens",
+        "10": "Mesclagem de Fotos",
+        "11": "Sobreposição de Imagens",
+        "12": "Misturador de Fotos",
+        "13": "Montagem de Imagens",
+        "14": "Composição de Imagens",
+        "15": "Costura de Fotos",
+        "16": "Criador de Colagens de Imagens",
+        "17": "Editor de Fotos",
+        "18": "Editor de Imagens",
+        "19": "Manipulação de Imagens",
+        "20": "Fusão de Fotos",
+        "21": "Agregador de Imagens",
+        "22": "Unidor de Fotos",
+        "23": "Combinação de Imagens",
+        "24": "Mesclagem de Fotos",
+        "25": "Mesclagem de conversas do Whatsapp"
+      },
+      "page": {
+        "title": "Mesclador de Imagens",
+        "description": "Mescle facilmente várias imagens em uma",
+        "image": "Imagem",
+        "upload": "Carregar imagem",
+        "size": "Tamanho da imagem",
+        "selectSize": "Selecionar tamanho",
+        "sizeOriginal": "Tamanho Original",
+        "sizeMagnify": "Ampliar",
+        "sizeCrop": "Cortar",
+        "settings": "Configurações de Mesclagem",
+        "noImages": "Número de Imagens",
+        "positionTab": "Posição",
+        "borderTab": "Borda",
+        "imagePosition": "Posição da Imagem",
+        "selectPosition": "Selecionar posição",
+        "horizontal": "Horizontal (Lado a Lado)",
+        "vertical": "Vertical (Uma Acima da Outra)",
+        "sizeNor": "Normalização de Tamanho",
+        "selNorm": "Selecionar normalização",
+        "selNone": "Nenhum (Manter Proporções Originais)",
+        "largest": "Ajustar à Maior Imagem",
+        "smallest": "Ajustar à Menor Imagem",
+        "borderType": "Tipo de Borda",
+        "selBorder": "Selecionar tipo de borda",
+        "between": "Entre Imagens",
+        "aroundEach": "Ao Redor de Cada Imagem",
+        "aroundAll": "Ao Redor do Resultado Mesclado",
+        "borderStyle": "Estilo de Borda",
+        "selStyle": "Selecionar estilo de borda",
+        "solid": "Sólido",
+        "dashed": "Tracejado",
+        "dotted": "Pontilhado",
+        "borderWidth": "Largura da Borda",
+        "borderColor": "Cor da Borda",
+        "result": "Resultado Mesclado",
+        "error": "Carregue pelo menos uma imagem para ver o resultado mesclado",
+        "download": "Baixar Imagem Mesclada",
+        "tune": "Ajuste as configurações de mesclagem para obter o resultado desejado"
+      }
+    }
+  }
+}

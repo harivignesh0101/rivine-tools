@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import {
+    imageMergePath,
     jsonEditorPath,
     passwordGeneratorPath,
     qrHomePath,
@@ -58,6 +59,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${siteUrl}${jsonEditorPath}`,
             lastModified: new Date(),
             alternates: getAlternates(jsonEditorPath),
+        },
+        {
+            url: `${siteUrl}${imageMergePath}`,
+            lastModified: new Date(),
+            alternates: getAlternates(imageMergePath),
         },
     ]
 }

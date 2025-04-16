@@ -27,3 +27,7 @@ export const textCompare = `${tools}.textCompare`;
 export const json = `${tools}.json`;
 
 export const jsonEditor = `${tools}.jsonEditor`;
+
+export const image = `${tools}.image`;
+
+export const imageMerge = `${tools}.imageMerge`;

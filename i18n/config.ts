@@ -6,11 +6,15 @@ export const supportedLanguages = [
     },
     {
         code: 'es',
-        label: 'Spanish'
+        label: 'Español (Spanish)'
     },
     {
         code: 'ta',
-        label: 'Tamil'
+        label: 'தமிழ் (Tamil)'
+    },
+    {
+        code: 'pt',
+        label: 'Português (Portuguese)'
     }
 ]
 
