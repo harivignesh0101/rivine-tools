@@ -66,6 +66,8 @@ export const jsonEditorPath = "/json-editor";
 
 export const imageMergePath = "/image-merge";
 
+export const textToHandwritingPath = "/text-to-handwriting";
+
 export const toolsNavItems: ToolNavItem[] = [
     {
         label: "QR Code Generator",
@@ -128,6 +130,35 @@ export const toolsNavItems: ToolNavItem[] = [
         ],
     },
     {
+        label: "Text",
+        tLabel: `${text}.label`,
+        description: "Clocks",
+        tDescription: `${text}.navDescription`,
+        featured: {
+            href: textComparePath,
+            label: "Clock Suite",
+            tLabel: `${text}.subLabel`,
+            description: "clocks.",
+            tDescription: `${text}.subNavDescription`,
+        },
+        links: [
+            {
+                label: "Text Compare",
+                tLabel: `${textCompare}.label`,
+                href: textComparePath,
+                description: "clocks.",
+                tDescription: `${textCompare}.navDescription`,
+            },
+            {
+                label: "Text to Handwriting",
+                tLabel: `${textToHandwriting}.label`,
+                href: textToHandwritingPath,
+                description: "Handwriting.",
+                tDescription: `${textToHandwriting}.navDescription`,
+            },
+        ],
+    },
+    {
         label: "Password generator",
         tLabel: `${passwordGenerator}.label`,
         description: "Create secure passwords.",
@@ -169,28 +200,6 @@ export const toolsNavItems: ToolNavItem[] = [
                 href: timerPath,
                 description: "clocks.",
                 tDescription: `${timer}.navDescription`,
-            },
-        ],
-    },
-    {
-        label: "Text",
-        tLabel: `${text}.label`,
-        description: "Clocks",
-        tDescription: `${text}.navDescription`,
-        featured: {
-            href: textComparePath,
-            label: "Clock Suite",
-            tLabel: `${text}.subLabel`,
-            description: "clocks.",
-            tDescription: `${text}.subNavDescription`,
-        },
-        links: [
-            {
-                label: "Text Compare",
-                tLabel: `${textCompare}.label`,
-                href: textComparePath,
-                description: "clocks.",
-                tDescription: `${textCompare}.navDescription`,
             },
         ],
     },
@@ -314,9 +323,15 @@ export const toolsCards = [
         link: `${jsonEditorPath}`,
     },
     {
+        title: `${imageMerge}.label`,
+        description: `${imageMerge}.description`,
+        isActive: true,
+        link:`${imageMergePath}`,
+    },
+    {
         title: `${textToHandwriting}.label`,
         description: `${textToHandwriting}.description`,
-        isActive: false,
-        link: "/text-to-handwriting",
+        isActive: true,
+        link: `${textToHandwritingPath}`,
     },
 ];

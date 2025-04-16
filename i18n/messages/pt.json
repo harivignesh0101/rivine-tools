@@ -160,23 +160,6 @@
         "input": "Selecione os caracteres desejados"
       }
     },
-    "textToHandwriting": {
-      "title": "Texto para Caligrafia Gratuito",
-      "label": "Texto para Caligrafia",
-      "navDescription": "Converta texto em caligrafia realista.",
-      "subLabel": "Suite de Ferramentas de Caligrafia",
-      "subNavDescription": "Transforme seu texto em uma bela caligrafia.",
-      "description": "Use nossa ferramenta para converter texto em estilos de caligrafia realistas. Personalize fontes e tamanhos.",
-      "keywords": {
-        "0": "Texto para Caligrafia",
-        "1": "Conversor de Caligrafia",
-        "2": "Caligrafia Realista",
-        "3": "Estilos de Caligrafia",
-        "4": "Conversor de Texto",
-        "5": "Caligrafia Online",
-        "6": "Caligrafia Personalizada"
-      }
-    },
     "text": {
       "title": "Suite de Texto",
       "label": "Texto",
@@ -331,6 +314,74 @@
         "error": "Carregue pelo menos uma imagem para ver o resultado mesclado",
         "download": "Baixar Imagem Mesclada",
         "tune": "Ajuste as configurações de mesclagem para obter o resultado desejado"
+      }
+    },
+    "textToHandwriting": {
+      "title": "Ferramenta de Texto para Escrita à Mão",
+      "label": "Texto para Escrita à Mão",
+      "navDescription": "Converta texto digitado em escrita à mão realista sem esforço.",
+      "subLabel": "Suíte de Escrita à Mão",
+      "subNavDescription": "Transforme facilmente texto em notas manuscritas.",
+      "description": "Use nossa Ferramenta de Texto para Escrita à Mão para converter seu texto digitado em escrita à mão realista. Personalize as configurações para melhorar sua experiência de escrita à mão.",
+      "keywords": {
+        "0": "Texto para Escrita à Mão",
+        "1": "Conversor de Escrita à Mão",
+        "2": "Texto para Roteiro",
+        "3": "Notas Manuscritas",
+        "4": "Ferramenta de Escrita à Mão Online",
+        "5": "Texto para Cursiva",
+        "6": "Gerador de Escrita à Mão",
+        "7": "Texto para Caligrafia",
+        "8": "Conversor de Roteiro",
+        "9": "Texto para Caligrafia",
+        "10": "Simulação de Escrita à Mão",
+        "11": "Texto para Manuscrito",
+        "12": "Criador de Escrita à Mão",
+        "13": "Texto para Letra",
+        "14": "Estilo de Escrita à Mão",
+        "15": "Texto para Tinta",
+        "16": "Editor de Escrita à Mão",
+        "17": "Texto para Fonte",
+        "18": "Personalização de Escrita à Mão",
+        "19": "Texto para Escrita",
+        "20": "Transformação de Escrita à Mão",
+        "21": "Texto para Manuscrito",
+        "22": "Criador de Roteiro",
+        "23": "Conversor de Texto para Escrita à Mão",
+        "24": "Gerador de Texto para Escrita à Mão",
+        "25": "Editor de Texto para Escrita à Mão"
+      },
+      "page": {
+        "title": "Texto para Escrita à Mão",
+        "description": "Converta facilmente texto digitado em escrita à mão realista",
+        "yourText": "Seu Texto",
+        "font": "Fonte de Escrita à Mão",
+        "selFont": "Selecionar fonte",
+        "pageSize": "Tamanho da Página",
+        "selPSize": "Selecionar tamanho da página",
+        "fontSize": "Tamanho da Fonte",
+        "lineSpacing": "Espaçamento de Linhas",
+        "verticalPosition": "Posição Vertical",
+        "wordSpacing": "Espaçamento de Palavras",
+        "letterSpacing": "Espaçamento de Letras",
+        "leftMargin": "Margem Esquerda",
+        "topMargin": "Margem Superior",
+        "inkColor": "Cor da Tinta",
+        "pageBackground": "Fundo da Página",
+        "marginColor": "Cor da Margem",
+        "lineColor": "Cor da Linha",
+        "showMargin": "Mostrar Margem",
+        "showPageLines": "Mostrar Linhas da Página",
+        "addToBook": "Adicionar ao Livro",
+        "downloadAsImage": "Baixar como Imagem",
+        "downloadAsPdf": "Baixar como PDF",
+        "downloadAllImages": "Baixar Todas as Imagens",
+        "emptyBook": "Seu livro está vazio",
+        "empBookDes": "Adicione páginas do editor ou carregue imagens para criar seu livro",
+        "page": "Página",
+        "handwrittenText": "Texto Manuscrito",
+        "image": "Imagem",
+        "note": "Se as linhas ou texto se sobrepuserem, ajuste as configurações. Para baixar várias páginas, use \"Adicionar ao Livro\" e role para baixo para baixar."
       }
     }
   }

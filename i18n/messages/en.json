@@ -160,23 +160,6 @@
         "input": "Select desired characters"
       }
     },
-    "textToHandwriting": {
-      "title": "Text to Handwriting Free",
-      "label": "Text to Handwriting",
-      "navDescription": "Convert text to realistic handwriting.",
-      "subLabel": "Handwriting Tool Suite",
-      "subNavDescription": "Transform your text into beautiful handwriting.",
-      "description": "Use our tool to convert text into realistic handwriting styles. Customize fonts and sizes.",
-      "keywords": {
-        "0": "Text to Handwriting",
-        "1": "Handwriting Converter",
-        "2": "Realistic Handwriting",
-        "3": "Handwriting Styles",
-        "4": "Text Converter",
-        "5": "Handwriting Online",
-        "6": "Custom Handwriting"
-      }
-    },
     "text" : {
       "title": "Text Suite",
       "label": "Text",
@@ -331,6 +314,74 @@
         "error": "Upload at least one image to see the merged result",
         "download": "Download Merged Image",
         "tune": "Adjust the merger settings to achieve the desired output"
+      }
+    },
+    "textToHandwriting": {
+      "title": "Text to Handwriting Tool",
+      "label": "Text to Handwriting",
+      "navDescription": "Convert typed text into realistic handwriting effortlessly.",
+      "subLabel": "Handwriting Suite",
+      "subNavDescription": "Easily transform text into handwritten notes.",
+      "description": "Use our Text to Handwriting Tool to convert your typed text into realistic handwriting. Customize settings to enhance your handwriting experience.",
+      "keywords": {
+        "0": "Text to Handwriting",
+        "1": "Handwriting Converter",
+        "2": "Text to Script",
+        "3": "Handwritten Notes",
+        "4": "Online Handwriting Tool",
+        "5": "Text to Cursive",
+        "6": "Handwriting Generator",
+        "7": "Text to Penmanship",
+        "8": "Script Converter",
+        "9": "Text to Calligraphy",
+        "10": "Handwriting Simulation",
+        "11": "Text to Manuscript",
+        "12": "Handwriting Maker",
+        "13": "Text to Lettering",
+        "14": "Handwriting Style",
+        "15": "Text to Ink",
+        "16": "Handwriting Editor",
+        "17": "Text to Font",
+        "18": "Handwriting Customization",
+        "19": "Text to Writing",
+        "20": "Handwriting Transformation",
+        "21": "Text to Handwritten",
+        "22": "Script Maker",
+        "23": "Text to Handwriting Converter",
+        "24": "Text to Handwriting Generator",
+        "25": "Text to Handwriting Editor"
+      },
+      "page": {
+        "title": "Text to Handwriting",
+        "description": "Easily convert typed text into realistic handwriting",
+        "yourText": "Your Text",
+        "font": "Handwriting Font",
+        "selFont": "Select font",
+        "pageSize": "Page Size",
+        "selPSize": "Select page size",
+        "fontSize": "Font Size",
+        "lineSpacing": "Line Spacing",
+        "verticalPosition": "Vertical Position",
+        "wordSpacing": "Word Spacing",
+        "letterSpacing": "Letter Spacing",
+        "leftMargin": "Left Margin",
+        "topMargin": "Top Margin",
+        "inkColor": "Ink Color",
+        "pageBackground": "Page Background",
+        "marginColor": "Margin Color",
+        "lineColor": "Line Color",
+        "showMargin": "Show Margin",
+        "showPageLines": "Show Page Lines",
+        "addToBook": "Add to Book",
+        "downloadAsImage": "Download as Image",
+        "downloadAsPdf": "Download as PDF",
+        "downloadAllImages": "Download All Images",
+        "emptyBook": "Your book is empty",
+        "empBookDes": "Add pages from the editor or upload images to create your book",
+        "page": "Page",
+        "handwrittenText": "Handwritten Text",
+        "image": "Image",
+        "note": "If lines or text overlap, adjust the settings. To download multiple pages, use \"Add to Book\" and scroll down to download."
       }
     }
   }

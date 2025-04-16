@@ -307,7 +307,7 @@ export default function ImageMerger() {
     }
 
     return (
-        <div className="container mx-auto py-8 px-4">
+        <div className="container mx-auto px-4">
             <h2 className="text-xl font-bold text-center">{t(`${imageMerge}.page.title`)}</h2>
             <p className="text-center text-sm text-muted-foreground">{t(`${imageMerge}.page.description`)}</p>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8 mt-6">

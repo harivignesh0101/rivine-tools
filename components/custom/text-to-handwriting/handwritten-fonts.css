@@ -1,0 +1,58 @@
+/* fonts.css */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Dawning+of+a+New+Day&family=Kalam&family=Shadows+Into+Light&family=Homemade+Apple&family=Reenie+Beanie&family=Just+Me+Again+Down+Here&family=Kristi&family=Marck+Script&display=swap');
+
+@font-face {
+    font-family: 'signatura-monoline';
+    src: url('https://cdn.jsdelivr.net/gh/rivine-dev/cdn/fonts/handwritten/SignaturaMonoline.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}  /*https://www.cufonfonts.com/category/handwritten/1?free-for-commercial=1*/
+
+@font-face {
+    font-family: 'DwayneDylan';
+    src: url('https://cdn.jsdelivr.net/gh/rivine-dev/cdn/fonts/handwritten/DwayneDylan.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} /*https://www.cufonfonts.com/category/handwritten/1?free-for-commercial=1*/
+
+@font-face {
+    font-family: 'Parkinsons';
+    src: url('https://cdn.jsdelivr.net/gh/rivine-dev/cdn/fonts/handwritten/Parkinsons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} /*https://www.cufonfonts.com/category/handwritten/1?free-for-commercial=1*/
+
+@font-face {
+    font-family: 'Quetine';
+    src: url('https://cdn.jsdelivr.net/gh/rivine-dev/cdn/fonts/handwritten/Quetine.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} /*https://www.cufonfonts.com/category/handwritten/1?free-for-commercial=1*/
+
+@font-face {
+    font-family: 'Singlong';
+    src: url('https://cdn.jsdelivr.net/gh/rivine-dev/cdn/fonts/handwritten/Singlong.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} /*https://www.cufonfonts.com/category/handwritten/1?free-for-commercial=1*/
+
+@font-face {
+    font-family: 'MistralSingleLineOutline-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/rivine-dev/cdn/fonts/handwritten/MistralSingleLineOutline-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} /*https://fontesk.com/mistral-singleline-font/*/
+
+@font-face {
+    font-family: 'BrandiseSignature';
+    src: url('https://cdn.jsdelivr.net/gh/rivine-dev/cdn/fonts/handwritten/BrandiseSignature.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} /*https://font.download/font/brandise-signature*/

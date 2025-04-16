@@ -160,23 +160,6 @@
         "input": "Seleccione los caracteres deseados"
       }
     },
-    "textToHandwriting": {
-      "title": "Texto a Manuscrito",
-      "label": "Texto a Manuscrito",
-      "navDescription": "Convierte texto en escritura a mano realista.",
-      "subLabel": "Suite de Herramientas de Manuscrito",
-      "subNavDescription": "Transforma tu texto en una hermosa escritura a mano.",
-      "description": "Utiliza nuestra herramienta para convertir texto en estilos de escritura a mano realistas. Personaliza fuentes y tamaños.",
-      "keywords": {
-        "0": "Texto a Manuscrito",
-        "1": "Convertidor de Manuscrito",
-        "2": "Escritura a Mano Realista",
-        "3": "Estilos de Manuscrito",
-        "4": "Convertidor de Texto",
-        "5": "Manuscrito en Línea",
-        "6": "Manuscrito Personalizado"
-      }
-    },
     "text": {
       "title": "Suite de Texto",
       "label": "Texto",
@@ -331,6 +314,74 @@
         "error": "Sube al menos una imagen para ver el resultado fusionado",
         "download": "Descargar Imagen Fusionada",
         "tune": "Ajusta la configuración de fusión para lograr el resultado deseado"
+      }
+    },
+    "textToHandwriting": {
+      "title": "Herramienta de Texto a Escritura a Mano",
+      "label": "Texto a Escritura a Mano",
+      "navDescription": "Convierte texto mecanografiado en escritura a mano realista sin esfuerzo.",
+      "subLabel": "Suite de Escritura a Mano",
+      "subNavDescription": "Transforma fácilmente texto en notas escritas a mano.",
+      "description": "Utiliza nuestra Herramienta de Texto a Escritura a Mano para convertir tu texto mecanografiado en escritura a mano realista. Personaliza configuraciones para mejorar tu experiencia de escritura a mano.",
+      "keywords": {
+        "0": "Texto a Escritura a Mano",
+        "1": "Convertidor de Escritura a Mano",
+        "2": "Texto a Guion",
+        "3": "Notas Escritas a Mano",
+        "4": "Herramienta de Escritura a Mano en Línea",
+        "5": "Texto a Cursiva",
+        "6": "Generador de Escritura a Mano",
+        "7": "Texto a Caligrafía",
+        "8": "Convertidor de Guion",
+        "9": "Texto a Caligrafía",
+        "10": "Simulación de Escritura a Mano",
+        "11": "Texto a Manuscrito",
+        "12": "Creador de Escritura a Mano",
+        "13": "Texto a Letra",
+        "14": "Estilo de Escritura a Mano",
+        "15": "Texto a Tinta",
+        "16": "Editor de Escritura a Mano",
+        "17": "Texto a Fuente",
+        "18": "Personalización de Escritura a Mano",
+        "19": "Texto a Escritura",
+        "20": "Transformación de Escritura a Mano",
+        "21": "Texto a Manuscrito",
+        "22": "Creador de Guion",
+        "23": "Convertidor de Texto a Escritura a Mano",
+        "24": "Generador de Texto a Escritura a Mano",
+        "25": "Editor de Texto a Escritura a Mano"
+      },
+      "page": {
+        "title": "Texto a Escritura a Mano",
+        "description": "Convierte fácilmente texto mecanografiado en escritura a mano realista",
+        "yourText": "Tu Texto",
+        "font": "Fuente de Escritura a Mano",
+        "selFont": "Seleccionar fuente",
+        "pageSize": "Tamaño de Página",
+        "selPSize": "Seleccionar tamaño de página",
+        "fontSize": "Tamaño de Fuente",
+        "lineSpacing": "Espaciado de Líneas",
+        "verticalPosition": "Posición Vertical",
+        "wordSpacing": "Espaciado de Palabras",
+        "letterSpacing": "Espaciado de Letras",
+        "leftMargin": "Margen Izquierdo",
+        "topMargin": "Margen Superior",
+        "inkColor": "Color de Tinta",
+        "pageBackground": "Fondo de Página",
+        "marginColor": "Color del Margen",
+        "lineColor": "Color de Línea",
+        "showMargin": "Mostrar Margen",
+        "showPageLines": "Mostrar Líneas de Página",
+        "addToBook": "Agregar al Libro",
+        "downloadAsImage": "Descargar como Imagen",
+        "downloadAsPdf": "Descargar como PDF",
+        "downloadAllImages": "Descargar Todas las Imágenes",
+        "emptyBook": "Tu libro está vacío",
+        "empBookDes": "Agrega páginas desde el editor o sube imágenes para crear tu libro",
+        "page": "Página",
+        "handwrittenText": "Texto Escrito a Mano",
+        "image": "Imagen",
+        "note": "Si las líneas o el texto se superponen, ajusta las configuraciones. Para descargar múltiples páginas, usa \"Agregar al Libro\" y desplázate hacia abajo para descargar."
       }
     }
   }

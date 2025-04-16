@@ -20,7 +20,7 @@ import {useTranslations} from "use-intl";
 export function ToolsNav() {
     const t = useTranslations()
     return (
-        <NavigationMenu delayDuration={0}>
+        <NavigationMenu delayDuration={300}>
             <NavigationMenuList>
                 {toolsNavItems.map((item) => {
                     if ("links" in item) {
