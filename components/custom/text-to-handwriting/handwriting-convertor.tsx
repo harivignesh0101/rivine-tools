@@ -441,7 +441,7 @@ export default function HandwritingConverter() {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-2/3 flex items-center flex-col">
+                <div className="w-full lg:w-2/3 flex items-center flex-col max-w-full">
                     <div className="flex space-x-2 justify-end">
                         <Button onClick={addToBook} variant="outline">
                             <Book className="mr-2 h-4 w-4" /> {t(`${textToHandwriting}.page.addToBook`)}
@@ -464,7 +464,7 @@ export default function HandwritingConverter() {
                             </AlertDescription>
                         </Alert>
                     </div>
-                    <div className="relative overflow-auto max-h-[80vh] border rounded-md p-4 bg-[var(--muted)]">
+                    <div className="relative overflow-auto max-h-[80vh] border rounded-md p-4 max-w-full bg-[var(--muted)]">
                         {loading ? (
                             <div className="flex items-center justify-center" style={{ width: pageWidth, height: pageHeight }}>
                                 <RefreshCw className="animate-spin h-8 w-8 text-gray-500" />
