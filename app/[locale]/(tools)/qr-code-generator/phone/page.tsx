@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { getLocalizedPath } from "@/i18n/get-localized-path";
 import { qrCodeGenerator, qrCodePhone } from "@/config/i18n-constants";
 import JsonLd from "@/components/custom/core/json-ld";
+import {generateAlternates} from "@/lib/utils";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -45,11 +46,14 @@ export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
   const { locale } = resolvedParams; // Extract locale from resolved params
   const t = await getTranslations({ locale });
   const url = `${siteUrl}${getLocalizedPath({ slug: "", locale })}`;
+  const alternates = generateAlternates(locale, `${qrHomePath}/phone`);
 
   return {
     title: `${appName} | ${t(`${qrCodeGenerator}.title`)}`,
     description: t(`${qrCodeGenerator}.description`),
     keywords: Array.from({ length: 7 }, (_, i) => t(`${qrCodeGenerator}.keywords.${i}`)),
+    metadataBase: new URL(siteUrl),
+    alternates,
     openGraph: {
       title: `${t(`${qrCodePhone}.title`)} | Free QR Code Generator`,
       description: t(`${qrCodePhone}.description`),

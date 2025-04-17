@@ -5,6 +5,7 @@ import { getLocalizedPath } from "@/i18n/get-localized-path";
 import JsonLd from "@/components/custom/core/json-ld";
 import {textToHandwriting} from "@/config/i18n-constants";
 import HandwritingConverter from "@/components/custom/text-to-handwriting/handwriting-convertor";
+import {generateAlternates} from "@/lib/utils";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -45,11 +46,14 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     const { locale } = resolvedParams; // Extract locale from resolved params
     const t = await getTranslations({ locale });
     const url = `${siteUrl}${getLocalizedPath({ slug: "", locale })}`;
+    const alternates = generateAlternates(locale, textToHandwritingPath);
 
     return {
         title: `${appName} | ${t(`${textToHandwriting}.title`)}`,
         description: t(`${textToHandwriting}.description`),
         keywords: Array.from({ length: 26 }, (_, i) => t(`${textToHandwriting}.keywords.${i}`)),
+        metadataBase: new URL(siteUrl),
+        alternates,
         openGraph: {
             title: `${t(`${textToHandwriting}.title`)} | Free Online Text to Handwriting`,
             description: t(`${textToHandwriting}.description`),

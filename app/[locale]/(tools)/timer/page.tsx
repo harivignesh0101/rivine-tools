@@ -5,6 +5,7 @@ import { getLocalizedPath } from "@/i18n/get-localized-path";
 import JsonLd from "@/components/custom/core/json-ld";
 import {timer} from "@/config/i18n-constants";
 import {Timer} from "@/components/custom/timer/timer";
+import {generateAlternates} from "@/lib/utils";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -45,11 +46,14 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     const { locale } = resolvedParams; // Extract locale from resolved params
     const t = await getTranslations({ locale });
     const url = `${siteUrl}${getLocalizedPath({ slug: "", locale })}`;
+    const alternates = generateAlternates(locale, timerPath);
 
     return {
         title: `${appName} | ${t(`${timer}.title`)}`,
         description: t(`${timer}.description`),
         keywords: Array.from({ length: 7 }, (_, i) => t(`${timer}.keywords.${i}`)),
+        metadataBase: new URL(siteUrl),
+        alternates,
         openGraph: {
             title: `${t(`${timer}.title`)} | Free Online Timer`,
             description: t(`${timer}.description`),

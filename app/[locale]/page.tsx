@@ -8,6 +8,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { getLocalizedPath } from "@/i18n/get-localized-path";
 import { home } from "@/config/i18n-constants";
+import {generateAlternates} from "@/lib/utils";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -63,11 +64,15 @@ export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
     const { locale } = resolvedParams; // Extract locale from resolved params
     const t = await getTranslations({ locale }); // Pass locale to getTranslations
     const url = `${siteUrl}${getLocalizedPath({ slug: "", locale })}`;
+    const alternates = generateAlternates(locale, '/');
+    console.log(alternates)
 
     return {
         title: `${appName} | ${t(`${home}.title`)}`,
         description: t(`${home}.description`),
         keywords: Array.from({ length: 7 }, (_, i) => t(`${home}.keywords.${i}`)),
+        metadataBase: new URL(siteUrl),
+        alternates,
         openGraph: {
             title: `${t(`${home}.title`)} | Free online tools`,
             description: t(`${home}.description`),

@@ -5,6 +5,7 @@ import { getLocalizedPath } from "@/i18n/get-localized-path";
 import JsonLd from "@/components/custom/core/json-ld";
 import {jsonEditor} from "@/config/i18n-constants";
 import JsonCompare from "@/components/custom/json/json-compare";
+import {generateAlternates} from "@/lib/utils";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -45,11 +46,14 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     const { locale } = resolvedParams; // Extract locale from resolved params
     const t = await getTranslations({ locale });
     const url = `${siteUrl}${getLocalizedPath({ slug: "", locale })}`;
+    const alternates = generateAlternates(locale, jsonEditorPath);
 
     return {
         title: `${appName} | ${t(`${jsonEditor}.title`)}`,
         description: t(`${jsonEditor}.description`),
         keywords: Array.from({ length: 11 }, (_, i) => t(`${jsonEditor}.keywords.${i}`)),
+        metadataBase: new URL(siteUrl),
+        alternates,
         openGraph: {
             title: `${t(`${jsonEditor}.title`)} | Free Online JSON Editor`,
             description: t(`${jsonEditor}.description`),
