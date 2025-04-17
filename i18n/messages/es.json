@@ -62,6 +62,72 @@
         "title": "Generador de Códigos QR Gratis para Números de Teléfono | Crear Códigos QR de Teléfono Personalizados",
         "description": "Genere y personalice fácilmente códigos QR para números de teléfono. Ideal para compartir información de contacto al instante. Rápido, gratis y sin necesidad de registro.",
         "input": "Ingrese su número de teléfono aquí"
+      },
+      "docs": {
+        "title": "🧾 Cómo Usar el Generador de Códigos QR de Rivine",
+        "intro": "¡Genera un código QR en segundos! Ya sea que estés vinculando a un sitio web, compartiendo una nota rápida o incrustando un número de teléfono, todo está a solo unos clics de distancia.",
+        "whatIs": {
+          "title": "✨ ¿Qué es un Código QR?",
+          "description": "Un código QR (Respuesta Rápida) es un tipo de código de barras que contiene información como enlaces, texto o detalles de contacto. Se puede escanear usando la cámara de tu teléfono o un escáner de códigos QR para acceder instantáneamente al contenido."
+        },
+        "whatCanYouCreate": {
+          "title": "📦 ¿Qué Puedes Crear?",
+          "url": {
+            "title": "URL:",
+            "description": "Enlace a sitios web, portafolios o aplicaciones."
+          },
+          "text": {
+            "title": "Texto:",
+            "description": "Mostrar mensajes, notas o códigos."
+          },
+          "phone": {
+            "title": "Teléfono:",
+            "description": "Incrusta un número para que los usuarios puedan tocar y llamar."
+          }
+        },
+        "steps": {
+          "title": "🚀 Cómo Generar un Código QR",
+          "step1": {
+            "title": "Paso 1: Elige lo que Quieres Codificar",
+            "description": "Usa el menú a la izquierda para seleccionar URL, Texto o Teléfono."
+          },
+          "step2": {
+            "title": "Paso 2: Escribe tu Contenido",
+            "description": "Ingresa tu contenido en el campo de entrada. ¡El código QR se actualiza instantáneamente!"
+          },
+          "step3": {
+            "title": "Paso 3: Previsualiza tu Código QR",
+            "description": "Verás el código aparecer a la derecha, listo para escanear."
+          },
+          "step4": {
+            "title": "Paso 4: Elige el Formato de Archivo",
+            "description": "Elige PNG o SVG dependiendo de cómo lo usarás."
+          },
+          "step5": {
+            "title": "Paso 5: Descarga",
+            "description": "¡Haz clic en el botón y listo!"
+          },
+          "exampleLabel": "Ejemplo (URL):",
+          "downloadButton": "Descargar"
+        },
+        "tips": {
+          "title": "💡 Consejos Profesionales",
+          "tip1": "Para imprimir, usa SVG para evitar bordes borrosos.",
+          "tip2": "Deja algo de espacio en blanco alrededor del código QR para un mejor escaneo.",
+          "tip3": "Asegúrate de que tu contenido sea preciso antes de compartirlo.",
+          "tip4": "Prueba con la cámara de tu teléfono antes de publicarlo en cualquier lugar."
+        },
+        "troubleshooting": {
+          "title": "🛠️ ¿Tienes Problemas?",
+          "qrNotShowing": {
+            "title": "¿El Código QR no se muestra?",
+            "description": "Verifica que hayas escrito algo válido y seleccionado la pestaña correcta."
+          },
+          "downloadNotWorking": {
+            "title": "¿La descarga no funciona?",
+            "description": "Prueba otro formato o actualiza la página."
+          }
+        }
       }
     },
     "clock": {

@@ -5,7 +5,7 @@ import {
     passwordGeneratorPath,
     qrHomePath,
     siteUrl,
-    textComparePath,
+    textComparePath, textToHandwritingPath,
     timerPath
 } from '@/config/site-config'
 import {supportedLanguages} from "@/i18n/config";
@@ -64,6 +64,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${siteUrl}${imageMergePath}`,
             lastModified: new Date(),
             alternates: getAlternates(imageMergePath),
+        },
+        {
+            url: `${siteUrl}${textToHandwritingPath}`,
+            lastModified: new Date(),
+            alternates: getAlternates(textToHandwritingPath),
         },
     ]
 }

@@ -1,5 +1,6 @@
-import {Card} from "@/components/ui/card";
+import {Card, CardContent} from "@/components/ui/card";
 import {QrMenu} from "@/components/custom/qr-code/qr-menu";
+import QrCodeGeneratorDocumentation from "@/components/custom/qr-code/qr-docs";
 
 export default function RootLayout({
                                        children,
@@ -15,6 +16,9 @@ export default function RootLayout({
                         <div className="flex-1 p-0">{children}</div>
                     </div>
                 </Card>
+                <div className="mt-4 bg-background">
+                    <QrCodeGeneratorDocumentation/>
+                </div>
             </div>
         </>
     )

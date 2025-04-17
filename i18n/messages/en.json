@@ -62,6 +62,72 @@
         "title": "Free QR Code Generator for Phone Numbers | Create Custom Phone QR Codes",
         "description": "Easily generate and customize QR codes for phone numbers. Ideal for sharing contact information instantly. Fast, free, and no signup required.",
         "input": "Enter your phone number here"
+      },
+      "docs": {
+        "title": "🧾 How to Use the Rivine QR Code Generator",
+        "intro": "Generate a QR code in seconds! Whether you're linking to a website, sharing a quick note, or embedding a phone number — it's all just a few clicks away.",
+        "whatIs": {
+          "title": "✨ What is a QR Code?",
+          "description": "A QR (Quick Response) code is a type of barcode that holds information like links, text, or contact details. It can be scanned using your phone camera or a QR code scanner to instantly access the content."
+        },
+        "whatCanYouCreate": {
+          "title": "📦 What Can You Create?",
+          "url": {
+            "title": "URL:",
+            "description": "Link to websites, portfolios, or apps."
+          },
+          "text": {
+            "title": "Text:",
+            "description": "Display messages, notes, or codes."
+          },
+          "phone": {
+            "title": "Phone:",
+            "description": "Embed a number so users can tap and call."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Generate a QR Code",
+          "step1": {
+            "title": "Step 1: Pick What You Want to Encode",
+            "description": "Use the menu on the left to select URL, Text, or Phone."
+          },
+          "step2": {
+            "title": "Step 2: Type Your Content",
+            "description": "Enter your content in the input field. The QR code updates instantly!"
+          },
+          "step3": {
+            "title": "Step 3: Preview Your QR Code",
+            "description": "You'll see the code appear to the right — ready to scan."
+          },
+          "step4": {
+            "title": "Step 4: Choose the File Format",
+            "description": "Pick PNG or SVG depending on how you’ll use it."
+          },
+          "step5": {
+            "title": "Step 5: Download",
+            "description": "Click the button and you're done!"
+          },
+          "exampleLabel": "Example (URL):",
+          "downloadButton": "Download"
+        },
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "For printing, use SVG to avoid blurry edges.",
+          "tip2": "Leave some white space around the QR code for better scanning.",
+          "tip3": "Make sure your content is accurate before sharing.",
+          "tip4": "Test with your phone camera before publishing it anywhere."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "qrNotShowing": {
+            "title": "QR Code not showing?",
+            "description": "Double-check that you’ve typed something valid and selected the right tab."
+          },
+          "downloadNotWorking": {
+            "title": "Download not working?",
+            "description": "Try another format or refresh the page."
+          }
+        }
       }
     },
     "clock": {
