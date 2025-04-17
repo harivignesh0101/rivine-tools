@@ -64,8 +64,7 @@ export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
     const { locale } = resolvedParams; // Extract locale from resolved params
     const t = await getTranslations({ locale }); // Pass locale to getTranslations
     const url = `${siteUrl}${getLocalizedPath({ slug: "", locale })}`;
-    const alternates = generateAlternates(locale, '/');
-    console.log(alternates)
+    const alternates = generateAlternates(locale, "");
 
     return {
         title: `${appName} | ${t(`${home}.title`)}`,
