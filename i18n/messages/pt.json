@@ -13,6 +13,62 @@
       "4": "Ferramentas do Instagram",
       "5": "Ferramentas do Facebook",
       "6": "Coleção de ferramentas"
+    },
+    "docs": {
+      "valueSection": {
+        "title": "🛠️ Ferramentas Poderosas para Tarefas Diárias",
+        "description": "Nossa coleção de ferramentas online gratuitas ajuda você a resolver desafios digitais diários sem instalar software adicional. Simples, eficazes e prontas quando você precisa delas."
+      },
+      "benefitsSection": {
+        "title": "Por Que Usar Nossas Ferramentas?",
+        "benefits": [
+          {
+            "title": "Não Requer Instalação",
+            "description": "Todas as ferramentas funcionam diretamente no seu navegador - sem downloads, sem instalações, sem complicações."
+          },
+          {
+            "title": "Focadas na Privacidade",
+            "description": "Seus dados permanecem no seu dispositivo. Não armazenamos seus arquivos ou informações em nossos servidores."
+          },
+          {
+            "title": "Grátis para Usar",
+            "description": "Todas as ferramentas são completamente gratuitas, sem custos ocultos ou recursos premium."
+          },
+          {
+            "title": "Continuamente Melhoradas",
+            "description": "Atualizamos regularmente nossas ferramentas com base no feedback dos usuários e nos avanços tecnológicos."
+          }
+        ]
+      },
+      "categoriesSection": {
+        "title": "Ferramentas para Cada Necessidade",
+        "categories": [
+          {
+            "title": "Ferramentas de Texto e Documentos",
+            "description": "Compare textos, converta formatos e transforme conteúdo escrito com facilidade."
+          },
+          {
+            "title": "Utilitários de Imagem",
+            "description": "Edite, converta e combine imagens sem software complexo."
+          },
+          {
+            "title": "Ferramentas de Dados e Conversão",
+            "description": "Transforme formatos de dados, converta unidades e simplifique tarefas técnicas."
+          },
+          {
+            "title": "Assistentes Criativos",
+            "description": "Gere conteúdo criativo e visualize ideias com ferramentas intuitivas."
+          }
+        ]
+      },
+      "usageSection": {
+        "title": "Como Começar",
+        "steps": "Basta navegar pela nossa coleção acima, selecionar a ferramenta que você precisa e seguir as instruções fáceis na página de cada ferramenta. Não é necessário criar uma conta - basta abrir e usar imediatamente."
+      },
+      "empowerSection": {
+        "title": "Empodere Seu Fluxo de Trabalho",
+        "steps": "Ferramentas online simplificam tarefas complexas, permitindo que você permaneça produtivo onde quer que esteja. Seja você um estudante, desenvolvedor, designer ou apenas precise de uma solução rápida, tudo o que você precisa está a um clique de distância."
+      }
     }
   },
   "general": {
@@ -169,6 +225,110 @@
         "4": "Definir Temporizador",
         "5": "Temporizador de Contagem Regressiva",
         "6": "Temporizador Online"
+      },
+      "docs": {
+        "title": "⏱️ Como Usar o Temporizador Rivine",
+        "intro": "Mantenha-se produtivo e gerencie seu tempo de forma eficaz com nosso temporizador personalizável. Perfeito para a técnica Pomodoro, sessões de trabalho focadas e intervalos programados.",
+        "whatIs": {
+          "title": "✨ O que é a Ferramenta de Temporizador?",
+          "description": "O Temporizador é uma ferramenta de gerenciamento de tempo simples, mas poderosa, que ajuda você a rastrear o tempo para várias atividades. Com durações personalizáveis e predefinições para técnicas populares como Pomodoro, ele é projetado para aumentar sua produtividade e ajudar a manter um equilíbrio saudável entre trabalho e descanso."
+        },
+        "features": {
+          "title": "📦 Recursos Principais",
+          "visualTimer": {
+            "title": "Indicador de Progresso Visual",
+            "description": "Um anel de progresso circular mostra seu tempo restante de relance."
+          },
+          "presets": {
+            "title": "Predefinições de Produtividade",
+            "description": "Acesso rápido a durações de temporizador comuns como Pomodoro (25 min), Intervalo Curto (5 min) e Foco (50 min)."
+          },
+          "custom": {
+            "title": "Duração Personalizada",
+            "description": "Defina horas, minutos e segundos precisos para suas necessidades específicas de temporização."
+          },
+          "controls": {
+            "title": "Controles Intuitivos",
+            "description": "Opções simples de reproduzir, pausar, redefinir e configurações para fácil gerenciamento do temporizador."
+          }
+        },
+        "presets": {
+          "title": "⚡ Compreendendo as Predefinições do Temporizador",
+          "pomodoro": {
+            "title": "Pomodoro (25 minutos)",
+            "description": "Baseado na popular Técnica Pomodoro, este temporizador de 25 minutos é projetado para sessões de trabalho focadas, geralmente seguido por um intervalo curto."
+          },
+          "shortBreak": {
+            "title": "Intervalo Curto (5 minutos)",
+            "description": "Um intervalo rápido de 5 minutos para descansar sua mente entre sessões de trabalho. Perfeito após uma sessão Pomodoro."
+          },
+          "focus": {
+            "title": "Foco (50 minutos)",
+            "description": "Um período de foco estendido para um trabalho mais profundo que requer mais atenção sustentada."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Usar o Temporizador",
+          "step1": {
+            "title": "Passo 1: Escolha uma Duração do Temporizador",
+            "description": "Selecione entre as opções predefinidas (Pomodoro, Intervalo Curto, Foco) ou defina uma duração personalizada."
+          },
+          "step2": {
+            "title": "Passo 2: Inicie o Temporizador",
+            "description": "Pressione o botão de reproduzir para iniciar a contagem regressiva. O círculo começará a se preencher para representar visualmente o tempo decorrido."
+          },
+          "step3": {
+            "title": "Passo 3: Monitore Seu Progresso",
+            "description": "Observe o temporizador contar regressivamente e o indicador visual mostrar seu tempo restante."
+          },
+          "step4": {
+            "title": "Passo 4: Gerencie Seu Temporizador",
+            "description": "Pause, retome ou redefina o temporizador conforme necessário usando os botões de controle."
+          }
+        },
+        "controls": {
+          "title": "🎮 Compreendendo os Controles do Temporizador",
+          "play": {
+            "title": "Botão de Reproduzir",
+            "description": "Inicia ou retoma a contagem regressiva do temporizador."
+          },
+          "pause": {
+            "title": "Botão de Pausa",
+            "description": "Interrompe temporariamente o temporizador enquanto preserva o tempo restante."
+          },
+          "reset": {
+            "title": "Botão de Redefinir",
+            "description": "Retorna o temporizador à sua duração inicial."
+          },
+          "settings": {
+            "title": "Botão de Configurações",
+            "description": "Abre o painel de configurações do temporizador para selecionar predefinições ou definir durações personalizadas."
+          }
+        },
+        "customTimer": {
+          "title": "⚙️ Configurando um Temporizador Personalizado",
+          "description": "Precisa de uma duração específica não coberta pelas predefinições? Siga estas etapas para criar um temporizador personalizado:",
+          "step1": "Clique no ícone de configurações (engrenagem) para abrir Configurações do Temporizador.",
+          "step2": "Em 'Duração Personalizada', defina suas horas, minutos e segundos desejados usando as entradas numéricas.",
+          "step3": "Clique em 'Salvar' para confirmar sua duração personalizada e retornar à tela do temporizador."
+        },
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Para produtividade ideal usando a Técnica Pomodoro, tente 25 minutos de trabalho focado seguido por um intervalo de 5 minutos, depois repita.",
+          "tip2": "Após completar quatro sessões Pomodoro, faça um intervalo mais longo de 15-30 minutos para recarregar.",
+          "tip3": "Minimize as distrações durante as sessões de trabalho cronometradas fechando aplicativos desnecessários e colocando seus dispositivos no modo 'Não Perturbe'."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "timerNotStarting": {
+            "title": "Temporizador Não Está Iniciando?",
+            "description": "Certifique-se de ter definido uma duração maior que zero e clique no botão de reproduzir para iniciar a contagem regressiva."
+          },
+          "notification": {
+            "title": "Não Consegue Ouvir a Conclusão do Temporizador?",
+            "description": "Aumente o volume para ouvir quando o temporizador terminar."
+          }
+        }
       }
     },
     "passwordGenerator": {
@@ -224,6 +384,76 @@
         "title": "Gerador de Senhas Seguras | Personalize os Caracteres da Senha",
         "description": "Selecione os tipos de caracteres que deseja incluir em sua senha: letras, números, símbolos.",
         "input": "Selecione os caracteres desejados"
+      },
+      "docs": {
+        "title": "🔐 Como Usar o Gerador de Senhas Rivine",
+        "intro": "Gere senhas fortes e seguras em segundos! Personalize o comprimento, os tipos de caracteres e regenere senhas com apenas um clique.",
+        "whatIs": {
+          "title": "✨ O que é um Gerador de Senhas?",
+          "description": "Um gerador de senhas cria senhas aleatórias e fortes para proteger suas contas. Você pode escolher tipos de caracteres específicos, como letras maiúsculas, números, símbolos e mais para atender às suas necessidades de segurança."
+        },
+        "features": {
+          "title": "📦 Características do Gerador de Senhas",
+          "length": {
+            "title": "Comprimento Ajustável:",
+            "description": "Defina o comprimento desejado da senha para corresponder às suas preferências de segurança."
+          },
+          "uppercase": {
+            "title": "Incluir Letras Maiúsculas:",
+            "description": "Opcionalmente inclua letras maiúsculas na sua senha."
+          },
+          "lowercase": {
+            "title": "Incluir Letras Minúsculas:",
+            "description": "Opcionalmente inclua letras minúsculas na sua senha."
+          },
+          "numbers": {
+            "title": "Incluir Números:",
+            "description": "Inclua dígitos para maior complexidade."
+          },
+          "symbols": {
+            "title": "Incluir Símbolos:",
+            "description": "Adicione caracteres especiais como !, @, #, etc., para tornar sua senha mais segura."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Gerar uma Senha",
+          "step1": {
+            "title": "Passo 1: Defina o Comprimento da Sua Senha",
+            "description": "Use o controle deslizante para ajustar o comprimento da sua senha. Quanto mais longa a senha, mais segura ela será."
+          },
+          "step2": {
+            "title": "Passo 2: Escolha Seus Tipos de Caracteres",
+            "description": "Ative/desative para incluir letras maiúsculas, letras minúsculas, números e símbolos."
+          },
+          "step3": {
+            "title": "Passo 3: Gere Sua Senha",
+            "description": "Clique no botão 'Gerar' para criar uma senha aleatória e segura com base nas suas configurações escolhidas."
+          },
+          "step4": {
+            "title": "Passo 4: Copie ou Regenere a Senha",
+            "description": "Uma vez que sua senha é gerada, clique no botão 'Copiar' para salvá-la ou 'Regenerar' para criar uma nova."
+          }
+        },
+        "exampleLabel": "Senha de Exemplo:",
+        "copyButton": "Copiar",
+        "regenerateButton": "Regenerar",
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Para melhor segurança, use um comprimento de senha de pelo menos 12 caracteres.",
+          "tip2": "Incluir uma mistura de maiúsculas, minúsculas, números e símbolos aumenta a força da senha.",
+          "tip3": "Evite reutilizar senhas em sites diferentes — crie uma senha única para cada conta."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "lengthError": {
+            "title": "Erro de Comprimento da Senha?",
+            "description": "Certifique-se de que o comprimento da sua senha seja de pelo menos 8 caracteres para garantir segurança adequada."
+          },
+          "generationError": {
+            "title": "Senha Não Está Gerando?",
+            "description": "Verifique se todos os campos obrigatórios estão selecionados e se o comprimento é apropriado."
+          }
+        }
       }
     },
     "text": {
@@ -267,6 +497,109 @@
         "left": "Texto da Esquerda",
         "right": "Texto da Direita",
         "realTime": "Visualização em tempo real"
+      },
+      "docs": {
+        "title": "🔍 Como Usar a Ferramenta de Comparação de Texto Rivine",
+        "intro": "Compare dois textos lado a lado para identificar facilmente diferenças, analisar mudanças e mesclar conteúdo sem esforço.",
+        "whatIs": {
+          "title": "✨ O que é a Ferramenta de Comparação de Texto?",
+          "description": "A ferramenta de Comparação de Texto é uma utilidade poderosa que permite identificar e visualizar diferenças entre dois documentos de texto. Seja comparando versões de código, documentos ou qualquer conteúdo de texto, ela destaca mudanças no nível de caractere, palavra ou linha para ajudar você a entender exatamente o que mudou."
+        },
+        "features": {
+          "title": "📦 Recursos Principais",
+          "dualView": {
+            "title": "Editor de Texto Duplo",
+            "description": "Áreas de texto lado a lado para fácil comparação do conteúdo esquerdo e direito."
+          },
+          "comparisonModes": {
+            "title": "Múltiplos Modos de Comparação",
+            "description": "Escolha entre métodos de comparação Caractere por Caractere, Palavra por Palavra ou Linha por Linha."
+          },
+          "realTime": {
+            "title": "Visualização em Tempo Real",
+            "description": "Ative a comparação em tempo real para ver as diferenças enquanto você digita."
+          },
+          "fileUpload": {
+            "title": "Upload de Arquivos",
+            "description": "Importe arquivos de texto diretamente para o editor esquerdo ou direito."
+          },
+          "merging": {
+            "title": "Mesclagem de Texto",
+            "description": "Mescle mudanças de um lado para o outro com botões de mesclagem dedicados."
+          }
+        },
+        "comparisonModes": {
+          "title": "🔄 Entendendo os Modos de Comparação",
+          "character": {
+            "title": "Caractere por Caractere",
+            "description": "O método de comparação mais detalhado, destacando diferenças no nível de caractere individual. Perfeito para identificar pequenos erros de digitação ou mudanças menores de texto."
+          },
+          "word": {
+            "title": "Palavra por Palavra",
+            "description": "Compara texto tratando palavras como unidades. Este modo é ideal para edição de documentos e revisões de conteúdo onde palavras inteiras são frequentemente adicionadas, excluídas ou alteradas."
+          },
+          "line": {
+            "title": "Linha por Linha",
+            "description": "Compara texto linha por linha, semelhante a como funcionam as diferenças de código. Melhor para conteúdo estruturado como código, listas ou qualquer texto onde quebras de linha são significativas."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Comparar Textos",
+          "step1": {
+            "title": "Passo 1: Adicione Seus Textos",
+            "description": "Digite ou cole seu texto original no editor esquerdo e o texto que você deseja comparar no editor direito. Alternativamente, use os botões de Upload para importar arquivos de texto."
+          },
+          "step2": {
+            "title": "Passo 2: Selecione o Modo de Comparação",
+            "description": "Escolha se deseja comparar Caractere por Caractere, Palavra por Palavra ou Linha por Linha no menu suspenso."
+          },
+          "step3": {
+            "title": "Passo 3: Ative a Visualização em Tempo Real (Opcional)",
+            "description": "Habilite a visualização em tempo real se desejar que as diferenças sejam destacadas automaticamente enquanto você digita."
+          },
+          "step4": {
+            "title": "Passo 4: Revise as Diferenças",
+            "description": "As diferenças serão destacadas com vermelho indicando conteúdo removido e verde indicando conteúdo adicionado. O painel inferior mostra uma comparação linha por linha para inspeção mais detalhada."
+          }
+        },
+        "merging": {
+          "title": "🔀 Mesclando Mudanças",
+          "description": "A ferramenta de Comparação de Texto permite mesclar mudanças entre os editores de texto esquerdo e direito:",
+          "mergeToRight": {
+            "title": "Mesclar para a Direita",
+            "description": "Copia conteúdo do editor esquerdo para o editor direito, sobrescrevendo o texto direito com o texto esquerdo."
+          },
+          "mergeToLeft": {
+            "title": "Mesclar para a Esquerda",
+            "description": "Copia conteúdo do editor direito para o editor esquerdo, sobrescrevendo o texto esquerdo com o texto direito."
+          }
+        },
+        "exampleLabel": "Exemplo de Comparação:",
+        "exampleLeft": "Texto Esquerdo:",
+        "exampleRight": "Texto Direito:",
+        "exampleNote": "Neste exemplo, 'antigo' foi substituído por 'atualizado', mostrado com destaque vermelho para conteúdo removido e verde para conteúdo adicionado.",
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Para comparação de código, o modo Linha por Linha geralmente funciona melhor para corresponder a como os sistemas de controle de versão mostram diferenças.",
+          "tip2": "Ao comparar documentos longos, experimente primeiro o modo Palavra por Palavra para uma visão mais clara de mudanças substanciais.",
+          "tip3": "Use o botão 'Upload' para comparar rapidamente arquivos do seu sistema local sem copiar e colar.",
+          "tip4": "Para a comparação mais precisa ao trabalhar com texto formatado, primeiro remova qualquer formatação colando como texto sem formatação."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "largeFiles": {
+            "title": "Desempenho com Arquivos Grandes",
+            "description": "Se comparar textos muito grandes causar lentidão, tente desativar a comparação em tempo real e use a comparação manual em vez disso."
+          },
+          "formatting": {
+            "title": "Problemas de Formatação",
+            "description": "A ferramenta compara apenas texto sem formatação. Se a formatação parecer diferente, certifique-se de que está colando como texto sem formatação sem caracteres de formatação ocultos."
+          },
+          "encoding": {
+            "title": "Problemas de Codificação de Caracteres",
+            "description": "Se caracteres especiais aparecerem de forma diferente nos dois textos, apesar de serem idênticos, verifique se ambos os textos usam a mesma codificação de caracteres."
+          }
+        }
       }
     },
     "json": {
@@ -296,6 +629,121 @@
         "8": "Visualizador de JSON",
         "9": "Minificador de JSON",
         "10": "Impressão Bonita de JSON"
+      },
+      "docs": {
+        "title": "🧩 Como Usar o Editor de JSON Rivine",
+        "intro": "Edite, formate e transforme dados JSON com facilidade. A interface de editor duplo permite que você trabalhe com vários documentos JSON simultaneamente com recursos poderosos de visualização e edição.",
+        "whatIs": {
+          "title": "✨ O que é um Editor de JSON?",
+          "description": "Um Editor de JSON é uma ferramenta que ajuda você a criar, editar e validar dados JSON (JavaScript Object Notation). Nosso editor fornece várias visualizações e recursos poderosos para tornar o trabalho com JSON fácil e eficiente."
+        },
+        "features": {
+          "title": "📦 Recursos Principais",
+          "dualEditor": {
+            "title": "Interface de Editor Duplo",
+            "description": "Trabalhe com dois documentos JSON lado a lado, facilitando a comparação, cópia ou fusão de conteúdo entre eles."
+          },
+          "viewModes": {
+            "title": "Múltiplos Modos de Visualização",
+            "description": "Alterne entre os modos Código, Árvore, Tabela e Visualização para visualizar seus dados JSON no formato mais útil."
+          },
+          "formatting": {
+            "title": "Formatar e Embelezar",
+            "description": "Formate e indente automaticamente seu JSON para melhor legibilidade com um único clique."
+          },
+          "search": {
+            "title": "Buscar e Substituir",
+            "description": "Encontre e substitua rapidamente valores dentro de seus documentos JSON, com suporte para expressões regulares."
+          },
+          "transform": {
+            "title": "Transformar e Manipular",
+            "description": "Classifique, filtre e transforme seus dados JSON usando ferramentas de transformação integradas."
+          }
+        },
+        "modes": {
+          "title": "📋 Modos de Visualização Explicados",
+          "code": {
+            "title": "Modo Código",
+            "description": "Edite texto JSON bruto com destaque de sintaxe, autocompletar e detecção de erros."
+          },
+          "tree": {
+            "title": "Modo Árvore",
+            "description": "Navegue e edite JSON como uma estrutura de árvore colapsável, perfeito para dados aninhados."
+          },
+          "table": {
+            "title": "Modo Tabela",
+            "description": "Visualize e edite arrays JSON como tabelas com colunas ordenáveis."
+          },
+          "preview": {
+            "title": "Modo Visualização",
+            "description": "Veja uma visualização formatada e somente leitura de seus dados JSON, ideal para revisar conteúdo."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Usar o Editor de JSON",
+          "step1": {
+            "title": "Passo 1: Insira ou Importe JSON",
+            "description": "Digite diretamente no editor, cole da área de transferência ou importe um arquivo JSON do seu dispositivo."
+          },
+          "step2": {
+            "title": "Passo 2: Escolha Seu Modo de Visualização",
+            "description": "Selecione entre os modos Código, Árvore, Tabela ou Visualização com base em suas necessidades de edição."
+          },
+          "step3": {
+            "title": "Passo 3: Edite e Transforme",
+            "description": "Modifique seus dados JSON usando os recursos do editor, incluindo adicionar, editar ou excluir propriedades."
+          },
+          "step4": {
+            "title": "Passo 4: Exporte ou Copie",
+            "description": "Copie seu JSON para a área de transferência ou exporte-o como um arquivo assim que concluir suas edições."
+          }
+        },
+        "advancedFeatures": {
+          "title": "🔧 Recursos Avançados",
+          "filter": {
+            "title": "Filtragem Baseada em Consulta",
+            "description": "Filtre documentos JSON grandes usando expressões de consulta para se concentrar em dados específicos."
+          },
+          "sort": {
+            "title": "Classificar Chaves e Valores",
+            "description": "Organize seu JSON classificando chaves alfabeticamente ou valores numericamente."
+          },
+          "transform": {
+            "title": "Transformação de JSON",
+            "description": "Aplique transformações como achatamento de estruturas aninhadas, conversão de tipos ou reestruturação de dados."
+          },
+          "repair": {
+            "title": "Corrigir JSON Malformado",
+            "description": "Repare automaticamente erros de sintaxe comuns em documentos JSON malformados."
+          },
+          "navigation": {
+            "title": "Navegação por Caminho",
+            "description": "Navegue por estruturas JSON complexas usando expressões de caminho para localizar rapidamente nós específicos."
+          }
+        },
+        "exampleLabel": "Exemplo de JSON:",
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Use atalhos de teclado (Ctrl+F para buscar, Ctrl+I para formatar) para acelerar seu fluxo de trabalho.",
+          "tip2": "Para arquivos JSON grandes, a visualização em Árvore pode ajudá-lo a navegar e entender a estrutura melhor do que a visualização em Código.",
+          "tip3": "Ao comparar dois documentos JSON, use o layout de editor duplo e o recurso de rolagem sincronizada.",
+          "tip4": "Use o recurso 'Copiar Caminho' para obter o caminho JSON exato para um valor específico, útil para APIs e documentação."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "invalidJson": {
+            "title": "Erro de JSON Inválido?",
+            "description": "Verifique a falta de vírgulas, vírgulas extras ou colchetes não fechados. O editor destacará erros de sintaxe para ajudá-lo a identificar problemas."
+          },
+          "performance": {
+            "title": "Editor Está Lento?",
+            "description": "Para arquivos JSON muito grandes (mais de 1MB), considere usar o modo Código em vez do modo Árvore para melhor desempenho."
+          },
+          "dataLoss": {
+            "title": "Preocupado com Perda de Dados?",
+            "description": "Use o recurso 'Salvar no Armazenamento Local' para fazer backup automático do seu trabalho enquanto edita."
+          }
+        }
       }
     },
     "image": {
@@ -380,6 +828,136 @@
         "error": "Carregue pelo menos uma imagem para ver o resultado mesclado",
         "download": "Baixar Imagem Mesclada",
         "tune": "Ajuste as configurações de mesclagem para obter o resultado desejado"
+      },
+      "docs": {
+        "title": "🖼️ Como Usar a Ferramenta de Fusão de Imagens",
+        "intro": "Combine facilmente várias imagens em uma única imagem composta com layouts e configurações personalizáveis.",
+        "whatIs": {
+          "title": "✨ O que é a Ferramenta de Fusão de Imagens?",
+          "description": "A ferramenta de Fusão de Imagens é uma utilidade poderosa que permite combinar várias imagens em uma única imagem composta. Seja para criar colagens, imagens de comparação ou exibições multipainel, esta ferramenta ajuda a organizar e mesclar imagens com opções de posicionamento e formatação personalizáveis."
+        },
+        "features": {
+          "title": "📦 Recursos Principais",
+          "multipleImages": {
+            "title": "Suporte a Múltiplas Imagens",
+            "description": "Combine entre 2 e 10 imagens em uma única saída mesclada."
+          },
+          "positionOptions": {
+            "title": "Posicionamento Flexível",
+            "description": "Organize imagens horizontalmente lado a lado, empilhadas verticalmente ou em um layout de grade."
+          },
+          "sizeControl": {
+            "title": "Normalização de Tamanho",
+            "description": "Escolha como as imagens são dimensionadas em relação umas às outras ao mesclar."
+          },
+          "borderOptions": {
+            "title": "Personalização de Bordas",
+            "description": "Adicione e personalize bordas entre imagens para uma separação clara."
+          },
+          "imageSettings": {
+            "title": "Configurações de Imagem Individual",
+            "description": "Controle o tamanho e a aparência de cada imagem de forma independente."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Mesclar Imagens",
+          "step1": {
+            "title": "Passo 1: Faça o Upload de Suas Imagens",
+            "description": "Clique no botão 'Fazer upload de imagem' em cada painel de imagem para adicionar suas imagens de origem. Você precisa de pelo menos 2 imagens para realizar uma mesclagem."
+          },
+          "step2": {
+            "title": "Passo 2: Defina o Número de Imagens",
+            "description": "Use os botões '+' e '-' para ajustar o número de imagens que deseja mesclar (mínimo 2, máximo 10)."
+          },
+          "step3": {
+            "title": "Passo 3: Escolha a Posição da Imagem",
+            "description": "Selecione o estilo de arranjo no menu suspenso 'Posição da Imagem': Horizontal (lado a lado), Vertical (empilhadas) ou Layout de Grade."
+          },
+          "step4": {
+            "title": "Passo 4: Ajuste a Normalização de Tamanho",
+            "description": "Selecione como as imagens devem ser dimensionadas em relação umas às outras. As opções incluem 'Ajustar à Menor Imagem', 'Igualar à Maior Imagem' ou 'Manter Tamanhos Originais'."
+          },
+          "step5": {
+            "title": "Passo 5: Configure as Configurações de Bordas (Opcional)",
+            "description": "Clique na guia 'Borda' para adicionar e personalizar bordas entre imagens, incluindo largura, cor e estilo da borda."
+          },
+          "step6": {
+            "title": "Passo 6: Visualize e Baixe",
+            "description": "O resultado mesclado será exibido automaticamente. Quando estiver satisfeito com o resultado, baixe sua imagem mesclada."
+          }
+        },
+        "positionModes": {
+          "title": "🔄 Opções de Posição de Imagem",
+          "horizontal": {
+            "title": "Horizontal (Lado a Lado)",
+            "description": "Coloca imagens lado a lado em uma linha. Ideal para comparar imagens lado a lado ou criar composições panorâmicas."
+          },
+          "vertical": {
+            "title": "Vertical (Empilhadas)",
+            "description": "Empilha imagens uma sobre a outra. Ideal para comparações de antes e depois ou exibições sequenciais."
+          },
+          "grid": {
+            "title": "Layout de Grade",
+            "description": "Organiza imagens em um padrão de grade. Perfeito para criar colagens ou quando se trabalha com várias imagens de importância semelhante."
+          }
+        },
+        "sizeOptions": {
+          "title": "📏 Opções de Normalização de Tamanho",
+          "fitToSmallest": {
+            "title": "Ajustar à Menor Imagem",
+            "description": "Dimensiona todas as imagens para corresponder às dimensões da menor imagem. Garante consistência, mas pode reduzir imagens maiores."
+          },
+          "matchLargest": {
+            "title": "Igualar à Maior Imagem",
+            "description": "Dimensiona todas as imagens para corresponder às dimensões da maior imagem. Preserva detalhes em imagens grandes, mas aumenta o tamanho do arquivo de saída."
+          },
+          "originalSize": {
+            "title": "Manter Tamanhos Originais",
+            "description": "Mantém as dimensões originais de cada imagem. Resulta em uma composição assimétrica, mas preserva todos os detalhes originais."
+          }
+        },
+        "borderOptions": {
+          "title": "🖌️ Personalização de Bordas",
+          "width": {
+            "title": "Largura da Borda",
+            "description": "Defina a espessura das bordas entre imagens de 0 (sem borda) até 20 pixels."
+          },
+          "color": {
+            "title": "Cor da Borda",
+            "description": "Escolha qualquer cor para as bordas para complementar suas imagens ou criar separação visual."
+          },
+          "style": {
+            "title": "Estilo da Borda",
+            "description": "Selecione estilos de borda, incluindo linhas sólidas, tracejadas ou pontilhadas."
+          }
+        },
+        "imageLimit": {
+          "title": "📱 Limites de Imagens",
+          "description": "A ferramenta de Fusão de Imagens requer um mínimo de 2 imagens e permite um máximo de 10 imagens para serem combinadas de uma vez."
+        },
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Para melhores resultados ao usar o modo 'Lado a Lado', escolha imagens com alturas semelhantes.",
+          "tip2": "Ao criar uma pilha vertical, imagens com larguras semelhantes funcionam melhor juntas.",
+          "tip3": "O layout de grade organiza automaticamente as imagens na formação mais equilibrada com base no número de imagens.",
+          "tip4": "Adicionar uma borda pode ajudar a distinguir entre imagens com cores ou conteúdo semelhantes.",
+          "tip5": "Considere usar 'Ajustar à Menor Imagem' para processamento mais rápido e tamanhos de arquivo menores."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "notMerging": {
+            "title": "Imagens Não Estão Mesclando",
+            "description": "Certifique-se de ter feito o upload de pelo menos dois arquivos de imagem válidos. A visualização da mesclagem é exibida automaticamente assim que imagens suficientes são carregadas."
+          },
+          "qualityIssues": {
+            "title": "Perda de Qualidade",
+            "description": "Se as imagens mescladas parecerem de qualidade inferior às originais, tente as configurações 'Manter Tamanhos Originais' ou 'Igualar à Maior Imagem' para preservar os detalhes."
+          },
+          "layoutProblems": {
+            "title": "Problemas de Layout",
+            "description": "Se o layout mesclado não parecer correto, tente uma configuração de posição diferente ou normalize os tamanhos das imagens para uma composição mais equilibrada."
+          }
+        }
       }
     },
     "textToHandwriting": {
@@ -448,6 +1026,110 @@
         "handwrittenText": "Texto Manuscrito",
         "image": "Imagem",
         "note": "Se as linhas ou texto se sobrepuserem, ajuste as configurações. Para baixar várias páginas, use \"Adicionar ao Livro\" e role para baixo para baixar."
+      },
+      "docs": {
+        "title": "🖋️ Como Usar a Ferramenta de Texto para Caligrafia",
+        "intro": "Converta texto digitado em caligrafia realista com estilos personalizáveis e opções de formatação.",
+        "whatIs": {
+          "title": "✨ O que é a Ferramenta de Texto para Caligrafia?",
+          "description": "A ferramenta de Texto para Caligrafia é uma utilidade versátil que transforma texto digital em conteúdo manuscrito de aparência autêntica. Seja criando notas, cartas, materiais de estudo ou projetos criativos, esta ferramenta dá ao seu texto digital um toque pessoal manuscrito com várias opções de personalização."
+        },
+        "features": {
+          "title": "📦 Recursos Principais",
+          "fonts": {
+            "title": "Fontes de Caligrafia Realistas",
+            "description": "Escolha entre vários estilos de caligrafia para encontrar a combinação perfeita para suas necessidades."
+          },
+          "customization": {
+            "title": "Aparência Personalizável",
+            "description": "Ajuste o tamanho da fonte, espaçamento, margens e posicionamento para criar a aparência manuscrita ideal."
+          },
+          "colorOptions": {
+            "title": "Opções de Cor",
+            "description": "Personalize a cor da tinta, o fundo da página e as cores das linhas de acordo com suas preferências."
+          },
+          "pageFormat": {
+            "title": "Controle de Formato de Página",
+            "description": "Selecione tamanhos de papel e alterne elementos de página como margens e linhas."
+          },
+          "multiPage": {
+            "title": "Suporte a Múltiplas Páginas",
+            "description": "Crie e gerencie várias páginas de conteúdo manuscrito em um único documento."
+          },
+          "exportOptions": {
+            "title": "Opções de Exportação",
+            "description": "Baixe páginas individuais como imagens ou compile várias páginas em um único livro PDF."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Usar a Ferramenta",
+          "step1": {
+            "title": "Passo 1: Insira Seu Texto",
+            "description": "Digite ou cole seu texto na área do editor no lado esquerdo da tela. O texto será renderizado como caligrafia no painel de visualização à direita."
+          },
+          "step2": {
+            "title": "Passo 2: Selecione o Estilo de Caligrafia",
+            "description": "Escolha seu estilo de caligrafia preferido no menu suspenso 'Fonte de Caligrafia'. Cada fonte oferece uma aparência manuscrita única."
+          },
+          "step3": {
+            "title": "Passo 3: Personalize a Formatação",
+            "description": "Ajuste o tamanho da fonte, espaçamento de linhas, espaçamento de palavras, espaçamento de letras, margens e tamanho da página para aperfeiçoar seu documento manuscrito."
+          },
+          "step4": {
+            "title": "Passo 4: Personalize as Cores",
+            "description": "Escolha cores para a tinta, fundo da página, linhas e margem para criar sua estética desejada."
+          },
+          "step5": {
+            "title": "Passo 5: Altere Elementos Visuais",
+            "description": "Use os interruptores para mostrar ou ocultar margens de página e linhas de acordo com sua preferência."
+          }
+        },
+        "multiPage": {
+          "title": "🔀 Criando Documentos de Múltiplas Páginas",
+          "description": "A ferramenta de Texto para Caligrafia permite construir documentos de múltiplas páginas:",
+          "addPages": {
+            "title": "Adicionando Páginas ao Seu Livro",
+            "description": "Formate seu texto, clique em 'Adicionar ao Livro', depois crie novas páginas modificando o texto e repetindo o processo."
+          },
+          "managingBook": {
+            "title": "Gerenciando Seu Livro",
+            "description": "Todas as páginas adicionadas ao seu livro aparecerão na área do livro na parte inferior da tela."
+          }
+        },
+        "downloading": {
+          "title": "📥 Baixando Seu Conteúdo",
+          "singlePage": {
+            "title": "Download de Página Individual",
+            "description": "Use o botão 'Baixar como Imagem' para salvar a página atual como um arquivo de imagem."
+          },
+          "multiPage": {
+            "title": "Opções de Download de Múltiplas Páginas",
+            "description": "Após adicionar páginas ao seu livro, use 'Baixar como PDF' para compilar todas as páginas em um único documento ou 'Baixar Todas as Imagens' para arquivos individuais."
+          }
+        },
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Se as linhas ou o texto se sobrepuserem, ajuste as configurações de espaçamento para melhor legibilidade.",
+          "tip2": "Para formatação consistente em várias páginas, anote suas configurações antes de adicionar cada nova página.",
+          "tip3": "O recurso 'Adicionar ao Livro' é essencial para criar documentos de múltiplas páginas que você pode baixar juntos como um PDF.",
+          "tip4": "Experimente diferentes fontes de caligrafia para encontrar o estilo que melhor atende às suas necessidades.",
+          "tip5": "Use o painel de visualização para ver como suas configurações afetam a aparência final antes de baixar."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "layout": {
+            "title": "Problemas de Layout de Página",
+            "description": "Se o texto aparecer cortado ou sobreposto, tente reduzir o tamanho da fonte, aumentar o espaçamento de linhas ou ajustar as configurações de margem."
+          },
+          "download": {
+            "title": "Problemas de Download",
+            "description": "Certifique-se de clicar em 'Adicionar ao Livro' para cada página que deseja incluir no seu PDF e verifique se todas as páginas estão adicionadas antes de baixar."
+          },
+          "rendering": {
+            "title": "Renderização de Texto",
+            "description": "Se a caligrafia parecer inconsistente, tente ajustar o espaçamento de letras e palavras, e certifique-se de que seu texto não contenha caracteres especiais não suportados."
+          }
+        }
       }
     }
   }

@@ -5,8 +5,6 @@ import React, {useRef} from "react"
 import { useState, useEffect } from "react"
 import dynamic from "next/dynamic"
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 // import { useToast } from "@/hooks/use-toast"
 import {
     Copy,
@@ -347,16 +345,16 @@ export default function JsonCompare() {
 
                 <div className="flex flex-col lg:pt-20 gap-4">
 
-                    <div className="flex items-center">
-                        <Checkbox id="terms" checked={compareMode} onClick={toggleCompareMode} className="mr-2"/>
-                        <Label htmlFor="terms">Compare</Label>
-                    </div>
-                    {compareMode && (<div className="text-center">
-                        <div className="text-sm font-medium">Differences</div>
-                        <div className="text-xs text-muted-foreground">
-                            {differences.length} difference{differences.length !== 1 ? "s" : ""}
-                        </div>
-                    </div>)}
+                    {/*<div className="flex items-center">*/}
+                    {/*    <Checkbox id="terms" checked={compareMode} onClick={toggleCompareMode} className="mr-2"/>*/}
+                    {/*    <Label htmlFor="terms">Compare</Label>*/}
+                    {/*</div>*/}
+                    {/*{compareMode && (<div className="text-center">*/}
+                    {/*    <div className="text-sm font-medium">Differences</div>*/}
+                    {/*    <div className="text-xs text-muted-foreground">*/}
+                    {/*        {differences.length} difference{differences.length !== 1 ? "s" : ""}*/}
+                    {/*    </div>*/}
+                    {/*</div>)}*/}
                 </div>
 
                 <div className={"flex-1 border rounded-lg overflow-hidden"}>
@@ -375,50 +373,6 @@ export default function JsonCompare() {
                                 </Button>
                             </div>
                         </div>
-                        {/*<div className="flex items-center gap-1">*/}
-                        {/*    <TooltipProvider>*/}
-                        {/*        <Tooltip>*/}
-                        {/*            <TooltipTrigger asChild>*/}
-                        {/*                <Button variant="ghost" size="icon" className="h-6 w-6 text-white">*/}
-                        {/*                    <FileUp className="h-4 w-4" />*/}
-                        {/*                </Button>*/}
-                        {/*            </TooltipTrigger>*/}
-                        {/*            <TooltipContent>*/}
-                        {/*                <p>Open file</p>*/}
-                        {/*            </TooltipContent>*/}
-                        {/*        </Tooltip>*/}
-                        {/*    </TooltipProvider>*/}
-
-                        {/*    <DropdownMenu>*/}
-                        {/*        <DropdownMenuTrigger asChild>*/}
-                        {/*            <Button variant="ghost" size="icon" className="h-6 w-6 text-white">*/}
-                        {/*                <Save className="h-4 w-4" />*/}
-                        {/*                <ChevronDown className="h-3 w-3 ml-1" />*/}
-                        {/*            </Button>*/}
-                        {/*        </DropdownMenuTrigger>*/}
-                        {/*        <DropdownMenuContent>*/}
-                        {/*            <DropdownMenuItem>Save</DropdownMenuItem>*/}
-                        {/*            <DropdownMenuItem>Save As...</DropdownMenuItem>*/}
-                        {/*        </DropdownMenuContent>*/}
-                        {/*    </DropdownMenu>*/}
-
-                        {/*    <DropdownMenu>*/}
-                        {/*        <DropdownMenuTrigger asChild>*/}
-                        {/*            <Button variant="ghost" size="icon" className="h-6 w-6 text-white">*/}
-                        {/*                <Copy className="h-4 w-4" />*/}
-                        {/*                <ChevronDown className="h-3 w-3 ml-1" />*/}
-                        {/*            </Button>*/}
-                        {/*        </DropdownMenuTrigger>*/}
-                        {/*        <DropdownMenuContent>*/}
-                        {/*            <DropdownMenuItem onClick={() => copyToClipboard("document2")}>Copy JSON</DropdownMenuItem>*/}
-                        {/*            <DropdownMenuItem>Copy Path</DropdownMenuItem>*/}
-                        {/*        </DropdownMenuContent>*/}
-                        {/*    </DropdownMenu>*/}
-
-                        {/*    <Button variant="ghost" size="icon" className="h-6 w-6 text-white" onClick={toggleFullscreen}>*/}
-                        {/*        <Maximize className="h-4 w-4" />*/}
-                        {/*    </Button>*/}
-                        {/*</div>*/}
                     </div>
 
                     <div className="h-[70vh]">

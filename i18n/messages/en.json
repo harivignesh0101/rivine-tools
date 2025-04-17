@@ -3,7 +3,7 @@
     "label": "A growing suite of fast, reliable tools",
     "subLabel": "Built for simplicity and performance. New tools are added regularly to help users stay productive and get things done—without distractions or clutter",
     "title": "Free online tools",
-    "description": "Explore fast, free online tools for everyday tasks. Rivine Tools provides a seamless experience with privacy-focused web utilities—constantly expanding to meet your needs.",
+    "description": "Discover fast, free online tools for daily tasks. Rivine Tools offers privacy-focused web utilities—always expanding to meet your needs.",
     "exploreTools": "Explore Tools",
     "keywords": {
       "0": "Online tools",
@@ -13,6 +13,62 @@
       "4": "Instagram Tools",
       "5": "Facebook Tools",
       "6": "Tool collection"
+    },
+    "docs": {
+      "valueSection": {
+        "title": "🛠️ Powerful Tools for Everyday Tasks",
+        "description": "Our collection of free online tools helps you solve everyday digital challenges without installing additional software. Simple, effective, and ready when you need them."
+      },
+      "benefitsSection": {
+        "title": "Why Use Our Tools?",
+        "benefits": [
+          {
+            "title": "No Installation Required",
+            "description": "All tools run directly in your browser - no downloads, no installations, no complications."
+          },
+          {
+            "title": "Privacy-Focused",
+            "description": "Your data stays on your device. We don't store your files or information on our servers."
+          },
+          {
+            "title": "Free to Use",
+            "description": "All tools are completely free to use with no hidden costs or premium features."
+          },
+          {
+            "title": "Continuously Improved",
+            "description": "We regularly update our tools based on user feedback and technological advancements."
+          }
+        ]
+      },
+      "categoriesSection": {
+        "title": "Tools for Every Need",
+        "categories": [
+          {
+            "title": "Text & Document Tools",
+            "description": "Compare texts, convert formats, and transform written content with ease."
+          },
+          {
+            "title": "Image Utilities",
+            "description": "Edit, convert, and combine images without complex software."
+          },
+          {
+            "title": "Data & Conversion Tools",
+            "description": "Transform data formats, convert units, and simplify technical tasks."
+          },
+          {
+            "title": "Creative Assistants",
+            "description": "Generate creative content and visualize ideas with intuitive tools."
+          }
+        ]
+      },
+      "usageSection": {
+        "title": "How to Get Started",
+        "steps": "Simply browse our collection above, select the tool you need, and follow the easy instructions on each tool's page. No account creation required - just open and use immediately."
+      },
+      "empowerSection": {
+        "title": "Empower Your Workflow",
+        "steps": "Online tools simplify complex tasks, letting you stay productive wherever you are. Whether you're a student, developer, designer, or just need a quick solution, everything you need is just a click away."
+      }
     }
   },
   "general": {
@@ -169,6 +225,110 @@
         "4": "Set Timer",
         "5": "Countdown Timer",
         "6": "Timer Online"
+      },
+      "docs": {
+        "title": "⏱️ How to Use the Rivine Timer",
+        "intro": "Stay productive and manage your time effectively with our customizable timer. Perfect for Pomodoro technique, focused work sessions, and scheduled breaks.",
+        "whatIs": {
+          "title": "✨ What is the Timer Tool?",
+          "description": "The Timer is a simple yet powerful time management tool that helps you track time for various activities. With customizable durations and presets for popular techniques like Pomodoro, it's designed to boost your productivity and help maintain a healthy work-rest balance."
+        },
+        "features": {
+          "title": "📦 Key Features",
+          "visualTimer": {
+            "title": "Visual Progress Indicator",
+            "description": "A circular progress ring shows your time remaining at a glance."
+          },
+          "presets": {
+            "title": "Productivity Presets",
+            "description": "Quick access to common timer durations like Pomodoro (25 min), Short Break (5 min), and Focus (50 min)."
+          },
+          "custom": {
+            "title": "Custom Duration",
+            "description": "Set precise hours, minutes, and seconds for your specific timing needs."
+          },
+          "controls": {
+            "title": "Intuitive Controls",
+            "description": "Simple play, pause, reset, and settings options for easy timer management."
+          }
+        },
+        "presets": {
+          "title": "⚡ Understanding Timer Presets",
+          "pomodoro": {
+            "title": "Pomodoro (25 minutes)",
+            "description": "Based on the popular Pomodoro Technique, this 25-minute timer is designed for focused work sessions, typically followed by a short break."
+          },
+          "shortBreak": {
+            "title": "Short Break (5 minutes)",
+            "description": "A quick 5-minute break to rest your mind between work sessions. Perfect after a Pomodoro session."
+          },
+          "focus": {
+            "title": "Focus (50 minutes)",
+            "description": "An extended focus period for deeper work that requires more sustained attention."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Use the Timer",
+          "step1": {
+            "title": "Step 1: Choose a Timer Duration",
+            "description": "Select from the preset options (Pomodoro, Short Break, Focus) or set a custom duration."
+          },
+          "step2": {
+            "title": "Step 2: Start the Timer",
+            "description": "Press the play button to begin the countdown. The circle will start filling to visually represent elapsed time."
+          },
+          "step3": {
+            "title": "Step 3: Monitor Your Progress",
+            "description": "Watch the timer count down and the visual indicator show your remaining time."
+          },
+          "step4": {
+            "title": "Step 4: Manage Your Timer",
+            "description": "Pause, resume, or reset the timer as needed using the control buttons."
+          }
+        },
+        "controls": {
+          "title": "🎮 Understanding Timer Controls",
+          "play": {
+            "title": "Play Button",
+            "description": "Starts or resumes the timer countdown."
+          },
+          "pause": {
+            "title": "Pause Button",
+            "description": "Temporarily stops the timer while preserving the remaining time."
+          },
+          "reset": {
+            "title": "Reset Button",
+            "description": "Returns the timer to its initial duration."
+          },
+          "settings": {
+            "title": "Settings Button",
+            "description": "Opens the timer settings panel to select presets or set custom durations."
+          }
+        },
+        "customTimer": {
+          "title": "⚙️ Setting a Custom Timer",
+          "description": "Need a specific duration not covered by the presets? Follow these steps to create a custom timer:",
+          "step1": "Click the settings (gear) icon to open Timer Settings.",
+          "step2": "Under 'Custom Duration', set your desired hours, minutes, and seconds using the number inputs.",
+          "step3": "Click 'Save' to confirm your custom duration and return to the timer screen."
+        },
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "For optimal productivity using the Pomodoro Technique, try 25 minutes of focused work followed by a 5-minute break, then repeat.",
+          "tip2": "After completing four Pomodoro sessions, take a longer break of 15-30 minutes to recharge.",
+          "tip3": "Minimize distractions during timed work sessions by closing unnecessary apps and putting your devices in 'Do Not Disturb' mode."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "timerNotStarting": {
+            "title": "Timer Not Starting?",
+            "description": "Make sure you've set a duration greater than zero and click the play button to begin the countdown."
+          },
+          "notification": {
+            "title": "Can't Hear Timer Completion?",
+            "description": "Turn up the volume to hear when the timer is finished."
+          }
+        }
       }
     },
     "passwordGenerator": {
@@ -211,6 +371,76 @@
         }
       },
       "autoGenerationMessage": "Your password will be generated automatically",
+      "docs": {
+        "title": "🔐 How to Use the Rivine Password Generator",
+        "intro": "Generate strong and secure passwords in seconds! Customize the length, character types, and regenerate passwords with just a click.",
+        "whatIs": {
+          "title": "✨ What is a Password Generator?",
+          "description": "A password generator creates random, strong passwords for securing your accounts. You can choose specific character types, such as uppercase letters, numbers, symbols, and more to meet your security needs."
+        },
+        "features": {
+          "title": "📦 Features of the Password Generator",
+          "length": {
+            "title": "Adjustable Length:",
+            "description": "Set the desired password length to match your security preferences."
+          },
+          "uppercase": {
+            "title": "Include Uppercase Letters:",
+            "description": "Optionally include uppercase letters in your password."
+          },
+          "lowercase": {
+            "title": "Include Lowercase Letters:",
+            "description": "Optionally include lowercase letters in your password."
+          },
+          "numbers": {
+            "title": "Include Numbers:",
+            "description": "Include digits for added complexity."
+          },
+          "symbols": {
+            "title": "Include Symbols:",
+            "description": "Add special characters like !, @, #, etc., to make your password more secure."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Generate a Password",
+          "step1": {
+            "title": "Step 1: Set Your Password Length",
+            "description": "Use the slider to adjust the length of your password. The longer the password, the more secure it will be."
+          },
+          "step2": {
+            "title": "Step 2: Choose Your Character Types",
+            "description": "Toggle on/off to include uppercase letters, lowercase letters, numbers, and symbols."
+          },
+          "step3": {
+            "title": "Step 3: Generate Your Password",
+            "description": "Click the 'Generate' button to create a random, secure password based on your chosen settings."
+          },
+          "step4": {
+            "title": "Step 4: Copy or Regenerate the Password",
+            "description": "Once your password is generated, click the 'Copy' button to save it or 'Regenerate' to create a new one."
+          }
+        },
+        "exampleLabel": "Example Password:",
+        "copyButton": "Copy",
+        "regenerateButton": "Regenerate",
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "For better security, use a password length of at least 12 characters.",
+          "tip2": "Including a mix of uppercase, lowercase, numbers, and symbols increases password strength.",
+          "tip3": "Avoid reusing passwords across different sites — create a unique password for each account."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "lengthError": {
+            "title": "Password Length Error?",
+            "description": "Make sure your password length is at least 8 characters to ensure adequate security."
+          },
+          "generationError": {
+            "title": "Password Not Generating?",
+            "description": "Double-check that all required fields are selected and the length is appropriate."
+          }
+        }
+      },
       "length": {
         "label": "Length",
         "navDescription": "Select the password length.",
@@ -267,6 +497,109 @@
         "left": "Left Text",
         "right": "Right Text",
         "realTime": "Real-time view"
+      },
+      "docs": {
+        "title": "🔍 How to Use the Rivine Text Compare Tool",
+        "intro": "Compare two texts side by side to easily spot differences, analyze changes, and merge content effortlessly.",
+        "whatIs": {
+          "title": "✨ What is the Text Compare Tool?",
+          "description": "The Text Compare tool is a powerful utility that allows you to identify and visualize differences between two text documents. Whether you're comparing versions of code, documents, or any text content, it highlights changes at the character, word, or line level to help you understand exactly what's changed."
+        },
+        "features": {
+          "title": "📦 Key Features",
+          "dualView": {
+            "title": "Dual Text Editor",
+            "description": "Side-by-side text areas for easy comparison of left and right content."
+          },
+          "comparisonModes": {
+            "title": "Multiple Comparison Modes",
+            "description": "Choose between Character by Character, Word by Word, or Line by Line comparison methods."
+          },
+          "realTime": {
+            "title": "Real-time View",
+            "description": "Toggle real-time comparison to see differences as you type."
+          },
+          "fileUpload": {
+            "title": "File Upload",
+            "description": "Import text files directly into either the left or right editor."
+          },
+          "merging": {
+            "title": "Text Merging",
+            "description": "Merge changes from one side to the other with dedicated merge buttons."
+          }
+        },
+        "comparisonModes": {
+          "title": "🔄 Understanding Comparison Modes",
+          "character": {
+            "title": "Character by Character",
+            "description": "The most detailed comparison method, highlighting differences at the individual character level. Perfect for spotting small typos or minor text changes."
+          },
+          "word": {
+            "title": "Word by Word",
+            "description": "Compares text by treating words as units. This mode is ideal for document editing and content revisions where whole words are often added, deleted, or changed."
+          },
+          "line": {
+            "title": "Line by Line",
+            "description": "Compares text line by line, similar to how code diffs work. Best for structured content like code, lists, or any text where line breaks are meaningful."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Compare Texts",
+          "step1": {
+            "title": "Step 1: Add Your Texts",
+            "description": "Enter or paste your original text in the left editor and the text you want to compare it with in the right editor. Alternatively, use the Upload buttons to import text files."
+          },
+          "step2": {
+            "title": "Step 2: Select Comparison Mode",
+            "description": "Choose whether to compare Character by Character, Word by Word, or Line by Line from the dropdown menu."
+          },
+          "step3": {
+            "title": "Step 3: Toggle Real-time View (Optional)",
+            "description": "Enable real-time view if you want differences to be highlighted automatically as you type."
+          },
+          "step4": {
+            "title": "Step 4: Review Differences",
+            "description": "Differences will be highlighted with red indicating removed content and green indicating added content. The bottom panel shows a line-by-line comparison for closer inspection."
+          }
+        },
+        "merging": {
+          "title": "🔀 Merging Changes",
+          "description": "The Text Compare tool allows you to merge changes between the left and right text editors:",
+          "mergeToRight": {
+            "title": "Merge to Right",
+            "description": "Copies content from the left editor to the right editor, overwriting the right text with the left text."
+          },
+          "mergeToLeft": {
+            "title": "Merge to Left",
+            "description": "Copies content from the right editor to the left editor, overwriting the left text with the right text."
+          }
+        },
+        "exampleLabel": "Example Comparison:",
+        "exampleLeft": "Left Text:",
+        "exampleRight": "Right Text:",
+        "exampleNote": "In this example, 'old' has been replaced with 'updated', shown with red highlighting for removed content and green for added content.",
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "For code comparison, Line by Line mode typically works best to match how version control systems show differences.",
+          "tip2": "When comparing long documents, try Word by Word mode first for a clearer overview of substantial changes.",
+          "tip3": "Use the 'Upload' button to quickly compare files from your local system without copy-pasting.",
+          "tip4": "For the most accurate comparison when working with formatted text, first strip any formatting by pasting as plain text."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "largeFiles": {
+            "title": "Performance with Large Files",
+            "description": "If comparing very large texts causes slowness, try disabling real-time comparison and use manual comparison instead."
+          },
+          "formatting": {
+            "title": "Formatting Issues",
+            "description": "The tool compares plain text only. If formatting appears different, ensure you're pasting as plain text without hidden formatting characters."
+          },
+          "encoding": {
+            "title": "Character Encoding Problems",
+            "description": "If special characters appear differently in the two texts despite being identical, check that both texts use the same character encoding."
+          }
+        }
       }
     },
     "json": {
@@ -296,6 +629,121 @@
         "8": "JSON Viewer",
         "9": "JSON Minifier",
         "10": "JSON Pretty Print"
+      },
+      "docs": {
+        "title": "🧩 How to Use the Rivine JSON Editor",
+        "intro": "Edit, format, and transform JSON data with ease. The dual-editor interface allows you to work with multiple JSON documents simultaneously with powerful visualization and editing features.",
+        "whatIs": {
+          "title": "✨ What is a JSON Editor?",
+          "description": "A JSON Editor is a tool that helps you create, edit, and validate JSON (JavaScript Object Notation) data. Our editor provides multiple views and powerful features to make working with JSON easy and efficient."
+        },
+        "features": {
+          "title": "📦 Core Features",
+          "dualEditor": {
+            "title": "Dual Editor Interface",
+            "description": "Work with two JSON documents side by side, making it easy to compare, copy, or merge content between them."
+          },
+          "viewModes": {
+            "title": "Multiple View Modes",
+            "description": "Switch between Code, Tree, Table, and Preview modes to visualize your JSON data in the most helpful format."
+          },
+          "formatting": {
+            "title": "Format & Beautify",
+            "description": "Automatically format and indent your JSON for better readability with a single click."
+          },
+          "search": {
+            "title": "Search & Replace",
+            "description": "Quickly find and replace values within your JSON documents, with support for regular expressions."
+          },
+          "transform": {
+            "title": "Transform & Manipulate",
+            "description": "Sort, filter, and transform your JSON data using built-in transformation tools."
+          }
+        },
+        "modes": {
+          "title": "📋 View Modes Explained",
+          "code": {
+            "title": "Code Mode",
+            "description": "Edit raw JSON text with syntax highlighting, autocompletion, and error detection."
+          },
+          "tree": {
+            "title": "Tree Mode",
+            "description": "Navigate and edit JSON as a collapsible tree structure, perfect for nested data."
+          },
+          "table": {
+            "title": "Table Mode",
+            "description": "View and edit JSON arrays as tables with sortable columns."
+          },
+          "preview": {
+            "title": "Preview Mode",
+            "description": "See a formatted, read-only view of your JSON data, ideal for reviewing content."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Use the JSON Editor",
+          "step1": {
+            "title": "Step 1: Enter or Import JSON",
+            "description": "Type directly into the editor, paste from clipboard, or import a JSON file from your device."
+          },
+          "step2": {
+            "title": "Step 2: Choose Your View Mode",
+            "description": "Select between Code, Tree, Table, or Preview modes based on your editing needs."
+          },
+          "step3": {
+            "title": "Step 3: Edit and Transform",
+            "description": "Modify your JSON data using the editor's features, including adding, editing, or deleting properties."
+          },
+          "step4": {
+            "title": "Step 4: Export or Copy",
+            "description": "Copy your JSON to clipboard or export it as a file once you've completed your edits."
+          }
+        },
+        "advancedFeatures": {
+          "title": "🔧 Advanced Features",
+          "filter": {
+            "title": "Query-based Filtering",
+            "description": "Filter large JSON documents using query expressions to focus on specific data."
+          },
+          "sort": {
+            "title": "Sort Keys and Values",
+            "description": "Organize your JSON by sorting keys alphabetically or values numerically."
+          },
+          "transform": {
+            "title": "JSON Transformation",
+            "description": "Apply transformations like flattening nested structures, converting types, or restructuring data."
+          },
+          "repair": {
+            "title": "Fix Malformed JSON",
+            "description": "Automatically repair common syntax errors in malformed JSON documents."
+          },
+          "navigation": {
+            "title": "Path Navigation",
+            "description": "Navigate complex JSON structures using path expressions to quickly locate specific nodes."
+          }
+        },
+        "exampleLabel": "Example JSON:",
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "Use keyboard shortcuts (Ctrl+F for search, Ctrl+I for formatting) to speed up your workflow.",
+          "tip2": "For large JSON files, Tree view can help you navigate and understand the structure better than Code view.",
+          "tip3": "When comparing two JSON documents, use the dual editor layout and sync scrolling feature.",
+          "tip4": "Use the 'Copy Path' feature to get the exact JSON path to a specific value, useful for APIs and documentation."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "invalidJson": {
+            "title": "Invalid JSON Error?",
+            "description": "Check for missing commas, extra commas, or unclosed brackets. The editor will highlight syntax errors to help you identify issues."
+          },
+          "performance": {
+            "title": "Editor Running Slowly?",
+            "description": "For very large JSON files (over 1MB), consider using Code mode instead of Tree mode for better performance."
+          },
+          "dataLoss": {
+            "title": "Concerned About Data Loss?",
+            "description": "Use the 'Save to Local Storage' feature to automatically back up your work as you edit."
+          }
+        }
       }
     },
     "image" : {
@@ -380,6 +828,136 @@
         "error": "Upload at least one image to see the merged result",
         "download": "Download Merged Image",
         "tune": "Adjust the merger settings to achieve the desired output"
+      },
+      "docs": {
+        "title": "🖼️ How to Use the Image Merger Tool",
+        "intro": "Easily combine multiple images into a single composite image with customizable layouts and settings.",
+        "whatIs": {
+          "title": "✨ What is the Image Merger Tool?",
+          "description": "The Image Merger tool is a powerful utility that allows you to combine multiple images into a single composite image. Whether you need to create collages, comparison images, or multi-panel displays, this tool helps you arrange and merge images with customizable positioning and formatting options."
+        },
+        "features": {
+          "title": "📦 Key Features",
+          "multipleImages": {
+            "title": "Multiple Image Support",
+            "description": "Combine between 2 and 10 images in a single merged output."
+          },
+          "positionOptions": {
+            "title": "Flexible Positioning",
+            "description": "Arrange images horizontally side by side, vertically stacked, or in a grid layout."
+          },
+          "sizeControl": {
+            "title": "Size Normalization",
+            "description": "Choose how images are sized relative to each other when merging."
+          },
+          "borderOptions": {
+            "title": "Border Customization",
+            "description": "Add and customize borders between images for clear separation."
+          },
+          "imageSettings": {
+            "title": "Individual Image Settings",
+            "description": "Control the size and appearance of each image independently."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Merge Images",
+          "step1": {
+            "title": "Step 1: Upload Your Images",
+            "description": "Click the 'Upload image' button in each image panel to add your source images. You need at least 2 images to perform a merge."
+          },
+          "step2": {
+            "title": "Step 2: Set Number of Images",
+            "description": "Use the '+' and '-' buttons to adjust the number of images you want to merge (minimum 2, maximum 10)."
+          },
+          "step3": {
+            "title": "Step 3: Choose Image Position",
+            "description": "Select the arrangement style from the 'Image Position' dropdown: Horizontal (side by side), Vertical (stacked), or Grid layout."
+          },
+          "step4": {
+            "title": "Step 4: Adjust Size Normalization",
+            "description": "Select how images should be sized relative to each other. Options include 'Fit to Smallest Image', 'Match Largest Image', or 'Keep Original Sizes'."
+          },
+          "step5": {
+            "title": "Step 5: Configure Border Settings (Optional)",
+            "description": "Click the 'Border' tab to add and customize borders between images, including border width, color, and style."
+          },
+          "step6": {
+            "title": "Step 6: Preview and Download",
+            "description": "The merged result will be displayed automatically. When satisfied with the result, download your merged image."
+          }
+        },
+        "positionModes": {
+          "title": "🔄 Image Position Options",
+          "horizontal": {
+            "title": "Horizontal (Side by Side)",
+            "description": "Places images next to each other in a row. Best for comparing images side by side or creating panoramic compositions."
+          },
+          "vertical": {
+            "title": "Vertical (Stacked)",
+            "description": "Stacks images on top of each other. Ideal for before-and-after comparisons or sequential displays."
+          },
+          "grid": {
+            "title": "Grid Layout",
+            "description": "Arranges images in a grid pattern. Perfect for creating collages or when working with several images of similar importance."
+          }
+        },
+        "sizeOptions": {
+          "title": "📏 Size Normalization Options",
+          "fitToSmallest": {
+            "title": "Fit to Smallest Image",
+            "description": "Scales all images to match the dimensions of the smallest image. Ensures consistency but may reduce larger images."
+          },
+          "matchLargest": {
+            "title": "Match Largest Image",
+            "description": "Scales all images to match the dimensions of the largest image. Preserves detail in large images but increases output file size."
+          },
+          "originalSize": {
+            "title": "Keep Original Sizes",
+            "description": "Maintains each image's original dimensions. Results in an asymmetrical composition but preserves all original details."
+          }
+        },
+        "borderOptions": {
+          "title": "🖌️ Border Customization",
+          "width": {
+            "title": "Border Width",
+            "description": "Set the thickness of borders between images from 0 (no border) up to 20 pixels."
+          },
+          "color": {
+            "title": "Border Color",
+            "description": "Choose any color for the borders to complement your images or create visual separation."
+          },
+          "style": {
+            "title": "Border Style",
+            "description": "Select border styles including solid, dashed, or dotted lines."
+          }
+        },
+        "imageLimit": {
+          "title": "📱 Image Limits",
+          "description": "The Image Merger tool requires a minimum of 2 images and allows a maximum of 10 images to be combined at once."
+        },
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "For best results when using 'Side by Side' mode, choose images with similar heights.",
+          "tip2": "When creating a vertical stack, images with similar widths work best together.",
+          "tip3": "The grid layout automatically arranges images in the most balanced formation based on the number of images.",
+          "tip4": "Adding a border can help distinguish between images with similar colors or content.",
+          "tip5": "Consider using 'Fit to Smallest Image' for faster processing and smaller file sizes."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "notMerging": {
+            "title": "Images Not Merging",
+            "description": "Make sure you've uploaded at least two valid image files. The merge preview displays automatically once sufficient images are loaded."
+          },
+          "qualityIssues": {
+            "title": "Quality Loss",
+            "description": "If merged images appear lower quality than originals, try 'Keep Original Sizes' or 'Match Largest Image' settings to preserve details."
+          },
+          "layoutProblems": {
+            "title": "Layout Problems",
+            "description": "If the merged layout doesn't look right, try a different position setting or normalize the image sizes for a more balanced composition."
+          }
+        }
       }
     },
     "textToHandwriting": {
@@ -448,6 +1026,110 @@
         "handwrittenText": "Handwritten Text",
         "image": "Image",
         "note": "If lines or text overlap, adjust the settings. To download multiple pages, use \"Add to Book\" and scroll down to download."
+      },
+      "docs": {
+        "title": "🖋️ How to Use the Text to Handwriting Tool",
+        "intro": "Convert typed text into realistic handwriting with customizable styles and formatting options.",
+        "whatIs": {
+          "title": "✨ What is the Text to Handwriting Tool?",
+          "description": "The Text to Handwriting tool is a versatile utility that transforms digital text into authentic-looking handwritten content. Whether you're creating notes, letters, study materials, or creative projects, this tool gives your digital text a personal handwritten touch with various customization options."
+        },
+        "features": {
+          "title": "📦 Key Features",
+          "fonts": {
+            "title": "Realistic Handwriting Fonts",
+            "description": "Choose from multiple handwriting styles to find the perfect match for your needs."
+          },
+          "customization": {
+            "title": "Customizable Appearance",
+            "description": "Adjust font size, spacing, margins, and positioning to create the ideal handwritten look."
+          },
+          "colorOptions": {
+            "title": "Color Options",
+            "description": "Personalize ink color, page background, and line colors to suit your preferences."
+          },
+          "pageFormat": {
+            "title": "Page Format Control",
+            "description": "Select paper sizes and toggle page elements like margins and lines."
+          },
+          "multiPage": {
+            "title": "Multi-page Support",
+            "description": "Create and manage multiple pages of handwritten content in a single document."
+          },
+          "exportOptions": {
+            "title": "Export Options",
+            "description": "Download individual pages as images or compile multiple pages into a single PDF book."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Use the Tool",
+          "step1": {
+            "title": "Step 1: Enter Your Text",
+            "description": "Type or paste your text in the editor area on the left side of the screen. The text will be rendered as handwriting in the preview panel on the right."
+          },
+          "step2": {
+            "title": "Step 2: Select Handwriting Style",
+            "description": "Choose your preferred handwriting style from the 'Handwriting Font' dropdown menu. Each font provides a unique handwritten appearance."
+          },
+          "step3": {
+            "title": "Step 3: Customize the Formatting",
+            "description": "Adjust font size, line spacing, word spacing, letter spacing, margins, and page size to perfect your handwritten document."
+          },
+          "step4": {
+            "title": "Step 4: Customize Colors",
+            "description": "Choose colors for the ink, page background, lines, and margin to create your desired aesthetic."
+          },
+          "step5": {
+            "title": "Step 5: Toggle Visual Elements",
+            "description": "Use the toggles to show or hide page margins and ruled lines according to your preference."
+          }
+        },
+        "multiPage": {
+          "title": "🔀 Creating Multi-Page Documents",
+          "description": "The Text to Handwriting tool allows you to build multi-page documents:",
+          "addPages": {
+            "title": "Adding Pages to Your Book",
+            "description": "Format your text, click 'Add to Book', then create new pages by modifying text and repeating the process."
+          },
+          "managingBook": {
+            "title": "Managing Your Book",
+            "description": "All pages added to your book will appear in the book area at the bottom of the screen."
+          }
+        },
+        "downloading": {
+          "title": "📥 Downloading Your Content",
+          "singlePage": {
+            "title": "Individual Page Download",
+            "description": "Use the 'Download as Image' button to save the current page as an image file."
+          },
+          "multiPage": {
+            "title": "Multi-Page Download Options",
+            "description": "After adding pages to your book, use 'Download as PDF' to compile all pages into a single document or 'Download All Images' for individual files."
+          }
+        },
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "If lines or text overlap, adjust the spacing settings for better readability.",
+          "tip2": "For consistent formatting across multiple pages, make note of your settings before adding each new page.",
+          "tip3": "The 'Add to Book' feature is essential for creating multi-page documents that you can download together as a PDF.",
+          "tip4": "Experiment with different handwriting fonts to find the style that best matches your needs.",
+          "tip5": "Use the preview panel to see how your settings affect the final appearance before downloading."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "layout": {
+            "title": "Page Layout Issues",
+            "description": "If text appears cut off or overlapping, try reducing font size, increasing line spacing, or adjusting margin settings."
+          },
+          "download": {
+            "title": "Download Problems",
+            "description": "Make sure to click 'Add to Book' for each page you want included in your PDF and verify all pages are added before downloading."
+          },
+          "rendering": {
+            "title": "Text Rendering",
+            "description": "If handwriting appears inconsistent, try adjusting letter and word spacing, and ensure your text doesn't contain unsupported special characters."
+          }
+        }
       }
     }
   }

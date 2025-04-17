@@ -1,5 +1,6 @@
 import {Card, CardContent} from "@/components/ui/card";
 import {QrMenu} from "@/components/custom/qr-code/qr-menu";
+import TextCompareDocumentation from "@/components/custom/text-compare/text-compare-docs";
 
 export default function RootLayout({
                                        children,
@@ -14,6 +15,9 @@ export default function RootLayout({
                         {children}
                     </CardContent>
                 </Card>
+                <div className="mt-4">
+                    <TextCompareDocumentation/>
+                </div>
             </div>
         </>
     )

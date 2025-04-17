@@ -9,6 +9,7 @@ import { getTranslations } from "next-intl/server";
 import { getLocalizedPath } from "@/i18n/get-localized-path";
 import { home } from "@/config/i18n-constants";
 import {generateAlternates} from "@/lib/utils";
+import ToolsHomeContent from "@/components/custom/home/home-content";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -54,6 +55,10 @@ export default async function Home({ params }: PageProps) {
                 <div className="max-w-5xl mx-auto px-8">
                     <HoverEffect items={toolsCards} />
                 </div>
+            </div>
+
+            <div className="my-10">
+                <ToolsHomeContent/>
             </div>
         </div>
     );
