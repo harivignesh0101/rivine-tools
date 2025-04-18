@@ -8,6 +8,14 @@ import {i18n} from "@/i18n/config";
 import PagesTopLoader from "@/components/providers/pages-top-loader";
 import {GoogleAnalytics} from "@next/third-parties/google";
 
+export const metadata = {
+    robots: {
+        index: true,
+        follow: true,
+    }
+};
+
+
 export default async function LocaleLayout({
                                                children,
                                                params
