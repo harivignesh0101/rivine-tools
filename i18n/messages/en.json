@@ -102,14 +102,14 @@
         "label": "URL",
         "navDescription": "Generate QR codes for links.",
         "title": "Free QR Code Generator | Generate Custom QR Codes Online",
-        "description": "Easily generate and customize QR codes for URLs. Ideal for sharing online content, directing traffic, or enhancing print materials. Fast, free, and no signup required.",
+        "description": "Generate and customize QR codes for URLs. Perfect for sharing content, directing traffic, or enhancing print materials. Fast and free.",
         "input": "Enter your website URL here"
       },
       "text": {
         "label": "Text",
         "navDescription": "Encode plain text into QR codes.",
         "title": "Free QR Code Generator for Text | Create Custom Text QR Codes",
-        "description": "Easily generate and customize QR codes for text messages. Perfect for sharing information quickly and efficiently. Fast, free, and no signup required.",
+        "description": "Easily generate and customize QR codes for text messages. Perfect for sharing information quickly and efficiently. Fast amd free.",
         "input": "Enter your text message here"
       },
       "phone": {

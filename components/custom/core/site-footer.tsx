@@ -39,7 +39,7 @@ const SiteFooter = async () => {
                         ))}
                         {toolsNavItems.map((item, sectionIdx) => (
                             <div key={sectionIdx}>
-                                <h3 className="mb-4 font-bold">{item.tLabel ? t(item.tLabel) : item.label}</h3>
+                                <p className="mb-4 font-bold">{item.tLabel ? t(item.tLabel) : item.label}</p>
                                 <ul className="space-y-4 text-muted-foreground">
                                     {item.links?.map((link: any, linkIdx) => (
                                         <li

@@ -3,7 +3,7 @@
     "label": "Una creciente suite de herramientas rápidas y confiables",
     "subLabel": "Construido para la simplicidad y el rendimiento. Se agregan nuevas herramientas regularmente para ayudar a los usuarios a mantenerse productivos y hacer las cosas, sin distracciones ni desorden",
     "title": "Herramientas en línea gratuitas",
-    "description": "Explore herramientas en línea rápidas y gratuitas para tareas cotidianas. Rivine Tools proporciona una experiencia fluida con utilidades web centradas en la privacidad, que se expanden constantemente para satisfacer sus necesidades.",
+    "description": "Descubre herramientas online rápidas y gratuitas para tareas diarias. Rivine Tools ofrece utilidades web centradas en la privacidad.",
     "exploreTools": "Explorar herramientas",
     "keywords": {
       "0": "Herramientas en línea",
@@ -192,7 +192,7 @@
       "navDescription": "Configura temporizadores para una variedad de tareas y actividades.",
       "subLabel": "Suite de Reloj",
       "subNavDescription": "Gestiona tu tiempo eficientemente con nuestro completo temporizador en línea.",
-      "description": "Utiliza nuestro versátil temporizador en línea para seguir el tiempo de tareas, entrenamientos y más. Personaliza alertas y duraciones según tus necesidades."
+      "description": "Temporizador en línea: mide tiempo para tareas y entrenos. Personaliza alertas y duraciones según tus necesidades."
     },
     "timer": {
       "title": "Temporizador en línea",
@@ -200,7 +200,7 @@
       "navDescription": "Establezca temporizadores para varias tareas y actividades.",
       "subLabel": "Suite de herramientas de temporizador",
       "subNavDescription": "Gestione su tiempo de manera efectiva con nuestro temporizador en línea.",
-      "description": "Utilice nuestro temporizador en línea gratuito para realizar un seguimiento del tiempo para tareas, entrenamientos y más. Personalice alertas y duraciones.",
+      "description": "Temporizador online gratis: mide tiempo para tareas y entrenos. Personaliza alertas y duraciones.",
       "page": {
         "paused": "Pausado",
         "running": "En ejecución"
@@ -337,7 +337,7 @@
       "navDescription": "Cree contraseñas seguras y aleatorias para proteger sus cuentas.",
       "subLabel": "Suite de Generador de Contraseñas",
       "subNavDescription": "Genere contraseñas fuertes y únicas al instante.",
-      "description": "Utilice nuestro generador de contraseñas en línea gratuito para crear contraseñas seguras y aleatorias. Personalice la longitud y los caracteres para satisfacer sus necesidades de seguridad.",
+      "description": "Generador de contraseñas: crea contraseñas seguras y aleatorias. Personaliza longitud y caracteres según tus necesidades.",
       "keywords": {
         "0": "Generador de Contraseñas",
         "1": "Contraseñas Seguras",
@@ -470,7 +470,7 @@
       "navDescription": "Compara dos textos para identificar diferencias y similitudes.",
       "subLabel": "Suite de Comparación de Texto",
       "subNavDescription": "Compara y analiza diferencias de texto sin esfuerzo.",
-      "description": "Utiliza nuestra herramienta gratuita de comparación de texto en línea para identificar diferencias entre dos textos. Personaliza la configuración para resaltar cambios y similitudes.",
+      "description": "Compara textos gratis: detecta diferencias y similitudes. Personaliza para resaltar cambios.",
       "keywords": {
         "0": "Comparar Texto",
         "1": "Comparar Textos",
@@ -616,7 +616,7 @@
       "navDescription": "Edita y formatea datos JSON con facilidad.",
       "subLabel": "Suite de Editor JSON",
       "subNavDescription": "Edita y formatea datos JSON sin esfuerzo.",
-      "description": "Utiliza nuestra herramienta gratuita de editor JSON en línea para editar y formatear datos JSON. Personaliza la configuración para mejorar tu experiencia de edición JSON.",
+      "description": "Editor JSON gratis: edita y formatea datos. Personaliza para mejorar tu experiencia.",
       "keywords": {
         "0": "Editor JSON",
         "1": "Editar JSON",
@@ -760,7 +760,7 @@
       "navDescription": "Combina múltiples imágenes en una sola imagen sin esfuerzo.",
       "subLabel": "Suite de Fusión de Imágenes",
       "subNavDescription": "Fusiona fácilmente múltiples imágenes en una.",
-      "description": "Utiliza nuestra Herramienta de Fusión de Imágenes para combinar múltiples imágenes en una sola imagen sin problemas. Personaliza la configuración para mejorar tu experiencia de fusión de imágenes.",
+      "description": "Fusiona imágenes fácilmente: combina varias en una. Personaliza para mejorar tu experiencia.",
       "keywords": {
         "0": "Fusión de Imágenes",
         "1": "Combinar Imágenes",
@@ -966,7 +966,7 @@
       "navDescription": "Convierte texto mecanografiado en escritura a mano realista sin esfuerzo.",
       "subLabel": "Suite de Escritura a Mano",
       "subNavDescription": "Transforma fácilmente texto en notas escritas a mano.",
-      "description": "Utiliza nuestra Herramienta de Texto a Escritura a Mano para convertir tu texto mecanografiado en escritura a mano realista. Personaliza configuraciones para mejorar tu experiencia de escritura a mano.",
+      "description": "Convierte texto a escritura a mano realista. Personaliza para mejorar tu experiencia.",
       "keywords": {
         "0": "Texto a Escritura a Mano",
         "1": "Convertidor de Escritura a Mano",

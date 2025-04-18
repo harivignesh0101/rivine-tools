@@ -49,13 +49,13 @@ export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
   const alternates = generateAlternates(locale, `${qrHomePath}/phone`);
 
   return {
-    title: `${appName} | ${t(`${qrCodeGenerator}.title`)}`,
-    description: t(`${qrCodeGenerator}.description`),
+    title: `${appName} | ${t(`${qrCodePhone}.title`)}`,
+    description: t(`${qrCodePhone}.description`),
     keywords: Array.from({ length: 7 }, (_, i) => t(`${qrCodeGenerator}.keywords.${i}`)),
     metadataBase: new URL(siteUrl),
     alternates,
     openGraph: {
-      title: `${t(`${qrCodePhone}.title`)} | Free QR Code Generator`,
+      title: `${t(`${qrCodePhone}.title`)}`,
       description: t(`${qrCodePhone}.description`),
       url: `${url}${qrHomePath}/phone`,
       siteName: appName,

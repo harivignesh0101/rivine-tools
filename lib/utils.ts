@@ -36,9 +36,7 @@ export function generateAlternates(locale: string, slug: string) {
             acc[lang.code] = '/';
         }
         return acc;
-    }, {
-        "x-default": `${slug ? slug : '/'}`,
-    });
+    }, {});
 
     return {
         canonical,

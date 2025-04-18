@@ -3,7 +3,7 @@
     "label": "Uma crescente suíte de ferramentas rápidas e confiáveis",
     "subLabel": "Construído para simplicidade e desempenho. Novas ferramentas são adicionadas regularmente para ajudar os usuários a se manterem produtivos e realizarem tarefas—sem distrações ou desordem",
     "title": "Ferramentas online gratuitas",
-    "description": "Explore ferramentas online rápidas e gratuitas para tarefas do dia a dia. Rivine Tools oferece uma experiência perfeita com utilitários web focados em privacidade—constantemente expandindo para atender às suas necessidades.",
+    "description": "Descubra ferramentas online rápidas e gratuitas para tarefas diárias. Rivine Tools oferece utilitários web focados na privacidade.",
     "exploreTools": "Explorar Ferramentas",
     "keywords": {
       "0": "Ferramentas online",
@@ -192,7 +192,7 @@
       "navDescription": "Defina temporizadores para uma variedade de tarefas e atividades.",
       "subLabel": "Suite de Relógio",
       "subNavDescription": "Gerencie seu tempo de forma eficiente com nosso temporizador online abrangente.",
-      "description": "Utilize nosso versátil temporizador online para acompanhar o tempo de tarefas, exercícios e mais. Personalize alertas e durações para atender às suas necessidades."
+      "description": "Temporizador online: tarefas, exercícios. Personalize alertas e durações conforme suas necessidades."
     },
     "timer": {
       "title": "Temporizador Online",
@@ -337,7 +337,7 @@
       "navDescription": "Crie senhas seguras e aleatórias para proteger suas contas.",
       "subLabel": "Suite de Gerador de Senhas",
       "subNavDescription": "Gere instantaneamente senhas fortes e únicas.",
-      "description": "Use nosso gerador de senhas online gratuito para criar senhas seguras e aleatórias. Personalize o comprimento e os caracteres para atender às suas necessidades de segurança.",
+      "description": "Gerador de senhas: crie senhas seguras e aleatórias. Personalize comprimento e caracteres conforme suas necessidades.",
       "keywords": {
         "0": "Gerador de Senhas",
         "1": "Senhas Seguras",
@@ -470,7 +470,7 @@
       "navDescription": "Compare dois textos para identificar diferenças e semelhanças.",
       "subLabel": "Suite de Comparação de Texto",
       "subNavDescription": "Compare e analise diferenças de texto sem esforço.",
-      "description": "Use nossa ferramenta de comparação de texto online gratuita para identificar diferenças entre dois textos. Personalize as configurações para destacar mudanças e semelhanças.",
+      "description": "Compare textos online grátis: veja diferenças e semelhanças. Personalize para destacar mudanças.",
       "keywords": {
         "0": "Comparação de Texto",
         "1": "Comparar Textos",
@@ -616,7 +616,7 @@
       "navDescription": "Edite e formate dados JSON com facilidade.",
       "subLabel": "Suite de Editor de JSON",
       "subNavDescription": "Edite e formate dados JSON sem esforço.",
-      "description": "Use nossa ferramenta de editor de JSON online gratuita para editar e formatar dados JSON. Personalize as configurações para melhorar sua experiência de edição de JSON.",
+      "description": "Editor JSON online grátis: edite e formate dados. Personalize configurações para uma melhor experiência.",
       "keywords": {
         "0": "Editor de JSON",
         "1": "Editar JSON",
@@ -760,7 +760,7 @@
       "navDescription": "Combine várias imagens em uma única imagem sem esforço.",
       "subLabel": "Suite de Mesclagem de Imagens",
       "subNavDescription": "Mescle facilmente várias imagens em uma.",
-      "description": "Use nossa Ferramenta de Mesclagem de Imagens para combinar várias imagens em uma única imagem de forma contínua. Personalize as configurações para melhorar sua experiência de mesclagem de imagens.",
+      "description": "Mescle imagens facilmente: combine várias em uma só. Personalize configurações para uma experiência otimizada.",
       "keywords": {
         "0": "Mesclagem de Imagens",
         "1": "Combinar Imagens",
@@ -966,7 +966,7 @@
       "navDescription": "Converta texto digitado em escrita à mão realista sem esforço.",
       "subLabel": "Suíte de Escrita à Mão",
       "subNavDescription": "Transforme facilmente texto em notas manuscritas.",
-      "description": "Use nossa Ferramenta de Texto para Escrita à Mão para converter seu texto digitado em escrita à mão realista. Personalize as configurações para melhorar sua experiência de escrita à mão.",
+      "description": "Converta texto digitado em escrita à mão realista. Personalize para aprimorar sua experiência.",
       "keywords": {
         "0": "Texto para Escrita à Mão",
         "1": "Conversor de Escrita à Mão",
