@@ -1131,6 +1131,185 @@
           }
         }
       }
+    },
+    "characterCounter": {
+      "title": "Herramienta de Contador de Caracteres",
+      "label": "Contador de Caracteres",
+      "navDescription": "Cuenta caracteres y palabras en tu texto sin esfuerzo.",
+      "subLabel": "Suite de Contador de Caracteres",
+      "subNavDescription": "Cuenta fácilmente caracteres y palabras en tu texto.",
+      "description": "Usa nuestra Herramienta de Contador de Caracteres para contar rápidamente el número de caracteres y palabras en tu texto.",
+      "keywords": {
+        "0": "Contador de Caracteres",
+        "1": "Conteo de Caracteres",
+        "2": "Contador de Caracteres en Línea",
+        "3": "Análisis de Caracteres",
+        "4": "Verificador de Caracteres",
+        "5": "Estadísticas de Caracteres",
+        "6": "Herramienta de Caracteres",
+        "7": "Agregador de Caracteres",
+        "8": "Composición de Caracteres"
+      },
+      "page": {
+        "title": "Contador de Caracteres",
+        "description": "Cuenta caracteres y palabras en tu texto sin esfuerzo."
+      },
+      "input": {
+        "label": "Introduce tu texto",
+        "placeholder": "Escribe o pega tu texto aquí..."
+      },
+      "processedText": {
+        "title": "Vista Previa del Texto Procesado",
+        "empty": "No hay texto después de aplicar filtros"
+      },
+      "countDisplay": {
+        "title": "Conteo de Caracteres",
+        "increasing": "aumentando",
+        "decreasing": "disminuyendo"
+      },
+      "options": {
+        "counting": {
+          "title": "Opciones de Conteo",
+          "stopAt": {
+            "label": "Detener conteo en",
+            "placeholder": "Introduce letra o palabra",
+            "help": "Cuenta solo hasta esta letra o palabra"
+          },
+          "ignoreChars": {
+            "label": "Ignorar caracteres específicos",
+            "placeholder": "ej. abc",
+            "help": "Caracteres a excluir del conteo"
+          },
+          "trim": "Recortar espacios en blanco antes de contar"
+        },
+        "ignore": {
+          "title": "Opciones de Ignorar",
+          "numbers": "Ignorar números",
+          "symbols": "Ignorar símbolos",
+          "uppercase": "Ignorar letras mayúsculas",
+          "lowercase": "Ignorar letras minúsculas",
+          "whitespace": "Ignorar espacios en blanco"
+        }
+      },
+      "docs": {
+        "title": "🔢 Cómo Usar la Herramienta de Contador de Caracteres",
+        "intro": "Cuenta y analiza texto fácilmente con filtros y opciones personalizables.",
+        "whatIs": {
+          "title": "✨ ¿Qué es la Herramienta de Contador de Caracteres?",
+          "description": "La herramienta de Contador de Caracteres es una utilidad poderosa que te permite contar caracteres en tu texto con precisión. Ya sea que necesites contar para publicaciones en redes sociales, contenido SEO o tareas de programación, esta herramienta te ayuda a analizar texto con filtros personalizables y opciones de formato."
+        },
+        "features": {
+          "title": "📦 Características Clave",
+          "realTimeCount": {
+            "title": "Conteo de Caracteres en Tiempo Real",
+            "description": "Ve cómo tu conteo de caracteres se actualiza instantáneamente mientras escribes o editas tu texto."
+          },
+          "filterOptions": {
+            "title": "Filtros Personalizables",
+            "description": "Filtra caracteres específicos, números, símbolos o espacios en blanco de tu conteo."
+          },
+          "stopAt": {
+            "title": "Análisis Parcial de Texto",
+            "description": "Cuenta caracteres hasta un carácter o palabra específica en tu texto."
+          },
+          "caseOptions": {
+            "title": "Opciones de Sensibilidad de Mayúsculas",
+            "description": "Incluye o excluye letras mayúsculas o minúsculas de tu conteo."
+          },
+          "trimWhitespace": {
+            "title": "Gestión de Espacios en Blanco",
+            "description": "Opcionalmente recorta espacios en blanco al inicio y al final antes de contar."
+          }
+        },
+        "steps": {
+          "title": "🚀 Cómo Usar el Contador de Caracteres",
+          "step1": {
+            "title": "Paso 1: Introduce Tu Texto",
+            "description": "Escribe o pega tu texto en el campo de entrada. El conteo de caracteres se actualizará automáticamente a medida que realices cambios."
+          },
+          "step2": {
+            "title": "Paso 2: Ve Tu Conteo de Caracteres",
+            "description": "El número de caracteres en tu texto se muestra de manera prominente en el contador. El conteo se actualiza en tiempo real mientras editas tu texto."
+          },
+          "step3": {
+            "title": "Paso 3: Aplica Filtros (Opcional)",
+            "description": "Usa las opciones de filtro para personalizar lo que se cuenta. Puedes excluir caracteres específicos, números, símbolos o espacios en blanco."
+          },
+          "step4": {
+            "title": "Paso 4: Establece Límites de Conteo (Opcional)",
+            "description": "Si solo deseas contar hasta un cierto punto en tu texto, introduce un carácter o palabra en el campo 'Detener conteo en'."
+          },
+          "step5": {
+            "title": "Paso 5: Vista Previa y Copia Resultados",
+            "description": "Ve tu texto procesado y el conteo final de caracteres. Puedes copiar el conteo a tu portapapeles si es necesario."
+          }
+        },
+        "countingOptions": {
+          "title": "⚙️ Opciones de Conteo",
+          "stopAt": {
+            "title": "Detener Conteo En",
+            "description": "Limita el conteo para incluir solo caracteres hasta un carácter o palabra específica. Útil para verificar si el texto se ajusta a límites específicos."
+          },
+          "ignoreChars": {
+            "title": "Ignorar Caracteres Específicos",
+            "description": "Excluye caracteres específicos del conteo. Introduce los caracteres que deseas ignorar sin separadores."
+          },
+          "trimText": {
+            "title": "Recortar Espacios en Blanco",
+            "description": "Elimina espacios en blanco al inicio y al final antes de contar. Útil para conteos más precisos cuando no se deben incluir espacios en blanco."
+          }
+        },
+        "ignoreOptions": {
+          "title": "🚫 Opciones de Ignorar",
+          "numbers": {
+            "title": "Ignorar Números",
+            "description": "Excluye todos los dígitos numéricos (0-9) del conteo de caracteres."
+          },
+          "symbols": {
+            "title": "Ignorar Símbolos",
+            "description": "Excluye todos los caracteres especiales y símbolos del conteo, enfocándose solo en caracteres alfanuméricos."
+          },
+          "uppercase": {
+            "title": "Ignorar Letras Mayúsculas",
+            "description": "Excluye todas las letras mayúsculas del conteo. Útil cuando solo deseas contar contenido en minúsculas."
+          },
+          "lowercase": {
+            "title": "Ignorar Letras Minúsculas",
+            "description": "Excluye todas las letras minúsculas del conteo. Útil cuando solo deseas contar contenido en mayúsculas."
+          },
+          "whitespace": {
+            "title": "Ignorar Espacios en Blanco",
+            "description": "Excluye todos los espacios, tabulaciones y saltos de línea del conteo. Proporciona un conteo solo de caracteres visibles."
+          }
+        },
+        "preview": {
+          "title": "👁️ Vista Previa del Texto Procesado",
+          "description": "Muestra tu texto después de que se hayan aplicado todos los filtros. Este es el texto exacto que se está utilizando para el conteo de caracteres."
+        },
+        "tips": {
+          "title": "💡 Consejos Profesionales",
+          "tip1": "Usa 'Ignorar Espacios en Blanco' al contar caracteres para codificación o cuando los espacios no deben contar hacia tu total.",
+          "tip2": "La función 'Detener conteo en' es perfecta para verificar si tu texto se ajustará a los límites de caracteres para plataformas de redes sociales.",
+          "tip3": "Para la optimización de etiquetas de título SEO, usa el contador sin filtros para mantenerte dentro de los límites de caracteres recomendados.",
+          "tip4": "Al contar palabras que contienen formato especial, usa las opciones de ignorar para contar solo los caracteres que te importan.",
+          "tip5": "La vista previa del texto procesado te ayuda a entender exactamente qué se está contando después de que se aplican todos tus filtros."
+        },
+        "troubleshooting": {
+          "title": "🛠️ ¿Tienes Problemas?",
+          "unexpectedCount": {
+            "title": "Conteo de Caracteres Inesperado",
+            "description": "Si tu conteo parece incorrecto, verifica si hay filtros habilitados. La vista previa del texto procesado muestra exactamente qué se está contando."
+          },
+          "filterInteraction": {
+            "title": "Conflictos de Filtros",
+            "description": "Habilitar demasiados filtros puede resultar en muy poco texto para contar. Usa la vista previa del texto procesado para ver qué queda después de filtrar."
+          },
+          "performanceIssues": {
+            "title": "Rendimiento con Texto Grande",
+            "description": "Para texto muy grande, el contador puede tardar un momento en actualizarse. Ten paciencia o intenta dividir tu texto en secciones más pequeñas."
+          }
+        }
+      }
     }
   }
 }

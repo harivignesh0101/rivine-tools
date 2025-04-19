@@ -1,5 +1,4 @@
 import {Card, CardContent} from "@/components/ui/card";
-import {QrMenu} from "@/components/custom/qr-code/qr-menu";
 import TimerDocumentation from "@/components/custom/timer/timer-docs";
 
 export default function RootLayout({

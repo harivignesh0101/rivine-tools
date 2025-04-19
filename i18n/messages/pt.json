@@ -1131,6 +1131,185 @@
           }
         }
       }
+    },
+    "characterCounter": {
+      "title": "Ferramenta de Contador de Caracteres",
+      "label": "Contador de Caracteres",
+      "navDescription": "Conte caracteres e palavras no seu texto sem esforço.",
+      "subLabel": "Suíte de Contador de Caracteres",
+      "subNavDescription": "Conte facilmente caracteres e palavras no seu texto.",
+      "description": "Use nossa Ferramenta de Contador de Caracteres para contar rapidamente o número de caracteres e palavras no seu texto.",
+      "keywords": {
+        "0": "Contador de Caracteres",
+        "1": "Contagem de Caracteres",
+        "2": "Contador de Caracteres Online",
+        "3": "Análise de Caracteres",
+        "4": "Verificador de Caracteres",
+        "5": "Estatísticas de Caracteres",
+        "6": "Ferramenta de Caracteres",
+        "7": "Agregador de Caracteres",
+        "8": "Composição de Caracteres"
+      },
+      "page": {
+        "title": "Contador de Caracteres",
+        "description": "Conte caracteres e palavras no seu texto sem esforço."
+      },
+      "input": {
+        "label": "Digite seu texto",
+        "placeholder": "Digite ou cole seu texto aqui..."
+      },
+      "processedText": {
+        "title": "Pré-visualização do Texto Processado",
+        "empty": "Nenhum texto após aplicar filtros"
+      },
+      "countDisplay": {
+        "title": "Contagem de Caracteres",
+        "increasing": "aumentando",
+        "decreasing": "diminuindo"
+      },
+      "options": {
+        "counting": {
+          "title": "Opções de Contagem",
+          "stopAt": {
+            "label": "Parar de contar em",
+            "placeholder": "Digite letra ou palavra",
+            "help": "Conte apenas até esta letra ou palavra"
+          },
+          "ignoreChars": {
+            "label": "Ignorar caracteres específicos",
+            "placeholder": "ex. abc",
+            "help": "Caracteres a excluir da contagem"
+          },
+          "trim": "Cortar espaços em branco antes de contar"
+        },
+        "ignore": {
+          "title": "Opções de Ignorar",
+          "numbers": "Ignorar números",
+          "symbols": "Ignorar símbolos",
+          "uppercase": "Ignorar letras maiúsculas",
+          "lowercase": "Ignorar letras minúsculas",
+          "whitespace": "Ignorar espaços em branco"
+        }
+      },
+      "docs": {
+        "title": "🔢 Como Usar a Ferramenta de Contador de Caracteres",
+        "intro": "Conte e analise texto facilmente com filtros e opções personalizáveis.",
+        "whatIs": {
+          "title": "✨ O que é a Ferramenta de Contador de Caracteres?",
+          "description": "A ferramenta de Contador de Caracteres é uma utilidade poderosa que permite contar caracteres no seu texto com precisão. Seja para contar para postagens em redes sociais, conteúdo SEO ou tarefas de programação, esta ferramenta ajuda a analisar texto com filtros personalizáveis e opções de formatação."
+        },
+        "features": {
+          "title": "📦 Principais Características",
+          "realTimeCount": {
+            "title": "Contagem de Caracteres em Tempo Real",
+            "description": "Veja sua contagem de caracteres atualizar instantaneamente enquanto você digita ou edita seu texto."
+          },
+          "filterOptions": {
+            "title": "Filtros Personalizáveis",
+            "description": "Filtre caracteres específicos, números, símbolos ou espaços em branco da sua contagem."
+          },
+          "stopAt": {
+            "title": "Análise Parcial de Texto",
+            "description": "Conte caracteres até um caractere ou palavra específica no seu texto."
+          },
+          "caseOptions": {
+            "title": "Opções de Sensibilidade de Maiúsculas",
+            "description": "Inclua ou exclua letras maiúsculas ou minúsculas da sua contagem."
+          },
+          "trimWhitespace": {
+            "title": "Gestão de Espaços em Branco",
+            "description": "Opcionalmente corte espaços em branco antes e depois de contar."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Usar o Contador de Caracteres",
+          "step1": {
+            "title": "Passo 1: Digite Seu Texto",
+            "description": "Digite ou cole seu texto no campo de entrada. A contagem de caracteres será atualizada automaticamente à medida que você fizer alterações."
+          },
+          "step2": {
+            "title": "Passo 2: Veja Sua Contagem de Caracteres",
+            "description": "O número de caracteres no seu texto é exibido de forma proeminente no contador. A contagem é atualizada em tempo real enquanto você edita seu texto."
+          },
+          "step3": {
+            "title": "Passo 3: Aplique Filtros (Opcional)",
+            "description": "Use as opções de filtro para personalizar o que é contado. Você pode excluir caracteres específicos, números, símbolos ou espaços em branco."
+          },
+          "step4": {
+            "title": "Passo 4: Defina Limites de Contagem (Opcional)",
+            "description": "Se você deseja contar apenas até um certo ponto no seu texto, digite um caractere ou palavra no campo 'Parar de contar em'."
+          },
+          "step5": {
+            "title": "Passo 5: Pré-visualize e Copie Resultados",
+            "description": "Veja seu texto processado e a contagem final de caracteres. Você pode copiar a contagem para sua área de transferência, se necessário."
+          }
+        },
+        "countingOptions": {
+          "title": "⚙️ Opções de Contagem",
+          "stopAt": {
+            "title": "Parar de Contar Em",
+            "description": "Limita a contagem para incluir apenas caracteres até um caractere ou palavra específica. Útil para verificar se o texto se encaixa em limites específicos."
+          },
+          "ignoreChars": {
+            "title": "Ignorar Caracteres Específicos",
+            "description": "Exclua caracteres específicos da contagem. Digite os caracteres que deseja ignorar sem separadores."
+          },
+          "trimText": {
+            "title": "Cortar Espaços em Branco",
+            "description": "Remove espaços em branco antes e depois de contar. Útil para contagens mais precisas quando espaços em branco não devem ser incluídos."
+          }
+        },
+        "ignoreOptions": {
+          "title": "🚫 Opções de Ignorar",
+          "numbers": {
+            "title": "Ignorar Números",
+            "description": "Exclui todos os dígitos numéricos (0-9) da contagem de caracteres."
+          },
+          "symbols": {
+            "title": "Ignorar Símbolos",
+            "description": "Exclui todos os caracteres especiais e símbolos da contagem, focando apenas em caracteres alfanuméricos."
+          },
+          "uppercase": {
+            "title": "Ignorar Letras Maiúsculas",
+            "description": "Exclui todas as letras maiúsculas da contagem. Útil quando você deseja contar apenas conteúdo em minúsculas."
+          },
+          "lowercase": {
+            "title": "Ignorar Letras Minúsculas",
+            "description": "Exclui todas as letras minúsculas da contagem. Útil quando você deseja contar apenas conteúdo em maiúsculas."
+          },
+          "whitespace": {
+            "title": "Ignorar Espaços em Branco",
+            "description": "Exclui todos os espaços, tabulações e quebras de linha da contagem. Fornece uma contagem apenas de caracteres visíveis."
+          }
+        },
+        "preview": {
+          "title": "👁️ Pré-visualização do Texto Processado",
+          "description": "Mostra seu texto após todos os filtros terem sido aplicados. Este é o texto exato que está sendo usado para a contagem de caracteres."
+        },
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Use 'Ignorar Espaços em Branco' ao contar caracteres para codificação ou quando espaços não devem contar para o seu total.",
+          "tip2": "O recurso 'Parar de contar em' é perfeito para verificar se o seu texto se encaixará nos limites de caracteres para plataformas de redes sociais.",
+          "tip3": "Para otimização de tags de título SEO, use o contador sem filtros para permanecer dentro dos limites de caracteres recomendados.",
+          "tip4": "Ao contar palavras que contêm formatação especial, use as opções de ignorar para contar apenas os caracteres que importam para você.",
+          "tip5": "A pré-visualização do texto processado ajuda você a entender exatamente o que está sendo contado após todos os seus filtros serem aplicados."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "unexpectedCount": {
+            "title": "Contagem de Caracteres Inesperada",
+            "description": "Se a sua contagem parecer errada, verifique se há filtros habilitados. A pré-visualização do texto processado mostra exatamente o que está sendo contado."
+          },
+          "filterInteraction": {
+            "title": "Conflitos de Filtros",
+            "description": "Habilitar muitos filtros pode resultar em muito pouco texto para contar. Use a pré-visualização do texto processado para ver o que resta após o filtro."
+          },
+          "performanceIssues": {
+            "title": "Desempenho com Texto Grande",
+            "description": "Para texto muito grande, o contador pode demorar um momento para atualizar. Seja paciente ou tente dividir seu texto em seções menores."
+          }
+        }
+      }
     }
   }
 }

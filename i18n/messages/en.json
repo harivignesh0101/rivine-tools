@@ -1131,6 +1131,185 @@
           }
         }
       }
+    },
+    "characterCounter": {
+      "title": "Character Counter Tool",
+      "label": "Character Counter",
+      "navDescription": "Count characters and words in your text effortlessly.",
+      "subLabel": "Character Counter Suite",
+      "subNavDescription": "Easily count characters and words in your text.",
+      "description": "Use our Character Counter Tool to quickly count the number of characters and words in your text.",
+      "keywords": {
+        "0": "Character Counter",
+        "1": "Character Count",
+        "2": "Online Character Counter",
+        "3": "Character Analysis",
+        "4": "Character Checker",
+        "5": "Character Statistics",
+        "6": "Character Tool",
+        "7": "Character Aggregator",
+        "8": "Character Composition"
+      },
+      "page": {
+        "title": "Character Counter",
+        "description": "Count characters and words in your text effortlessly."
+      },
+      "input": {
+        "label": "Enter your text",
+        "placeholder": "Type or paste your text here..."
+      },
+      "processedText": {
+        "title": "Processed Text Preview",
+        "empty": "No text after applying filters"
+      },
+      "countDisplay": {
+        "title": "Character Count",
+        "increasing": "increasing",
+        "decreasing": "decreasing"
+      },
+      "options": {
+        "counting": {
+          "title": "Counting Options",
+          "stopAt": {
+            "label": "Stop counting at",
+            "placeholder": "Enter letter or word",
+            "help": "Count only up to this letter or word"
+          },
+          "ignoreChars": {
+            "label": "Ignore specific characters",
+            "placeholder": "e.g. abc",
+            "help": "Characters to exclude from count"
+          },
+          "trim": "Trim whitespace before counting"
+        },
+        "ignore": {
+          "title": "Ignore Options",
+          "numbers": "Ignore numbers",
+          "symbols": "Ignore symbols",
+          "uppercase": "Ignore uppercase letters",
+          "lowercase": "Ignore lowercase letters",
+          "whitespace": "Ignore whitespace"
+        }
+      },
+      "docs": {
+        "title": "🔢 How to Use the Character Counter Tool",
+        "intro": "Easily count and analyze text with customizable filters and options.",
+        "whatIs": {
+          "title": "✨ What is the Character Counter Tool?",
+          "description": "The Character Counter tool is a powerful utility that allows you to count characters in your text with precision. Whether you need to count for social media posts, SEO content, or programming tasks, this tool helps you analyze text with customizable filters and formatting options."
+        },
+        "features": {
+          "title": "📦 Key Features",
+          "realTimeCount": {
+            "title": "Real-time Character Counting",
+            "description": "See your character count update instantly as you type or edit your text."
+          },
+          "filterOptions": {
+            "title": "Customizable Filters",
+            "description": "Filter out specific characters, numbers, symbols, or whitespace from your count."
+          },
+          "stopAt": {
+            "title": "Partial Text Analysis",
+            "description": "Count characters up to a specific character or word in your text."
+          },
+          "caseOptions": {
+            "title": "Case Sensitivity Options",
+            "description": "Include or exclude uppercase or lowercase letters from your count."
+          },
+          "trimWhitespace": {
+            "title": "Whitespace Management",
+            "description": "Optionally trim leading and trailing whitespace before counting."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Use the Character Counter",
+          "step1": {
+            "title": "Step 1: Enter Your Text",
+            "description": "Type or paste your text into the input field. The character count will update automatically as you make changes."
+          },
+          "step2": {
+            "title": "Step 2: View Your Character Count",
+            "description": "The number of characters in your text is displayed prominently in the counter. The count updates in real-time as you edit your text."
+          },
+          "step3": {
+            "title": "Step 3: Apply Filters (Optional)",
+            "description": "Use the filter options to customize what gets counted. You can exclude specific characters, numbers, symbols, or whitespace."
+          },
+          "step4": {
+            "title": "Step 4: Set Count Limits (Optional)",
+            "description": "If you only want to count up to a certain point in your text, enter a character or word in the 'Stop counting at' field."
+          },
+          "step5": {
+            "title": "Step 5: Preview and Copy Results",
+            "description": "View your processed text and final character count. You can copy the count to your clipboard if needed."
+          }
+        },
+        "countingOptions": {
+          "title": "⚙️ Counting Options",
+          "stopAt": {
+            "title": "Stop Counting At",
+            "description": "Limits the count to only include characters up to a specific character or word. Useful for checking if text fits within specific limits."
+          },
+          "ignoreChars": {
+            "title": "Ignore Specific Characters",
+            "description": "Exclude specific characters from the count. Enter the characters you want to ignore without separators."
+          },
+          "trimText": {
+            "title": "Trim Whitespace",
+            "description": "Removes leading and trailing whitespace before counting. Useful for more accurate counts when whitespace shouldn't be included."
+          }
+        },
+        "ignoreOptions": {
+          "title": "🚫 Ignore Options",
+          "numbers": {
+            "title": "Ignore Numbers",
+            "description": "Excludes all numeric digits (0-9) from the character count."
+          },
+          "symbols": {
+            "title": "Ignore Symbols",
+            "description": "Excludes all special characters and symbols from the count, focusing only on alphanumeric characters."
+          },
+          "uppercase": {
+            "title": "Ignore Uppercase Letters",
+            "description": "Excludes all capital letters from the count. Useful when you only want to count lowercase content."
+          },
+          "lowercase": {
+            "title": "Ignore Lowercase Letters",
+            "description": "Excludes all lowercase letters from the count. Useful when you only want to count uppercase content."
+          },
+          "whitespace": {
+            "title": "Ignore Whitespace",
+            "description": "Excludes all spaces, tabs, and line breaks from the count. Provides a count of only visible characters."
+          }
+        },
+        "preview": {
+          "title": "👁️ Processed Text Preview",
+          "description": "Shows your text after all filters have been applied. This is the exact text being used for the character count."
+        },
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "Use 'Ignore Whitespace' when counting characters for coding or when spaces shouldn't count toward your total.",
+          "tip2": "The 'Stop counting at' feature is perfect for checking if your text will fit within character limits for social media platforms.",
+          "tip3": "For SEO title tag optimization, use the counter without any filters to stay within recommended character limits.",
+          "tip4": "When counting words that contain special formatting, use the ignore options to count only the characters that matter to you.",
+          "tip5": "The processed text preview helps you understand exactly what's being counted after all your filters are applied."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "unexpectedCount": {
+            "title": "Unexpected Character Count",
+            "description": "If your count seems off, check if any filters are enabled. The processed text preview shows exactly what's being counted."
+          },
+          "filterInteraction": {
+            "title": "Filter Conflicts",
+            "description": "Enabling too many filters might result in very little text to count. Use the processed text preview to see what remains after filtering."
+          },
+          "performanceIssues": {
+            "title": "Performance with Large Text",
+            "description": "For very large text, the counter may take a moment to update. Be patient or try breaking your text into smaller sections."
+          }
+        }
+      }
     }
   }
 }

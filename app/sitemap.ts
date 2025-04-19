@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import {
+    characterCounterPath,
     imageMergePath,
     jsonEditorPath,
     passwordGeneratorPath,
@@ -69,6 +70,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${siteUrl}${textToHandwritingPath}`,
             lastModified: new Date(),
             alternates: getAlternates(textToHandwritingPath),
+        },
+        {
+            url: `${siteUrl}${characterCounterPath}`,
+            lastModified: new Date(),
+            alternates: getAlternates(characterCounterPath),
         },
     ]
 }

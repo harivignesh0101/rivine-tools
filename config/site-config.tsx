@@ -1,5 +1,6 @@
 import {LinkIcon, PhoneIcon, Type} from "lucide-react";
 import {
+    characterCounter,
     clock,
     general, image, imageMerge, json, jsonEditor,
     passwordGenerator,
@@ -67,6 +68,8 @@ export const jsonEditorPath = "/json-editor";
 export const imageMergePath = "/image-merge";
 
 export const textToHandwritingPath = "/text-to-handwriting";
+
+export const characterCounterPath = "/character-counter";
 
 export const toolsNavItems: ToolNavItem[] = [
     {
@@ -155,6 +158,13 @@ export const toolsNavItems: ToolNavItem[] = [
                 href: textToHandwritingPath,
                 description: "Handwriting.",
                 tDescription: `${textToHandwriting}.navDescription`,
+            },
+            {
+                label: "Character Counter",
+                tLabel: `${characterCounter}.label`,
+                href: characterCounterPath,
+                description: "Character counting.",
+                tDescription: `${characterCounter}.navDescription`,
             },
         ],
     },
@@ -333,5 +343,11 @@ export const toolsCards = [
         description: `${textToHandwriting}.description`,
         isActive: true,
         link: `${textToHandwritingPath}`,
+    },
+    {
+        title: `${characterCounter}.label`,
+        description: `${characterCounter}.description`,
+        isActive: true,
+        link: `${characterCounterPath}`,
     },
 ];

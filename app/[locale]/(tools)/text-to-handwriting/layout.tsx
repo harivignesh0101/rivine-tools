@@ -1,5 +1,4 @@
-import {Card, CardContent, CardHeader} from "@/components/ui/card";
-import {QrMenu} from "@/components/custom/qr-code/qr-menu";
+import {Card, CardContent} from "@/components/ui/card";
 import TextToHandwritingDocumentation from "@/components/custom/text-to-handwriting/text-to-handwriting-docs";
 
 export default function RootLayout({

@@ -1,5 +1,5 @@
-import {Card, CardContent, CardHeader} from "@/components/ui/card";
-import ImageMergerDocumentation from "@/components/custom/image-merger/image-merge-docs";
+import {Card, CardContent} from "@/components/ui/card";
+import CharacterCounterDocumentation from "@/components/custom/char-counter/character-counter-docs";
 
 export default function RootLayout({
                                        children,
@@ -8,14 +8,14 @@ export default function RootLayout({
 }>) {
     return (
         <>
-            <div className="mx-auto p-4 md:p-8">
-                <Card className="overflow-hidden bg-background backdrop-blur-sm">
+            <div className="container mx-auto p-4 md:p-8">
+                <Card className="overflow-hidden backdrop-blur-sm">
                     <CardContent>
                         {children}
                     </CardContent>
                 </Card>
                 <div className="mt-4">
-                    <ImageMergerDocumentation/>
+                    <CharacterCounterDocumentation/>
                 </div>
             </div>
         </>

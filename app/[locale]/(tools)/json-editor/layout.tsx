@@ -1,5 +1,4 @@
 import {Card, CardContent, CardHeader} from "@/components/ui/card";
-import {QrMenu} from "@/components/custom/qr-code/qr-menu";
 import JSONEditorDocumentation from "@/components/custom/json/json-editor-docs";
 
 export default function RootLayout({

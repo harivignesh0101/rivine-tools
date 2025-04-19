@@ -31,3 +31,5 @@ export const jsonEditor = `${tools}.jsonEditor`;
 export const image = `${tools}.image`;
 
 export const imageMerge = `${tools}.imageMerge`;
+
+export const characterCounter = `${tools}.characterCounter`;
