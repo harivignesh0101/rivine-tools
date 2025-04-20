@@ -8,7 +8,7 @@ import {
     qrCodePhone,
     qrCodeText,
     qrCodeUrl, text, textCompare, textToHandwriting,
-    timer
+    timer, wordCounter
 } from "@/config/i18n-constants";
 
 interface ToolLink {
@@ -70,6 +70,8 @@ export const imageMergePath = "/image-merge";
 export const textToHandwritingPath = "/text-to-handwriting";
 
 export const characterCounterPath = "/character-counter";
+
+export const wordCounterPath = "/word-counter";
 
 export const toolsNavItems: ToolNavItem[] = [
     {
@@ -165,6 +167,13 @@ export const toolsNavItems: ToolNavItem[] = [
                 href: characterCounterPath,
                 description: "Character counting.",
                 tDescription: `${characterCounter}.navDescription`,
+            },
+            {
+                label: "Word Counter",
+                tLabel: `${wordCounter}.label`,
+                href: wordCounterPath,
+                description: "Word counting.",
+                tDescription: `${wordCounter}.navDescription`,
             },
         ],
     },
@@ -349,5 +358,11 @@ export const toolsCards = [
         description: `${characterCounter}.description`,
         isActive: true,
         link: `${characterCounterPath}`,
+    },
+    {
+        title: `${wordCounter}.label`,
+        description: `${wordCounter}.description`,
+        isActive: true,
+        link: `${wordCounterPath}`,
     },
 ];

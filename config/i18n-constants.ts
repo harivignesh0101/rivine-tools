@@ -33,3 +33,5 @@ export const image = `${tools}.image`;
 export const imageMerge = `${tools}.imageMerge`;
 
 export const characterCounter = `${tools}.characterCounter`;
+
+export const wordCounter = `${tools}.wordCounter`;

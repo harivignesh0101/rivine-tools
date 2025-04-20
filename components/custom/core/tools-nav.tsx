@@ -21,16 +21,16 @@ export function ToolsNav() {
     const t = useTranslations()
     return (
         <NavigationMenu delayDuration={300}>
-            <NavigationMenuList>
+            <NavigationMenuList className="flex flex-row items-center">
                 {toolsNavItems.map((item) => {
                     if ("links" in item) {
                         return (
                             <NavigationMenuItem key={item.label}>
                                 <NavigationMenuTrigger>{item.tLabel ? t(item.tLabel) : item.label}</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                    <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] grid-cols-1 md:grid-cols-2">
                                         {item.featured && (
-                                            <li className="row-span-3">
+                                            <li className="md:row-span-3">
                                                 <NavigationMenuLink asChild>
                                                     <Link
                                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
@@ -46,7 +46,7 @@ export function ToolsNav() {
                                                         <p className="text-sm leading-tight text-muted-foreground">
                                                             {
                                                                 item.featured.tDescription ?
-                                                                   t(item.featured.tDescription) : item.featured.description
+                                                                    t(item.featured.tDescription) : item.featured.description
                                                             }
                                                         </p>
                                                     </Link>
@@ -54,14 +54,16 @@ export function ToolsNav() {
                                             </li>
                                         )}
 
-                                        {item.links?.map((link) => (
-                                            <ListItem key={link.label} href={link.href} title={link.tLabel ? t(link.tLabel) : link.label ? link.label : ''}>
-                                                {
-                                                    link.tDescription ?
-                                                        t(link.tDescription) : link.description
-                                                }
-                                            </ListItem>
-                                        ))}
+                                        <div className="flex flex-col gap-3">
+                                            {item.links?.map((link) => (
+                                                <ListItem key={link.label} href={link.href} title={link.tLabel ? t(link.tLabel) : link.label ? link.label : ''}>
+                                                    {
+                                                        link.tDescription ?
+                                                            t(link.tDescription) : link.description
+                                                    }
+                                                </ListItem>
+                                            ))}
+                                        </div>
                                     </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>

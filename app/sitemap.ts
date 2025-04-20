@@ -7,7 +7,7 @@ import {
     qrHomePath,
     siteUrl,
     textComparePath, textToHandwritingPath,
-    timerPath
+    timerPath, wordCounterPath
 } from '@/config/site-config'
 import {supportedLanguages} from "@/i18n/config";
 
@@ -75,6 +75,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${siteUrl}${characterCounterPath}`,
             lastModified: new Date(),
             alternates: getAlternates(characterCounterPath),
+        },
+        {
+            url: `${siteUrl}${wordCounterPath}`,
+            lastModified: new Date(),
+            alternates: getAlternates(wordCounterPath),
         },
     ]
 }

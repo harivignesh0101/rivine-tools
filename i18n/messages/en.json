@@ -1310,6 +1310,196 @@
           }
         }
       }
+    },
+    "wordCounter": {
+      "title": "Word Counter Tool",
+      "label": "Word Counter",
+      "navDescription": "Count words in your text effortlessly.",
+      "subLabel": "Word Counter Suite",
+      "subNavDescription": "Easily count words in your text with custom filters.",
+      "description": "Use our Word Counter Tool to quickly count the number of words in your text.",
+      "keywords": {
+        "0": "Word Counter",
+        "1": "Word Count",
+        "2": "Online Word Counter",
+        "3": "Word Analysis",
+        "4": "Word Checker",
+        "5": "Word Statistics",
+        "6": "Word Tool",
+        "7": "Word Frequency",
+        "8": "Word Calculator"
+      },
+      "page": {
+        "title": "Word Counter",
+        "description": "Count words in your text with customizable filters and options."
+      },
+      "input": {
+        "label": "Enter your text",
+        "placeholder": "Type or paste your text here..."
+      },
+      "processedText": {
+        "title": "Processed Text Preview",
+        "empty": "No text after applying filters"
+      },
+      "countDisplay": {
+        "title": "Word Count",
+        "increasing": "increasing",
+        "decreasing": "decreasing",
+        "char": "Character Count"
+      },
+      "options": {
+        "dialog": {
+          "edit": "Edit common words list",
+          "title": "Edit Common Words",
+          "save": "Save Changes",
+          "description": "Enter common words separated by commas that you want to exclude from your word count."
+        },
+        "counting": {
+          "title": "Counting Options",
+          "stopAtWord": {
+            "label": "Stop counting at",
+            "placeholder": "Enter word",
+            "help": "Count only up to this word"
+          },
+          "minWordLength": {
+            "label": "Minimum word length",
+            "placeholder": "e.g. 3",
+            "help": "Only count words with this many characters or more"
+          },
+          "maxWordLength": {
+            "label": "Maximum word length",
+            "placeholder": "e.g. 15",
+            "help": "Only count words with this many characters or fewer"
+          },
+          "trim": "Trim whitespace before counting"
+        },
+        "wordTypes": {
+          "title": "Word Types",
+          "ignoreCommonWords": "Ignore common words (a, the, and, etc.)",
+          "countNumbers": "Count numbers as words",
+          "countHyphenatedAsOne": "Count hyphenated words as one word",
+          "countAbbreviations": "Count abbreviations as words"
+        }
+      },
+      "docs": {
+        "title": "📝 How to Use the Word Counter Tool",
+        "intro": "Easily count and analyze words with customizable filters and options.",
+        "whatIs": {
+          "title": "✨ What is the Word Counter Tool?",
+          "description": "The Word Counter tool is a powerful utility that allows you to count words in your text with precision. Whether you need to check word counts for essays, articles, social media posts, or SEO content, this tool helps you analyze text with customizable filters and word-specific options."
+        },
+        "features": {
+          "title": "📦 Key Features",
+          "realTimeCount": {
+            "title": "Real-time Word Counting",
+            "description": "See your word count update instantly as you type or edit your text."
+          },
+          "filterOptions": {
+            "title": "Customizable Filters",
+            "description": "Filter your count based on word types, common words, and other criteria."
+          },
+          "wordLength": {
+            "title": "Word Length Control",
+            "description": "Count only words that meet specific length requirements."
+          },
+          "wordTypes": {
+            "title": "Word Type Filtering",
+            "description": "Choose which types of words to include in your count, such as numbers, abbreviations, and hyphenated words."
+          },
+          "trimWhitespace": {
+            "title": "Whitespace Management",
+            "description": "Optionally trim leading and trailing whitespace before counting."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Use the Word Counter",
+          "step1": {
+            "title": "Step 1: Enter Your Text",
+            "description": "Type or paste your text into the input field. The word count will update automatically as you make changes."
+          },
+          "step2": {
+            "title": "Step 2: View Your Word Count",
+            "description": "The number of words in your text is displayed prominently in the counter. The count updates in real-time as you edit your text."
+          },
+          "step3": {
+            "title": "Step 3: Apply Filters (Optional)",
+            "description": "Use the filter options to customize what gets counted. You can exclude common words, set word length requirements, and filter by word types."
+          },
+          "step4": {
+            "title": "Step 4: Set Count Limits (Optional)",
+            "description": "If you only want to count up to a certain point in your text, enter a word in the 'Stop counting at' field."
+          },
+          "step5": {
+            "title": "Step 5: Preview and Copy Results",
+            "description": "View your processed text and final word count. You can copy the count to your clipboard if needed."
+          }
+        },
+        "countingOptions": {
+          "title": "⚙️ Counting Options",
+          "stopAtWord": {
+            "title": "Stop Counting At",
+            "description": "Limits the count to only include words up to a specific word. Useful for checking if text fits within specific word limits or analyzing sections of longer texts."
+          },
+          "minWordLength": {
+            "title": "Minimum Word Length",
+            "description": "Only counts words that have at least this many characters. Useful for excluding very short words like 'a', 'an', 'the', etc."
+          },
+          "maxWordLength": {
+            "title": "Maximum Word Length",
+            "description": "Only counts words that have at most this many characters. Useful for excluding very long words or potential errors in your text."
+          },
+          "trimText": {
+            "title": "Trim Whitespace",
+            "description": "Removes leading and trailing whitespace before counting. Useful for more accurate counts when whitespace shouldn't affect your word count."
+          }
+        },
+        "wordTypes": {
+          "title": "🔤 Word Types",
+          "ignoreCommonWords": {
+            "title": "Ignore Common Words",
+            "description": "Excludes common words like 'the', 'a', 'an', 'and', etc. from the count. Useful for focusing on the more meaningful content words."
+          },
+          "countNumbers": {
+            "title": "Count Numbers",
+            "description": "When enabled, treats numeric strings (like '42' or '2025') as words. When disabled, numbers won't be included in the word count."
+          },
+          "countHyphenatedAsOne": {
+            "title": "Count Hyphenated Words as One",
+            "description": "When enabled, treats hyphenated terms (like 'state-of-the-art') as a single word. When disabled, each part is counted separately."
+          },
+          "countAbbreviations": {
+            "title": "Count Abbreviations",
+            "description": "When enabled, includes abbreviations and acronyms (like 'USA' or 'NASA') in the word count. When disabled, they are excluded."
+          }
+        },
+        "preview": {
+          "title": "👁️ Processed Text Preview",
+          "description": "Shows your text after all filters have been applied. This is the exact text being used for the word count."
+        },
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "Use 'Minimum Word Length' to focus on more meaningful content words and filter out short articles and prepositions.",
+          "tip2": "The 'Stop counting at' feature is perfect for checking if your introduction stays within a specific word limit.",
+          "tip3": "For academic writing, enable 'Count Hyphenated Words as One' to match most style guide word count rules.",
+          "tip4": "Use 'Ignore Common Words' when you want to analyze the density of key terms in your content.",
+          "tip5": "The processed text preview helps you understand exactly what's being counted after all your filters are applied."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "unexpectedCount": {
+            "title": "Unexpected Word Count",
+            "description": "If your count seems off, check if any filters are enabled. The processed text preview shows exactly what's being counted."
+          },
+          "filterInteraction": {
+            "title": "Filter Conflicts",
+            "description": "Using multiple filters together might significantly reduce your word count. For example, setting a high minimum word length while ignoring common words might filter out a large portion of your text."
+          },
+          "performanceIssues": {
+            "title": "Performance with Large Text",
+            "description": "For very large documents, the counter may take a moment to update. Be patient or try breaking your text into smaller sections."
+          }
+        }
+      }
     }
   }
 }

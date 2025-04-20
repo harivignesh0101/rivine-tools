@@ -1310,6 +1310,196 @@
           }
         }
       }
+    },
+    "wordCounter": {
+      "title": "Ferramenta de Contador de Palavras",
+      "label": "Contador de Palavras",
+      "navDescription": "Conte palavras no seu texto sem esforço.",
+      "subLabel": "Suite de Contador de Palavras",
+      "subNavDescription": "Conte palavras no seu texto facilmente com filtros personalizados.",
+      "description": "Use nossa Ferramenta de Contador de Palavras para contar rapidamente o número de palavras no seu texto.",
+      "keywords": {
+        "0": "Contador de Palavras",
+        "1": "Contagem de Palavras",
+        "2": "Contador de Palavras Online",
+        "3": "Análise de Palavras",
+        "4": "Verificador de Palavras",
+        "5": "Estatísticas de Palavras",
+        "6": "Ferramenta de Palavras",
+        "7": "Frequência de Palavras",
+        "8": "Calculadora de Palavras"
+      },
+      "page": {
+        "title": "Contador de Palavras",
+        "description": "Conte palavras no seu texto com filtros e opções personalizáveis."
+      },
+      "input": {
+        "label": "Digite seu texto",
+        "placeholder": "Digite ou cole seu texto aqui..."
+      },
+      "processedText": {
+        "title": "Pré-visualização do Texto Processado",
+        "empty": "Nenhum texto após aplicar filtros"
+      },
+      "countDisplay": {
+        "title": "Contagem de Palavras",
+        "increasing": "aumentando",
+        "decreasing": "diminuindo",
+        "char": "Contagem de Caracteres"
+      },
+      "options": {
+        "dialog": {
+          "edit": "Editar lista de palavras comuns",
+          "title": "Editar Palavras Comuns",
+          "save": "Salvar Alterações",
+          "description": "Digite palavras comuns separadas por vírgulas que você deseja excluir da sua contagem de palavras."
+        },
+        "counting": {
+          "title": "Opções de Contagem",
+          "stopAtWord": {
+            "label": "Parar de contar em",
+            "placeholder": "Digite a palavra",
+            "help": "Conte apenas até esta palavra"
+          },
+          "minWordLength": {
+            "label": "Comprimento mínimo da palavra",
+            "placeholder": "ex. 3",
+            "help": "Conte apenas palavras com este número de caracteres ou mais"
+          },
+          "maxWordLength": {
+            "label": "Comprimento máximo da palavra",
+            "placeholder": "ex. 15",
+            "help": "Conte apenas palavras com este número de caracteres ou menos"
+          },
+          "trim": "Cortar espaços em branco antes de contar"
+        },
+        "wordTypes": {
+          "title": "Tipos de Palavras",
+          "ignoreCommonWords": "Ignorar palavras comuns (a, o, e, etc.)",
+          "countNumbers": "Contar números como palavras",
+          "countHyphenatedAsOne": "Contar palavras hifenizadas como uma palavra",
+          "countAbbreviations": "Contar abreviações como palavras"
+        }
+      },
+      "docs": {
+        "title": "📝 Como Usar a Ferramenta de Contador de Palavras",
+        "intro": "Conte e analise palavras facilmente com filtros e opções personalizáveis.",
+        "whatIs": {
+          "title": "✨ O que é a Ferramenta de Contador de Palavras?",
+          "description": "A ferramenta de Contador de Palavras é uma utilidade poderosa que permite contar palavras no seu texto com precisão. Seja para verificar contagens de palavras para ensaios, artigos, postagens em redes sociais ou conteúdo de SEO, esta ferramenta ajuda a analisar texto com filtros personalizáveis e opções específicas de palavras."
+        },
+        "features": {
+          "title": "📦 Principais Características",
+          "realTimeCount": {
+            "title": "Contagem de Palavras em Tempo Real",
+            "description": "Veja sua contagem de palavras atualizar instantaneamente enquanto você digita ou edita seu texto."
+          },
+          "filterOptions": {
+            "title": "Filtros Personalizáveis",
+            "description": "Filtre sua contagem com base em tipos de palavras, palavras comuns e outros critérios."
+          },
+          "wordLength": {
+            "title": "Controle de Comprimento de Palavra",
+            "description": "Conte apenas palavras que atendam a requisitos de comprimento específicos."
+          },
+          "wordTypes": {
+            "title": "Filtragem de Tipos de Palavras",
+            "description": "Escolha quais tipos de palavras incluir na sua contagem, como números, abreviações e palavras hifenizadas."
+          },
+          "trimWhitespace": {
+            "title": "Gestão de Espaços em Branco",
+            "description": "Opcionalmente, corte espaços em branco antes e depois de contar."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Usar o Contador de Palavras",
+          "step1": {
+            "title": "Passo 1: Digite Seu Texto",
+            "description": "Digite ou cole seu texto no campo de entrada. A contagem de palavras será atualizada automaticamente à medida que você fizer alterações."
+          },
+          "step2": {
+            "title": "Passo 2: Veja Sua Contagem de Palavras",
+            "description": "O número de palavras no seu texto é exibido de forma proeminente no contador. A contagem é atualizada em tempo real enquanto você edita seu texto."
+          },
+          "step3": {
+            "title": "Passo 3: Aplique Filtros (Opcional)",
+            "description": "Use as opções de filtro para personalizar o que é contado. Você pode excluir palavras comuns, definir requisitos de comprimento de palavra e filtrar por tipos de palavras."
+          },
+          "step4": {
+            "title": "Passo 4: Defina Limites de Contagem (Opcional)",
+            "description": "Se você deseja contar apenas até um certo ponto no seu texto, digite uma palavra no campo 'Parar de contar em'."
+          },
+          "step5": {
+            "title": "Passo 5: Pré-visualize e Copie Resultados",
+            "description": "Veja seu texto processado e a contagem final de palavras. Você pode copiar a contagem para sua área de transferência, se necessário."
+          }
+        },
+        "countingOptions": {
+          "title": "⚙️ Opções de Contagem",
+          "stopAtWord": {
+            "title": "Parar de Contar em",
+            "description": "Limita a contagem para incluir apenas palavras até uma palavra específica. Útil para verificar se o texto se encaixa em limites de palavras específicos ou para analisar seções de textos mais longos."
+          },
+          "minWordLength": {
+            "title": "Comprimento Mínimo da Palavra",
+            "description": "Conta apenas palavras que tenham pelo menos este número de caracteres. Útil para excluir palavras muito curtas como 'a', 'um', 'o', etc."
+          },
+          "maxWordLength": {
+            "title": "Comprimento Máximo da Palavra",
+            "description": "Conta apenas palavras que tenham no máximo este número de caracteres. Útil para excluir palavras muito longas ou possíveis erros no seu texto."
+          },
+          "trimText": {
+            "title": "Cortar Espaços em Branco",
+            "description": "Remove espaços em branco antes e depois de contar. Útil para contagens mais precisas quando espaços em branco não devem afetar sua contagem de palavras."
+          }
+        },
+        "wordTypes": {
+          "title": "🔤 Tipos de Palavras",
+          "ignoreCommonWords": {
+            "title": "Ignorar Palavras Comuns",
+            "description": "Exclui palavras comuns como 'o', 'a', 'um', 'e', etc. da contagem. Útil para focar nas palavras de conteúdo mais significativas."
+          },
+          "countNumbers": {
+            "title": "Contar Números",
+            "description": "Quando ativado, trata cadeias numéricas (como '42' ou '2025') como palavras. Quando desativado, os números não serão incluídos na contagem de palavras."
+          },
+          "countHyphenatedAsOne": {
+            "title": "Contar Palavras Hifenizadas como Uma",
+            "description": "Quando ativado, trata termos hifenizados (como 'estado-da-arte') como uma única palavra. Quando desativado, cada parte é contada separadamente."
+          },
+          "countAbbreviations": {
+            "title": "Contar Abreviações",
+            "description": "Quando ativado, inclui abreviações e acrônimos (como 'EUA' ou 'NASA') na contagem de palavras. Quando desativado, eles são excluídos."
+          }
+        },
+        "preview": {
+          "title": "👁️ Pré-visualização do Texto Processado",
+          "description": "Mostra seu texto após todos os filtros terem sido aplicados. Este é o texto exato que está sendo usado para a contagem de palavras."
+        },
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Use 'Comprimento Mínimo da Palavra' para focar em palavras de conteúdo mais significativas e filtrar artigos curtos e preposições.",
+          "tip2": "O recurso 'Parar de contar em' é perfeito para verificar se sua introdução se encaixa em um limite de palavras específico.",
+          "tip3": "Para escrita acadêmica, ative 'Contar Palavras Hifenizadas como Uma' para corresponder às regras de contagem de palavras da maioria dos guias de estilo.",
+          "tip4": "Use 'Ignorar Palavras Comuns' quando quiser analisar a densidade de termos-chave no seu conteúdo.",
+          "tip5": "A pré-visualização do texto processado ajuda você a entender exatamente o que está sendo contado após todos os seus filtros serem aplicados."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "unexpectedCount": {
+            "title": "Contagem de Palavras Inesperada",
+            "description": "Se sua contagem parecer errada, verifique se há filtros ativados. A pré-visualização do texto processado mostra exatamente o que está sendo contado."
+          },
+          "filterInteraction": {
+            "title": "Conflitos de Filtros",
+            "description": "Usar vários filtros juntos pode reduzir significativamente sua contagem de palavras. Por exemplo, definir um comprimento mínimo de palavra alto enquanto ignora palavras comuns pode filtrar uma grande parte do seu texto."
+          },
+          "performanceIssues": {
+            "title": "Desempenho com Texto Grande",
+            "description": "Para documentos muito grandes, o contador pode demorar um momento para atualizar. Seja paciente ou tente dividir seu texto em seções menores."
+          }
+        }
+      }
     }
   }
 }
