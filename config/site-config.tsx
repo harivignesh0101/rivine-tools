@@ -10,6 +10,7 @@ import {
     qrCodeUrl, text, textCompare, textToHandwriting,
     timer, wordCounter
 } from "@/config/i18n-constants";
+import {Icons} from "@/components/custom/icons/icons";
 
 interface ToolLink {
     href: string;
@@ -302,6 +303,19 @@ export const footerMenuItems = [
 export const footerBottomLinks = [
     // { label: "Terms and Conditions", url: "http://www.example.com/terms-and-conditions" },
     // { label: "Privacy Policy", url: "#" },
+]
+
+export const socialIcons = [
+    {
+        label: 'Instagram',
+        icon: Icons.Instagram,
+        url: 'https://www.instagram.com/rivine.dev/'
+    },
+    {
+        label: 'Threads',
+        icon: Icons.Threads,
+        url: 'https://www.threads.net/@rivine.dev'
+    },
 ]
 
 export const publicUrl = process.env.PUBLIC_SITE_URL;

@@ -1,5 +1,5 @@
 import Logo from "@/components/custom/core/logo";
-import {footerBottomLinks, footerMenuItems, toolsNavItems, publicUrl} from "@/config/site-config";
+import {footerBottomLinks, footerMenuItems, toolsNavItems, publicUrl, socialIcons} from "@/config/site-config";
 import { getTranslations } from 'next-intl/server';
 import Link from "next/link";
 
@@ -16,6 +16,30 @@ const SiteFooter = async () => {
                                 <a href={publicUrl || '/'}>
                                     <Logo/>
                                 </a>
+                            </div>
+                            <div className="py-8">
+                                <ul className="flex flex-wrap items-center gap-6">
+                                    {socialIcons.map((technology, idx) => {
+                                        const Icon = technology.icon;
+                                        return (
+                                            <li
+                                                key={idx}
+                                                className="transition-transform duration-300 hover:scale-110"
+                                            >
+                                                <Link
+                                                    href={technology.url}
+                                                    target="_blank"
+                                                    className="flex items-center justify-center p-3 rounded-full
+                                                     bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700
+                                                      text-gray-700 dark:text-gray-300 transition-colors duration-300"
+                                                    aria-label={`Social link ${idx + 1}`}
+                                                >
+                                                    <Icon className="w-6 h-6" />
+                                                </Link>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
                             </div>
                         </div>
                         {footerMenuItems.map((section: any, sectionIdx: number) => (
