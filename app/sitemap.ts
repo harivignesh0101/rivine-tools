@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import {
     characterCounterPath,
-    imageMergePath,
+    imageMergePath, instagramPostGeneratorPath,
     jsonEditorPath,
     passwordGeneratorPath,
     qrHomePath,
@@ -80,6 +80,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${siteUrl}${wordCounterPath}`,
             lastModified: new Date(),
             alternates: getAlternates(wordCounterPath),
+        },
+        {
+            url: `${siteUrl}${instagramPostGeneratorPath}`,
+            lastModified: new Date(),
+            alternates: getAlternates(instagramPostGeneratorPath),
         },
     ]
 }

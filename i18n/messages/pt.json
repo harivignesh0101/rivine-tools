@@ -331,6 +331,14 @@
         }
       }
     },
+    "utilities": {
+      "title": "Utilitários",
+      "label": "Utilitários",
+      "navDescription": "Explore utilitários online úteis para várias tarefas do dia a dia.",
+      "subLabel": "Utilitários Web",
+      "subNavDescription": "Geradores e ferramentas para produtividade e criatividade.",
+      "description": "De geradores de senhas seguras a criadores de postagens divertidas, nossa seção de utilitários está repleta de ferramentas web úteis."
+    },
     "passwordGenerator": {
       "title": "Gerador de Senhas Gratuito",
       "label": "Gerador de Senhas",
@@ -1497,6 +1505,208 @@
           "performanceIssues": {
             "title": "Desempenho com Texto Grande",
             "description": "Para documentos muito grandes, o contador pode demorar um momento para atualizar. Seja paciente ou tente dividir seu texto em seções menores."
+          }
+        }
+      }
+    },
+    "instagramPostGenerator": {
+      "title": "Ferramenta de Gerador de Postagens do Instagram",
+      "label": "Gerador de Postagens do Instagram",
+      "navDescription": "Crie maquetes realistas de postagens do Instagram de forma rápida e fácil.",
+      "subLabel": "Conjunto de Postagens do Instagram",
+      "subNavDescription": "Desenhe e personalize maquetes de postagens do Instagram para seus projetos.",
+      "description": "Use nossa Ferramenta de Gerador de Postagens do Instagram para criar maquetes personalizáveis de postagens do Instagram.",
+      "keywords": {
+        "0": "Gerador de Postagens do Instagram",
+        "1": "Maquete do Instagram",
+        "2": "Modelo de Mídia Social",
+        "3": "Criador de Postagens do Instagram",
+        "4": "Designer do Instagram",
+        "5": "Maquete de Mídia Social",
+        "6": "UI do Instagram",
+        "7": "Gerador de Postagens",
+        "8": "Criador de Conteúdo de Mídia Social"
+      },
+      "page": {
+        "title": "Gerador de Postagens do Instagram",
+        "description": "Crie maquetes personalizáveis de postagens do Instagram para seus projetos"
+      },
+      "userInfo": {
+        "username": {
+          "label": "Nome de Usuário",
+          "placeholder": "Insira o nome de usuário"
+        },
+        "avatar": {
+          "label": "Foto de Perfil",
+          "button": "Carregar Avatar"
+        },
+        "verified": {
+          "label": "Conta Verificada"
+        },
+        "location": {
+          "label": "Localização",
+          "placeholder": "Insira a localização"
+        }
+      },
+      "postContent": {
+        "caption": {
+          "label": "Legenda",
+          "placeholder": "Escreva a legenda da sua postagem..."
+        },
+        "timeAgo": {
+          "label": "Tempo de Postagem",
+          "placeholder": "ex. 2 HORAS ATRÁS"
+        },
+        "image": {
+          "label": "Imagem da Postagem",
+          "button": "Carregar Imagem"
+        }
+      },
+      "appearance": {
+        "theme": {
+          "label": "Tema da Postagem",
+          "light": "Claro",
+          "dark": "Escuro"
+        },
+        "viewMode": {
+          "label": "Modo de Visualização",
+          "web": "Versão Web",
+          "mobile": "Versão Mobile"
+        }
+      },
+      "engagement": {
+        "likes": {
+          "label": "Curtidas",
+          "placeholder": "Número de curtidas"
+        },
+        "liked": {
+          "label": "Curtido por você"
+        },
+        "comments": {
+          "label": "Comentários",
+          "placeholder": "Número de comentários",
+          "label2": "Comentários em Destaque",
+          "addPlaceholder": "Adicionar um comentário...",
+          "usernamePlaceholder": "Nome de usuário",
+          "addButton": "Adicionar",
+          "viewAll": "Ver todos os {count} comentários"
+        }
+      },
+      "actions": {
+        "download": "Baixar Imagem da Postagem",
+        "removeComment": "Remover comentário"
+      },
+      "postElements": {
+        "likes": "{count} curtidas"
+      },
+      "docs": {
+        "title": "📱 Como Usar a Ferramenta de Gerador de Postagens do Instagram",
+        "intro": "Crie maquetes personalizáveis de postagens do Instagram com nosso gerador fácil de usar.",
+        "usagePolicy": {
+          "title": "Política de Uso Importante",
+          "intro": "Antes de usar a Ferramenta de Gerador de Postagens do Instagram, leia e entenda as seguintes diretrizes:",
+          "disclaimer": "A Rivine Tools não se responsabiliza pelo conteúdo criado usando este gerador. Ao usar esta ferramenta, você concorda em:",
+          "rules": {
+            "rule1": "Não criar conteúdo que possa prejudicar, assediar, difamar ou intimidar indivíduos ou organizações",
+            "rule2": "Não usar imagens geradas para espalhar desinformação que possa impactar negativamente os outros",
+            "rule3": "Não apresentar postagens geradas como conteúdo autêntico do Instagram ou postagens reais de contas reais",
+            "rule4": "Indicar claramente aos visualizadores que qualquer conteúdo criado com esta ferramenta é gerado e não genuíno",
+            "rule5": "Não se passar por indivíduos ou organizações reais com intenção maliciosa",
+            "rule6": "Não usar a ferramenta para criar conteúdo que viole quaisquer leis ou políticas de plataforma",
+            "rule7": "Usar a ferramenta de forma responsável e ética para fins legítimos, como maquetes, educação ou design"
+          },
+          "conclusion": "Esta ferramenta é destinada apenas para fins criativos, educacionais e de design. Use-a de forma responsável."
+        },
+        "whatIs": {
+          "title": "✨ O que é a Ferramenta de Gerador de Postagens do Instagram?",
+          "description": "O Gerador de Postagens do Instagram é uma ferramenta de design que cria maquetes realistas de postagens do Instagram. É perfeito para criadores de conteúdo, designers, profissionais de marketing ou qualquer pessoa que precise visualizar como o conteúdo pode aparecer no Instagram antes de publicar."
+        },
+        "features": {
+          "title": "📦 Principais Recursos",
+          "customization": {
+            "title": "Personalização Completa da Postagem",
+            "description": "Controle todos os aspectos da sua postagem no Instagram, desde o nome de usuário e foto de perfil até legendas e comentários."
+          },
+          "themes": {
+            "title": "Temas Claro e Escuro",
+            "description": "Alterne entre os modos claro e escuro do Instagram para combinar com sua estética preferida."
+          },
+          "viewModes": {
+            "title": "Múltiplos Modos de Visualização",
+            "description": "Veja sua postagem em layouts web e mobile para ver como ela apareceria em diferentes dispositivos."
+          },
+          "download": {
+            "title": "Download de Imagem",
+            "description": "Baixe sua postagem criada como uma imagem de alta qualidade para uso em apresentações, maquetes ou designs."
+          },
+          "engagement": {
+            "title": "Personalização de Engajamento",
+            "description": "Ajuste curtidas e comentários para visualizar diferentes níveis de engajamento no seu conteúdo."
+          }
+        },
+        "steps": {
+          "title": "🚀 Como Usar o Gerador de Postagens do Instagram",
+          "step1": {
+            "title": "Passo 1: Configurar Detalhes do Usuário",
+            "description": "Insira um nome de usuário, carregue uma foto de perfil, adicione uma localização e escolha se a conta é verificada."
+          },
+          "step2": {
+            "title": "Passo 2: Adicionar Conteúdo da Postagem",
+            "description": "Carregue sua imagem de postagem e escreva uma legenda. Defina o carimbo de data/hora da postagem para indicar quando foi publicada."
+          },
+          "step3": {
+            "title": "Passo 3: Selecionar Opções de Aparência",
+            "description": "Escolha entre temas claro e escuro, e selecione o modo de visualização web ou mobile para atender às suas necessidades."
+          },
+          "step4": {
+            "title": "Passo 4: Adicionar Engajamento",
+            "description": "Defina o número de curtidas para sua postagem e adicione comentários para tornar sua maquete mais realista."
+          },
+          "step5": {
+            "title": "Passo 5: Gerar e Baixar",
+            "description": "Quando estiver satisfeito com seu design, baixe a imagem para uso em seus projetos."
+          }
+        },
+        "customizationOptions": {
+          "title": "⚙️ Opções de Personalização",
+          "profileSection": {
+            "title": "Opções de Perfil",
+            "description": "Personalize o perfil do usuário com nome de usuário, foto de perfil, selo de verificação e tag de localização personalizados."
+          },
+          "contentSection": {
+            "title": "Opções de Conteúdo",
+            "description": "Carregue sua própria imagem para a postagem e crie uma legenda personalizada para expressar sua mensagem."
+          },
+          "appearanceSection": {
+            "title": "Opções de Aparência",
+            "description": "Alterne entre temas claro e escuro, e mude entre modos de visualização web e mobile para diferentes exibições."
+          },
+          "engagementSection": {
+            "title": "Opções de Engajamento",
+            "description": "Personalize contagens de curtidas e adicione comentários para simular interação realista do usuário na sua postagem."
+          }
+        },
+        "tips": {
+          "title": "💡 Dicas Profissionais",
+          "tip1": "Use imagens quadradas (proporção 1:1) para obter os melhores resultados, pois o Instagram exibe postagens nesse formato.",
+          "tip2": "Para maquetes mais realistas, use nomes de usuário que reflitam seu p��blico-alvo ou identidade de marca.",
+          "tip3": "Ao criar maquetes para clientes, use as cores e estética da marca deles no design da sua postagem.",
+          "tip4": "Adicione tags de localização para aumentar a autenticidade da sua maquete, especialmente para conteúdo de viagem ou negócios locais.",
+          "tip5": "Use o tema escuro para um visual mais moderno ou para combinar com a estética da sua apresentação."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Está com Problemas?",
+          "imageIssues": {
+            "title": "Imagem Não Exibindo Corretamente",
+            "description": "Tente usar imagens quadradas para exibição ideal. Se as imagens aparecerem esticadas ou comprimidas, ajuste-as para uma proporção de 1:1 antes de carregar."
+          },
+          "downloadProblems": {
+            "title": "Problemas de Download",
+            "description": "Se o botão de download não estiver funcionando, tente um navegador diferente ou certifique-se de que você permitiu as permissões necessárias para downloads de imagem."
+          },
+          "performanceIssues": {
+            "title": "Desempenho com Imagens Grandes",
+            "description": "Para imagens muito grandes, a ferramenta pode ficar lenta. Tente usar imagens otimizadas com menos de 2MB para obter o melhor desempenho."
           }
         }
       }

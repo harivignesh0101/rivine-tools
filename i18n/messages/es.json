@@ -331,6 +331,14 @@
         }
       }
     },
+    "utilities": {
+      "title": "Utilidades",
+      "label": "Utilidades",
+      "navDescription": "Explora útiles utilidades en línea para diversas tareas cotidianas.",
+      "subLabel": "Utilidades Web",
+      "subNavDescription": "Generadores y herramientas para productividad y creatividad.",
+      "description": "Desde generadores de contraseñas seguras hasta creadores de publicaciones divertidas, nuestra sección de utilidades está llena de herramientas web útiles."
+    },
     "passwordGenerator": {
       "title": "Generador de Contraseñas Seguras",
       "label": "Generador de Contraseñas",
@@ -1497,6 +1505,208 @@
           "performanceIssues": {
             "title": "Rendimiento con Texto Grande",
             "description": "Para documentos muy grandes, el contador puede tardar un momento en actualizarse. Ten paciencia o intenta dividir tu texto en secciones más pequeñas."
+          }
+        }
+      }
+    },
+    "instagramPostGenerator": {
+      "title": "Herramienta Generadora de Publicaciones de Instagram",
+      "label": "Generador de Publicaciones de Instagram",
+      "navDescription": "Crea maquetas realistas de publicaciones de Instagram rápida y fácilmente.",
+      "subLabel": "Suite de Publicaciones de Instagram",
+      "subNavDescription": "Diseña y personaliza maquetas de publicaciones de Instagram para tus proyectos.",
+      "description": "Usa nuestra Herramienta Generadora de Publicaciones de Instagram para crear maquetas personalizables de publicaciones de Instagram.",
+      "keywords": {
+        "0": "Generador de Publicaciones de Instagram",
+        "1": "Maqueta de Instagram",
+        "2": "Plantilla de Redes Sociales",
+        "3": "Creador de Publicaciones de Instagram",
+        "4": "Diseñador de Instagram",
+        "5": "Maqueta de Redes Sociales",
+        "6": "UI de Instagram",
+        "7": "Generador de Publicaciones",
+        "8": "Creador de Contenido de Redes Sociales"
+      },
+      "page": {
+        "title": "Generador de Publicaciones de Instagram",
+        "description": "Crea maquetas personalizables de publicaciones de Instagram para tus proyectos"
+      },
+      "userInfo": {
+        "username": {
+          "label": "Nombre de Usuario",
+          "placeholder": "Introduce el nombre de usuario"
+        },
+        "avatar": {
+          "label": "Foto de Perfil",
+          "button": "Subir Avatar"
+        },
+        "verified": {
+          "label": "Cuenta Verificada"
+        },
+        "location": {
+          "label": "Ubicación",
+          "placeholder": "Introduce la ubicación"
+        }
+      },
+      "postContent": {
+        "caption": {
+          "label": "Subtítulo",
+          "placeholder": "Escribe el subtítulo de tu publicación..."
+        },
+        "timeAgo": {
+          "label": "Hora de Publicación",
+          "placeholder": "p. ej. HACE 2 HORAS"
+        },
+        "image": {
+          "label": "Imagen de la Publicación",
+          "button": "Subir Imagen"
+        }
+      },
+      "appearance": {
+        "theme": {
+          "label": "Tema de la Publicación",
+          "light": "Claro",
+          "dark": "Oscuro"
+        },
+        "viewMode": {
+          "label": "Modo de Vista",
+          "web": "Versión Web",
+          "mobile": "Versión Móvil"
+        }
+      },
+      "engagement": {
+        "likes": {
+          "label": "Me gusta",
+          "placeholder": "Número de me gusta"
+        },
+        "liked": {
+          "label": "Te gusta"
+        },
+        "comments": {
+          "label": "Comentarios",
+          "placeholder": "Número de comentarios",
+          "label2": "Comentarios Destacados",
+          "addPlaceholder": "Añadir un comentario...",
+          "usernamePlaceholder": "Nombre de usuario",
+          "addButton": "Añadir",
+          "viewAll": "Ver todos los {count} comentarios"
+        }
+      },
+      "actions": {
+        "download": "Descargar Imagen de la Publicación",
+        "removeComment": "Eliminar comentario"
+      },
+      "postElements": {
+        "likes": "{count} me gusta"
+      },
+      "docs": {
+        "title": "📱 Cómo Usar la Herramienta Generadora de Publicaciones de Instagram",
+        "intro": "Crea maquetas personalizables de publicaciones de Instagram con nuestro generador fácil de usar.",
+        "usagePolicy": {
+          "title": "Política de Uso Importante",
+          "intro": "Antes de usar la Herramienta Generadora de Publicaciones de Instagram, por favor lee y comprende las siguientes pautas:",
+          "disclaimer": "Rivine Tools no se hace responsable del contenido creado con este generador. Al usar esta herramienta, aceptas:",
+          "rules": {
+            "rule1": "No crear contenido que pueda dañar, acosar, desprestigiar o intimidar a individuos u organizaciones",
+            "rule2": "No usar imágenes generadas para difundir información errónea que pueda impactar negativamente a otros",
+            "rule3": "No presentar publicaciones generadas como contenido auténtico de Instagram o publicaciones reales de cuentas reales",
+            "rule4": "Indicar claramente a los espectadores que cualquier contenido creado con esta herramienta es generado y no genuino",
+            "rule5": "No hacerse pasar por individuos u organizaciones reales con intención maliciosa",
+            "rule6": "No usar la herramienta para crear contenido que viole leyes o políticas de plataformas",
+            "rule7": "Usar la herramienta de manera responsable y ética para propósitos legítimos como maquetas, educación o diseño"
+          },
+          "conclusion": "Esta herramienta está destinada solo para propósitos creativos, educativos y de diseño. Por favor úsala responsablemente."
+        },
+        "whatIs": {
+          "title": "✨ ¿Qué es la Herramienta Generadora de Publicaciones de Instagram?",
+          "description": "El Generador de Publicaciones de Instagram es una herramienta de diseño que crea maquetas realistas de publicaciones de Instagram. Es perfecta para creadores de contenido, diseñadores, mercadólogos o cualquiera que necesite visualizar cómo podría aparecer el contenido en Instagram antes de publicarlo."
+        },
+        "features": {
+          "title": "📦 Características Clave",
+          "customization": {
+            "title": "Personalización Completa de Publicaciones",
+            "description": "Controla cada aspecto de tu publicación de Instagram desde el nombre de usuario y la foto de perfil hasta los subtítulos y comentarios."
+          },
+          "themes": {
+            "title": "Temas Claro y Oscuro",
+            "description": "Cambia entre los modos claro y oscuro de Instagram para coincidir con tu estética preferida."
+          },
+          "viewModes": {
+            "title": "Múltiples Modos de Vista",
+            "description": "Ve tu publicación en diseños web y móvil para ver cómo aparecería en diferentes dispositivos."
+          },
+          "download": {
+            "title": "Descarga de Imagen",
+            "description": "Descarga tu publicación creada como una imagen de alta calidad para usar en presentaciones, maquetas o diseños."
+          },
+          "engagement": {
+            "title": "Personalización de Interacción",
+            "description": "Ajusta los me gusta y comentarios para visualizar diferentes niveles de interacción en tu contenido."
+          }
+        },
+        "steps": {
+          "title": "🚀 Cómo Usar el Generador de Publicaciones de Instagram",
+          "step1": {
+            "title": "Paso 1: Configura los Detalles del Usuario",
+            "description": "Introduce un nombre de usuario, sube una foto de perfil, añade una ubicación y elige si la cuenta está verificada."
+          },
+          "step2": {
+            "title": "Paso 2: Añade Contenido a la Publicación",
+            "description": "Sube tu imagen de publicación y escribe un subtítulo. Establece la marca de tiempo de la publicación para indicar cuándo se publicó."
+          },
+          "step3": {
+            "title": "Paso 3: Selecciona Opciones de Apariencia",
+            "description": "Elige entre temas claro y oscuro, y selecciona el modo de vista web o móvil para satisfacer tus necesidades."
+          },
+          "step4": {
+            "title": "Paso 4: Añade Interacción",
+            "description": "Establece el número de me gusta para tu publicación y añade comentarios para hacer tu maqueta más realista."
+          },
+          "step5": {
+            "title": "Paso 5: Genera y Descarga",
+            "description": "Una vez que estés satisfecho con tu diseño, descarga la imagen para usarla en tus proyectos."
+          }
+        },
+        "customizationOptions": {
+          "title": "⚙️ Opciones de Personalización",
+          "profileSection": {
+            "title": "Opciones de Perfil",
+            "description": "Personaliza el perfil del usuario con nombre de usuario, foto de perfil, insignia de verificación y etiqueta de ubicación personalizados."
+          },
+          "contentSection": {
+            "title": "Opciones de Contenido",
+            "description": "Sube tu propia imagen para la publicación y crea un subtítulo personalizado para expresar tu mensaje."
+          },
+          "appearanceSection": {
+            "title": "Opciones de Apariencia",
+            "description": "Cambia entre temas claro y oscuro, y cambia entre modos de vista web y móvil para diferentes pantallas."
+          },
+          "engagementSection": {
+            "title": "Opciones de Interacción",
+            "description": "Personaliza los conteos de me gusta y añade comentarios para simular una interacción realista del usuario en tu publicación."
+          }
+        },
+        "tips": {
+          "title": "💡 Consejos Profesionales",
+          "tip1": "Usa imágenes cuadradas (relación 1:1) para obtener los mejores resultados, ya que Instagram muestra las publicaciones en este formato.",
+          "tip2": "Para maquetas más realistas, usa nombres de usuario que reflejen tu audiencia objetivo o identidad de marca.",
+          "tip3": "Al crear maquetas para clientes, usa sus colores de marca y estética en el diseño de tu publicación.",
+          "tip4": "Añade etiquetas de ubicación para aumentar la autenticidad de tu maqueta, especialmente para contenido de viajes o negocios locales.",
+          "tip5": "Usa el tema oscuro para un aspecto más moderno o para coincidir con la estética de tu presentación."
+        },
+        "troubleshooting": {
+          "title": "🛠️ ¿Tienes Problemas?",
+          "imageIssues": {
+            "title": "La Imagen No Se Muestra Correctamente",
+            "description": "Intenta usar imágenes cuadradas para una visualización óptima. Si las imágenes aparecen estiradas o comprimidas, ajústalas a una relación de aspecto 1:1 antes de subirlas."
+          },
+          "downloadProblems": {
+            "title": "Problemas de Descarga",
+            "description": "Si el botón de descarga no funciona, prueba con otro navegador o asegúrate de haber permitido los permisos necesarios para descargas de imágenes."
+          },
+          "performanceIssues": {
+            "title": "Rendimiento con Imágenes Grandes",
+            "description": "Para imágenes muy grandes, la herramienta puede ralentizarse. Intenta usar imágenes optimizadas de menos de 2MB para obtener el mejor rendimiento."
           }
         }
       }

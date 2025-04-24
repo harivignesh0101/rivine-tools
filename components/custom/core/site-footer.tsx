@@ -18,7 +18,7 @@ const SiteFooter = async () => {
                                 </a>
                             </div>
                             <div className="py-8">
-                                <ul className="flex flex-wrap items-center gap-6">
+                                <ul className="flex flex-wrap items-center gap-2">
                                     {socialIcons.map((technology, idx) => {
                                         const Icon = technology.icon;
                                         return (

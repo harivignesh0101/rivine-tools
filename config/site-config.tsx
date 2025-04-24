@@ -2,7 +2,7 @@ import {LinkIcon, PhoneIcon, Type} from "lucide-react";
 import {
     characterCounter,
     clock,
-    general, image, imageMerge, json, jsonEditor,
+    general, image, imageMerge, instagramPostGenerator, json, jsonEditor, utilities,
     passwordGenerator,
     qrCodeGenerator,
     qrCodePhone,
@@ -73,6 +73,8 @@ export const textToHandwritingPath = "/text-to-handwriting";
 export const characterCounterPath = "/character-counter";
 
 export const wordCounterPath = "/word-counter";
+
+export const instagramPostGeneratorPath = "/instagram-post-generator";
 
 export const toolsNavItems: ToolNavItem[] = [
     {
@@ -179,16 +181,16 @@ export const toolsNavItems: ToolNavItem[] = [
         ],
     },
     {
-        label: "Password generator",
-        tLabel: `${passwordGenerator}.label`,
-        description: "Create secure passwords.",
-        tDescription: `${passwordGenerator}.navDescription`,
+        label: "Online tools",
+        tLabel: `${utilities}.label`,
+        description: "all tools.",
+        tDescription: `${utilities}.navDescription`,
         featured: {
             href: passwordGeneratorPath,
             label: "QR Tool Generator Suite",
-            tLabel: `${passwordGenerator}.subLabel`,
+            tLabel: `${utilities}.subLabel`,
             description: "Generate various passwords.",
-            tDescription: `${passwordGenerator}.subNavDescription`,
+            tDescription: `${utilities}.subNavDescription`,
             icon: "qr",
         },
         links: [
@@ -198,6 +200,13 @@ export const toolsNavItems: ToolNavItem[] = [
                 href: passwordGeneratorPath,
                 description: "Generate QR codes for links.",
                 tDescription: `${passwordGenerator}.navDescription`,
+            },
+            {
+                label: "instagram",
+                tLabel: `${instagramPostGenerator}.label`,
+                href: instagramPostGeneratorPath,
+                description: "Generate instagram posts.",
+                tDescription: `${instagramPostGenerator}.navDescription`,
             },
         ],
     },
@@ -378,5 +387,11 @@ export const toolsCards = [
         description: `${wordCounter}.description`,
         isActive: true,
         link: `${wordCounterPath}`,
+    },
+    {
+        title: `${instagramPostGenerator}.label`,
+        description: `${instagramPostGenerator}.description`,
+        isActive: true,
+        link: `${instagramPostGeneratorPath}`,
     },
 ];

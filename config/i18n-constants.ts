@@ -16,6 +16,8 @@ export const clock = `${tools}.clock`;
 
 export const timer = `${tools}.timer`;
 
+export const utilities = `${tools}.utilities`;
+
 export const passwordGenerator = `${tools}.passwordGenerator`;
 
 export const textToHandwriting = `${tools}.textToHandwriting`;
@@ -35,3 +37,5 @@ export const imageMerge = `${tools}.imageMerge`;
 export const characterCounter = `${tools}.characterCounter`;
 
 export const wordCounter = `${tools}.wordCounter`;
+
+export const instagramPostGenerator = `${tools}.instagramPostGenerator`;

@@ -331,6 +331,14 @@
         }
       }
     },
+    "utilities": {
+      "title": "Utilities",
+      "label": "Utilities",
+      "navDescription": "Explore helpful online utilities for various everyday tasks.",
+      "subLabel": "Web Utilities",
+      "subNavDescription": "Generators and tools for productivity and creativity.",
+      "description": "From secure password generators to fun mock post creators, our utilities section is packed with helpful web tools."
+    },
     "passwordGenerator": {
       "title": "Password Generator Free",
       "label": "Password Generator",
@@ -1497,6 +1505,208 @@
           "performanceIssues": {
             "title": "Performance with Large Text",
             "description": "For very large documents, the counter may take a moment to update. Be patient or try breaking your text into smaller sections."
+          }
+        }
+      }
+    },
+    "instagramPostGenerator": {
+      "title": "Instagram Post Generator Tool",
+      "label": "Instagram Post Generator",
+      "navDescription": "Create realistic Instagram post mockups quickly and easily.",
+      "subLabel": "Instagram Post Suite",
+      "subNavDescription": "Design and customize Instagram post mockups for your projects.",
+      "description": "Use our Instagram Post Generator Tool to create customizable Instagram post mockups.",
+      "keywords": {
+        "0": "Instagram Post Generator",
+        "1": "Instagram Mockup",
+        "2": "Social Media Template",
+        "3": "Instagram Post Maker",
+        "4": "Instagram Designer",
+        "5": "Social Media Mockup",
+        "6": "Instagram UI",
+        "7": "Post Generator",
+        "8": "Social Media Content Creator"
+      },
+      "page": {
+        "title": "Instagram Post Generator",
+        "description": "Create customizable Instagram post mockups for your projects"
+      },
+      "userInfo": {
+        "username": {
+          "label": "Username",
+          "placeholder": "Enter username"
+        },
+        "avatar": {
+          "label": "Profile Picture",
+          "button": "Upload Avatar"
+        },
+        "verified": {
+          "label": "Verified Account"
+        },
+        "location": {
+          "label": "Location",
+          "placeholder": "Enter location"
+        }
+      },
+      "postContent": {
+        "caption": {
+          "label": "Caption",
+          "placeholder": "Write your post caption..."
+        },
+        "timeAgo": {
+          "label": "Posted Time",
+          "placeholder": "e.g. 2 HOURS AGO"
+        },
+        "image": {
+          "label": "Post Image",
+          "button": "Upload Image"
+        }
+      },
+      "appearance": {
+        "theme": {
+          "label": "Post Theme",
+          "light": "Light",
+          "dark": "Dark"
+        },
+        "viewMode": {
+          "label": "View Mode",
+          "web": "Web Version",
+          "mobile": "Mobile Version"
+        }
+      },
+      "engagement": {
+        "likes": {
+          "label": "Likes",
+          "placeholder": "Number of likes"
+        },
+        "liked": {
+          "label": "Liked by you"
+        },
+        "comments": {
+          "label": "Comments",
+          "placeholder": "Number of comments",
+          "label2": "Featured Comments",
+          "addPlaceholder": "Add a comment...",
+          "usernamePlaceholder": "Username",
+          "addButton": "Add",
+          "viewAll": "View all {count} comments"
+        }
+      },
+      "actions": {
+        "download": "Download Post Image",
+        "removeComment": "Remove comment"
+      },
+      "postElements": {
+        "likes": "{count} likes"
+      },
+      "docs": {
+        "title": "📱 How to Use the Instagram Post Generator Tool",
+        "intro": "Create customizable Instagram post mockups with our easy-to-use generator.",
+        "usagePolicy": {
+          "title": "Important Usage Policy",
+          "intro": "Before using the Instagram Post Generator Tool, please read and understand the following guidelines:",
+          "disclaimer": "Rivine Tools is not responsible for content created using this generator. By using this tool, you agree to:",
+          "rules": {
+            "rule1": "Not create content that may harm, harass, disparage, or intimidate individuals or organizations",
+            "rule2": "Not use generated images to spread misinformation that could negatively impact others",
+            "rule3": "Not present generated posts as authentic Instagram content or actual posts from real accounts",
+            "rule4": "Clearly indicate to viewers that any content created with this tool is generated and not genuine",
+            "rule5": "Not impersonate real individuals or organizations with malicious intent",
+            "rule6": "Not use the tool to create content that violates any laws or platform policies",
+            "rule7": "Use the tool responsibly and ethically for legitimate purposes such as mockups, education, or design"
+          },
+          "conclusion": "This tool is intended for creative, educational, and design purposes only. Please use it responsibly."
+        },
+        "whatIs": {
+          "title": "✨ What is the Instagram Post Generator Tool?",
+          "description": "The Instagram Post Generator is a design tool that creates realistic mockups of Instagram posts. It's perfect for content creators, designers, marketers, or anyone who needs to visualize how content might appear on Instagram before publishing."
+        },
+        "features": {
+          "title": "📦 Key Features",
+          "customization": {
+            "title": "Full Post Customization",
+            "description": "Control every aspect of your Instagram post from username and profile picture to captions and comments."
+          },
+          "themes": {
+            "title": "Light and Dark Themes",
+            "description": "Switch between Instagram's light and dark modes to match your preferred aesthetic."
+          },
+          "viewModes": {
+            "title": "Multiple View Modes",
+            "description": "View your post in both web and mobile layouts to see how it would appear on different devices."
+          },
+          "download": {
+            "title": "Image Download",
+            "description": "Download your created post as a high-quality image for use in presentations, mockups, or designs."
+          },
+          "engagement": {
+            "title": "Engagement Customization",
+            "description": "Adjust likes and comments to visualize different levels of engagement on your content."
+          }
+        },
+        "steps": {
+          "title": "🚀 How to Use the Instagram Post Generator",
+          "step1": {
+            "title": "Step 1: Set Up User Details",
+            "description": "Enter a username, upload a profile picture, add a location, and choose whether the account is verified."
+          },
+          "step2": {
+            "title": "Step 2: Add Post Content",
+            "description": "Upload your post image and write a caption. Set the post timestamp to indicate when it was published."
+          },
+          "step3": {
+            "title": "Step 3: Select Appearance Options",
+            "description": "Choose between light and dark themes, and select web or mobile view mode to match your needs."
+          },
+          "step4": {
+            "title": "Step 4: Add Engagement",
+            "description": "Set the number of likes for your post and add comments to make your mockup more realistic."
+          },
+          "step5": {
+            "title": "Step 5: Generate and Download",
+            "description": "Once you're happy with your design, download the image for use in your projects."
+          }
+        },
+        "customizationOptions": {
+          "title": "⚙️ Customization Options",
+          "profileSection": {
+            "title": "Profile Options",
+            "description": "Personalize the user profile with custom username, profile picture, verification badge, and location tag."
+          },
+          "contentSection": {
+            "title": "Content Options",
+            "description": "Upload your own image for the post and create a custom caption to express your message."
+          },
+          "appearanceSection": {
+            "title": "Appearance Options",
+            "description": "Switch between light and dark themes, and change between web and mobile view modes for different displays."
+          },
+          "engagementSection": {
+            "title": "Engagement Options",
+            "description": "Customize like counts and add comments to simulate realistic user interaction on your post."
+          }
+        },
+        "tips": {
+          "title": "💡 Pro Tips",
+          "tip1": "Use square images (1:1 ratio) for the best results as Instagram displays posts in this format.",
+          "tip2": "For more realistic mockups, use usernames that reflect your target audience or brand identity.",
+          "tip3": "When creating mockups for clients, use their brand colors and aesthetic in your post design.",
+          "tip4": "Add location tags to increase the authenticity of your mockup, especially for travel or local business content.",
+          "tip5": "Use the dark theme for a more modern look or to match your presentation's aesthetic."
+        },
+        "troubleshooting": {
+          "title": "🛠️ Having Trouble?",
+          "imageIssues": {
+            "title": "Image Not Displaying Correctly",
+            "description": "Try using square images for optimal display. If images appear stretched or compressed, adjust them to a 1:1 aspect ratio before uploading."
+          },
+          "downloadProblems": {
+            "title": "Download Issues",
+            "description": "If the download button isn't working, try a different browser or ensure you've allowed the necessary permissions for image downloads."
+          },
+          "performanceIssues": {
+            "title": "Performance with Large Images",
+            "description": "For very large images, the tool may slow down. Try using optimized images under 2MB for the best performance."
           }
         }
       }
