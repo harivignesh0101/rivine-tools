@@ -7,6 +7,7 @@ import "../globals.css";
 import {i18n} from "@/i18n/config";
 import PagesTopLoader from "@/components/providers/pages-top-loader";
 import {GoogleAnalytics} from "@next/third-parties/google";
+import IframeListenerProvider from "@/components/providers/iframe-listener-provider";
 
 export const metadata = {
     robots: {
@@ -40,6 +41,7 @@ export default async function LocaleLayout({
                 >
                     <NextIntlClientProvider>
                         <PagesTopLoader></PagesTopLoader>
+                        <IframeListenerProvider/>
                         <div className="flex flex-col min-h-screen">
                             <SiteHeader />
                             <div className="flex-grow">
