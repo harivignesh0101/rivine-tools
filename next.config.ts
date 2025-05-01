@@ -13,7 +13,7 @@ const cspHeader = `
   base-uri 'self';
   form-action 'self';
   frame-src 'none';
-  frame-ancestors http://localhost:3000 https://os.rivine.dev; 
+  frame-ancestors https://localhost:3000 https://os.rivine.dev; 
   upgrade-insecure-requests;
 `;
 
