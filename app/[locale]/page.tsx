@@ -92,11 +92,11 @@ export const generateMetadata = async (props: PageProps): Promise<Metadata> => {
             ],
             type: "website",
         },
-        twitter: {
-            card: "summary_large_image",
-            title: t(`${home}.title`),
-            description: t(`${home}.description`),
-            images: [`${siteUrl}/logo/logo-stone.png`],
-        },
+        // twitter: {
+        //     card: "summary_large_image",
+        //     title: t(`${home}.title`),
+        //     description: t(`${home}.description`),
+        //     images: [`${siteUrl}/logo/logo-stone.png`],
+        // },
     };
 };
