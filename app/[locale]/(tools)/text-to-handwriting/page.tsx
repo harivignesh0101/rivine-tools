@@ -51,7 +51,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     return {
         title: `${appName} | ${t(`${textToHandwriting}.title`)}`,
         description: t(`${textToHandwriting}.description`),
-        keywords: Array.from({ length: 26 }, (_, i) => t(`${textToHandwriting}.keywords.${i}`)),
+        // keywords: Array.from({ length: 26 }, (_, i) => t(`${textToHandwriting}.keywords.${i}`)),
         metadataBase: new URL(siteUrl),
         alternates,
         openGraph: {

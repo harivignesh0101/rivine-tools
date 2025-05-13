@@ -51,7 +51,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     return {
         title: `${appName} | ${t(`${instagramPostGenerator}.title`)}`,
         description: t(`${instagramPostGenerator}.description`),
-        keywords: Array.from({ length: 7 }, (_, i) => t(`${instagramPostGenerator}.keywords.${i}`)),
+        // keywords: Array.from({ length: 7 }, (_, i) => t(`${instagramPostGenerator}.keywords.${i}`)),
         metadataBase: new URL(siteUrl),
         alternates,
         openGraph: {
