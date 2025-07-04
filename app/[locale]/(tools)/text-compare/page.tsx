@@ -51,7 +51,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     return {
         title: `${appName} | ${t(`${textCompare}.title`)}`,
         description: t(`${textCompare}.description`),
-        // keywords: Array.from({ length: 7 }, (_, i) => t(`${textCompare}.keywords.${i}`)),
+        keywords: Array.from({ length: 7 }, (_, i) => t(`${textCompare}.keywords.${i}`)),
         metadataBase: new URL(siteUrl),
         alternates,
         openGraph: {
