@@ -51,7 +51,7 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
     return {
         title: `${appName} | ${t(`${passwordGenerator}.title`)}`,
         description: t(`${passwordGenerator}.description`),
-        // keywords: Array.from({ length: 7 }, (_, i) => t(`${passwordGenerator}.keywords.${i}`)),
+        keywords: Array.from({ length: 7 }, (_, i) => t(`${passwordGenerator}.keywords.${i}`)),
         metadataBase: new URL(siteUrl),
         alternates,
         openGraph: {

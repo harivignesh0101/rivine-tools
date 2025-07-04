@@ -69,11 +69,11 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
             ],
             type: "website",
         },
-        // twitter: {
-        //     card: "summary_large_image",
-        //     title: t(`${instagramPostGenerator}.title`),
-        //     description: t(`${instagramPostGenerator}.description`),
-        //     images: [`${siteUrl}/logo/logo-stone.png`],
-        // },
+        twitter: {
+            card: "summary_large_image",
+            title: t(`${instagramPostGenerator}.title`),
+            description: t(`${instagramPostGenerator}.description`),
+            images: [`${siteUrl}/logo/logo-stone.png`],
+        },
     };
 };
