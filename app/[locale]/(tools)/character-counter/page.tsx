@@ -59,14 +59,14 @@ export const generateMetadata = async ({ params }: PageProps): Promise<Metadata>
             description: t(`${characterCounter}.description`),
             url: `${url}${characterCounterPath}`,
             siteName: appName,
-            images: [
-                {
-                    url: `${siteUrl}/logo/logo-stone.png`,
-                    width: 1200,
-                    height: 630,
-                    alt: t(`${characterCounter}.title`),
-                },
-            ],
+            // images: [
+            //     {
+            //         url: `${siteUrl}/logo/logo-stone.png`,
+            //         width: 1200,
+            //         height: 630,
+            //         alt: t(`${characterCounter}.title`),
+            //     },
+            // ],
             type: "website",
         },
         twitter: {
