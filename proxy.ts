@@ -9,7 +9,7 @@ const intlMiddleware = createMiddleware({
     localePrefix: "as-needed", // doesn't force locale in path
 });
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
     return intlMiddleware(request);
 }
 
