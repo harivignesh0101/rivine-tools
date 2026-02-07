@@ -5,7 +5,7 @@ export default function Logo() {
         <div className="flex row items-center justify-center">
             <Image
                 className="dark:invert"
-                src={"/logo/logo-stone.png"}
+                src={"/logo/logo.svg"}
                 alt="Logo"
                 width={40}
                 height={40}

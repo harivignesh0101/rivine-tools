@@ -30,7 +30,7 @@ export default async function Home({ params }: PageProps) {
             <div
                 className="h-[90vh] w-full rounded-md flex items-center justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden"
             >
-                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
+                <div className="absolute inset-0" />
                 <Spotlight />
                 <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20">
                     <h1
