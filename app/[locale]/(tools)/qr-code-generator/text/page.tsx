@@ -6,6 +6,8 @@ import { getLocalizedPath } from "@/i18n/get-localized-path";
 import { qrCodeGenerator, qrCodePhone, qrCodeText } from "@/config/i18n-constants";
 import JsonLd from "@/components/custom/core/json-ld";
 import {generateAlternates} from "@/lib/utils";
+import ToolSeoContent from "@/components/custom/seo/tool-seo-content";
+import { toolSeoContent } from "@/lib/tool-seo-content";
 
 type PageProps = {
   params: Promise<{ locale: string }>;
@@ -32,11 +34,30 @@ export default async function QRCodeGenerator({ params }: PageProps) {
       url: siteUrl,
     },
   };
+  const seoData = toolSeoContent.qrCodeText;
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: seoData.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
       <>
         <JsonLd data={jsonLd} />
+        <JsonLd data={faqJsonLd} />
         <QrGenerator type="text" initialValue="Hello"></QrGenerator>
+        <ToolSeoContent
+          title={t(`${qrCodeText}.label`)}
+          description={t(`${qrCodeText}.description`)}
+          data={seoData}
+        />
       </>
   );
 }

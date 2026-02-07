@@ -24,67 +24,67 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: siteUrl,
             lastModified: new Date(),
-            // alternates: getAlternates(''),
+            alternates: getAlternates(''),
         },
         {
             url: `${siteUrl}${qrHomePath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(qrHomePath),
+            alternates: getAlternates(qrHomePath),
         },
         {
             url: `${siteUrl}${qrHomePath}/phone`,
             lastModified: new Date(),
-            // alternates: getAlternates(`${qrHomePath}/phone`),
+            alternates: getAlternates(`${qrHomePath}/phone`),
         },
         {
             url: `${siteUrl}${qrHomePath}/text`,
             lastModified: new Date(),
-            // alternates: getAlternates(`${qrHomePath}/text`),
+            alternates: getAlternates(`${qrHomePath}/text`),
         },
         {
             url: `${siteUrl}${passwordGeneratorPath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(passwordGeneratorPath),
+            alternates: getAlternates(passwordGeneratorPath),
         },
         {
             url: `${siteUrl}${timerPath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(timerPath),
+            alternates: getAlternates(timerPath),
         },
         {
             url: `${siteUrl}${textComparePath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(textComparePath),
+            alternates: getAlternates(textComparePath),
         },
         {
             url: `${siteUrl}${jsonEditorPath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(jsonEditorPath),
+            alternates: getAlternates(jsonEditorPath),
         },
         {
             url: `${siteUrl}${imageMergePath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(imageMergePath),
+            alternates: getAlternates(imageMergePath),
         },
         {
             url: `${siteUrl}${textToHandwritingPath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(textToHandwritingPath),
+            alternates: getAlternates(textToHandwritingPath),
         },
         {
             url: `${siteUrl}${characterCounterPath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(characterCounterPath),
+            alternates: getAlternates(characterCounterPath),
         },
         {
             url: `${siteUrl}${wordCounterPath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(wordCounterPath),
+            alternates: getAlternates(wordCounterPath),
         },
         {
             url: `${siteUrl}${instagramPostGeneratorPath}`,
             lastModified: new Date(),
-            // alternates: getAlternates(instagramPostGeneratorPath),
+            alternates: getAlternates(instagramPostGeneratorPath),
         },
     ]
 }

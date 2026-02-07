@@ -1,6 +1,7 @@
 import {clsx, type ClassValue} from "clsx"
 import {twMerge} from "tailwind-merge"
 import {supportedLanguages} from "@/i18n/config";
+import {siteUrl} from "@/config/site-config";
 
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs))
@@ -23,18 +24,24 @@ export function formatTime(seconds: number): string {
 export function generateAlternates(locale: string, slug: string) {
     const defaultLang = supportedLanguages.find((lang) => lang.default)?.code || "en";
 
-    let canonical = locale === defaultLang ? `${slug}` : `/${locale}${slug}`;
-    if (!canonical) {
-        canonical = '/';
-    }
+    const normalizePath = (path: string) => {
+        if (!path) return "/";
+        return path.startsWith("/") ? path : `/${path}`;
+    };
 
+    const localizedPath =
+        locale === defaultLang
+            ? normalizePath(slug)
+            : normalizePath(`/${locale}${slug}`);
+
+    const canonical = `${siteUrl}${localizedPath === "//" ? "/" : localizedPath}`;
 
     const languages = supportedLanguages.reduce<Record<string, string>>((acc, lang) => {
-        acc[lang.code] =
-            lang.code === defaultLang ? `${slug}` : `/${lang.code}${slug}`;
-        if (!acc[lang.code]) {
-            acc[lang.code] = '/';
-        }
+        const localized =
+            lang.code === defaultLang
+                ? normalizePath(slug)
+                : normalizePath(`/${lang.code}${slug}`);
+        acc[lang.code] = `${siteUrl}${localized === "//" ? "/" : localized}`;
         return acc;
     }, {});
 

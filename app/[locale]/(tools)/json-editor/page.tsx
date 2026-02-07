@@ -6,6 +6,8 @@ import JsonLd from "@/components/custom/core/json-ld";
 import {jsonEditor} from "@/config/i18n-constants";
 import JsonCompare from "@/components/custom/json/json-compare";
 import {generateAlternates} from "@/lib/utils";
+import ToolSeoContent from "@/components/custom/seo/tool-seo-content";
+import { toolSeoContent } from "@/lib/tool-seo-content";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -32,11 +34,30 @@ export default async function JsonEditorPage({ params }: PageProps) {
             url: siteUrl,
         },
     };
+    const seoData = toolSeoContent.jsonEditor;
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: seoData.faq.items.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+            },
+        })),
+    };
 
     return (
         <>
             <JsonLd data={jsonLd} />
+            <JsonLd data={faqJsonLd} />
             <JsonCompare/>
+            <ToolSeoContent
+                title={t(`${jsonEditor}.label`)}
+                description={t(`${jsonEditor}.description`)}
+                data={seoData}
+            />
         </>
     );
 }

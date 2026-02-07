@@ -6,6 +6,8 @@ import JsonLd from "@/components/custom/core/json-ld";
 import {instagramPostGenerator} from "@/config/i18n-constants";
 import { generateAlternates } from "@/lib/utils";
 import InstagramPostGenerator from "@/components/custom/instagram/instagram-post-generator";
+import ToolSeoContent from "@/components/custom/seo/tool-seo-content";
+import { toolSeoContent } from "@/lib/tool-seo-content";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -32,11 +34,30 @@ export default async function InstagramPostGeneratorPage({ params }: PageProps) 
             url: siteUrl,
         },
     };
+    const seoData = toolSeoContent.instagramPostGenerator;
+    const faqJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: seoData.faq.items.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+            },
+        })),
+    };
 
     return (
         <>
             <JsonLd data={jsonLd} />
+            <JsonLd data={faqJsonLd} />
             <InstagramPostGenerator/>
+            <ToolSeoContent
+                title={t(`${instagramPostGenerator}.label`)}
+                description={t(`${instagramPostGenerator}.description`)}
+                data={seoData}
+            />
         </>
     );
 }

@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
@@ -14,10 +14,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { jsPDF } from "jspdf"
 import { toPng } from "html-to-image"
 import "./handwritten-fonts.css"
-import {ColorPickerPopover} from "@/components/custom/text-to-handwriting/color-picker";
-import {textToHandwriting} from "@/config/i18n-constants";
-import {useTranslations} from "use-intl";
 import {Alert, AlertDescription} from "@/components/ui/alert";
+import {ColorPickerPopover} from "@/components/custom/text-to-handwriting/color-picker";
 
 const HANDWRITING_FONTS = [
     { name: "Dawning of a New Day", value: "Dawning of a New Day" },
@@ -71,96 +69,220 @@ export default function HandwritingConverter() {
     const [lineSpacing, setLineSpacing] = useState(24)
     const [loading, setLoading] = useState(false)
     const [bookPages, setBookPages] = useState<BookPage[]>([])
-
-    const t = useTranslations()
+    const [paginatedText, setPaginatedText] = useState<string[]>([])
+    const [currentPreviewPage, setCurrentPreviewPage] = useState(0)
 
     const pageRef = useRef<HTMLDivElement>(null)
+    const measureRef = useRef<HTMLDivElement>(null)
 
     // Calculate page dimensions in pixels (assuming 96 DPI)
     const mmToPx = (mm: number) => Math.round(mm * 3.7795275591)
     const pageWidth = mmToPx(PAGE_SIZES[pageSize as keyof typeof PAGE_SIZES].width)
     const pageHeight = mmToPx(PAGE_SIZES[pageSize as keyof typeof PAGE_SIZES].height)
 
-    const handleDownload = () => {
-        if (!pageRef.current) return
+    // Calculate available space for text
+    const availableWidth = pageWidth - leftMargin - 20
+    const availableHeight = pageHeight - topMargin - verticalPosition - 20
 
-        // Add this to suppress specific console errors related to fonts
+    // Paginate text when settings change
+    useEffect(() => {
+        paginateText()
+    }, [text, font, fontSize, lineSpacing, wordSpacing, letterSpacing, leftMargin, topMargin, verticalPosition, pageWidth, pageHeight])
+
+    const paginateText = () => {
+        if (!text.trim()) {
+            setPaginatedText([])
+            setCurrentPreviewPage(0)
+            return
+        }
+
+        // Split by newlines first to preserve them
+        const lines = text.split('\n')
+        const pages: string[] = []
+        let currentPage = ""
+
+        // Create a temporary element to measure text
+        const measureDiv = document.createElement('div')
+        measureDiv.style.position = 'absolute'
+        measureDiv.style.visibility = 'hidden'
+        measureDiv.style.fontFamily = font
+        measureDiv.style.fontSize = `${fontSize}px`
+        measureDiv.style.wordSpacing = `${wordSpacing}px`
+        measureDiv.style.letterSpacing = `${letterSpacing}px`
+        measureDiv.style.lineHeight = `${lineSpacing}px`
+        measureDiv.style.width = `${availableWidth}px`
+        measureDiv.style.whiteSpace = 'pre-wrap'
+        measureDiv.style.overflowWrap = 'break-word'
+        document.body.appendChild(measureDiv)
+
+        for (let lineIdx = 0; lineIdx < lines.length; lineIdx++) {
+            const line = lines[lineIdx]
+
+            // Handle empty lines (newlines)
+            if (line === '') {
+                const testText = currentPage + '\n'
+                measureDiv.textContent = testText
+
+                if (measureDiv.offsetHeight > availableHeight) {
+                    // Page is full, start new page
+                    pages.push(currentPage)
+                    currentPage = '\n'
+                } else {
+                    currentPage = testText
+                }
+                continue
+            }
+
+            // Process line word by word
+            const words = line.split(/\s+/)
+
+            for (let wordIdx = 0; wordIdx < words.length; wordIdx++) {
+                const word = words[wordIdx]
+                const isLastWordInLine = wordIdx === words.length - 1
+                const isLastLine = lineIdx === lines.length - 1
+
+                // Add word with appropriate spacing
+                const separator = isLastWordInLine && !isLastLine ? '\n' : ' '
+                const testText = currentPage + (currentPage && !currentPage.endsWith('\n') ? separator : '') + word
+                measureDiv.textContent = testText
+
+                if (measureDiv.offsetHeight > availableHeight) {
+                    // Current page is full, start a new page
+                    if (currentPage) {
+                        pages.push(currentPage.trimEnd())
+                        currentPage = word
+                        measureDiv.textContent = word
+                    } else {
+                        // Single word is too long, split it anyway
+                        currentPage = word
+                        pages.push(currentPage)
+                        currentPage = ""
+                    }
+                } else {
+                    currentPage = testText
+                }
+            }
+
+            // Add newline at end of line if not the last line
+            if (lineIdx < lines.length - 1) {
+                const testText = currentPage + '\n'
+                measureDiv.textContent = testText
+
+                if (measureDiv.offsetHeight > availableHeight) {
+                    pages.push(currentPage)
+                    currentPage = '\n'
+                } else {
+                    currentPage = testText
+                }
+            }
+        }
+
+        if (currentPage.trim() || currentPage.includes('\n')) {
+            pages.push(currentPage)
+        }
+
+        document.body.removeChild(measureDiv)
+        const finalPages = pages.length > 0 ? pages : [text]
+        setPaginatedText(finalPages)
+
+        // Reset to first page if current page is out of bounds
+        if (currentPreviewPage >= finalPages.length) {
+            setCurrentPreviewPage(0)
+        }
+    }
+
+    const capturePageAsImage = async (pageElement: HTMLDivElement): Promise<string> => {
         const originalConsoleError = console.error;
         console.error = (...args) => {
-            // Filter out font/CSS related errors
             if (args[0] && typeof args[0] === 'string' &&
                 (args[0].includes('css file') ||
                     args[0].includes('CSS rules') ||
                     args[0].includes('Error inlining remote css file'))) {
-                return; // Ignore these specific errors
-            }
-            originalConsoleError.apply(console, args);
-        };
-
-        toPng(pageRef.current, {
-            width: pageWidth,
-            height: pageHeight,
-            backgroundColor: pageBackground,
-            pixelRatio: 2, // Equivalent to scale: 2 in html2canvas
-            cacheBust: true,
-        }).then((dataUrl) => {
-            // Create download link
-            const link = document.createElement("a")
-            link.download = "handwritten-text.png"
-            link.href = dataUrl
-            link.click()
-
-            // Restore original console.error
-            console.error = originalConsoleError;
-        }).catch((error) => {
-            // Restore original console.error
-            console.error = originalConsoleError;
-            console.error("Error generating image:", error)
-        })
-    }
-
-    const addToBook = async () => {
-        if (!pageRef.current) return;
-
-        // Add this to suppress specific console errors related to fonts
-        const originalConsoleError = console.error;
-        console.error = (...args) => {
-            if (
-                args[0] && typeof args[0] === "string" &&
-                (args[0].includes("css file") ||
-                    args[0].includes("CSS rules") ||
-                    args[0].includes("Error inlining remote css file"))
-            ) {
-                return; // Ignore these specific errors
+                return;
             }
             originalConsoleError.apply(console, args);
         };
 
         try {
-            const dataUrl = await toPng(pageRef.current, {
+            const dataUrl = await toPng(pageElement, {
                 width: pageWidth,
                 height: pageHeight,
                 backgroundColor: pageBackground,
                 pixelRatio: 2,
                 cacheBust: true,
             });
-
-            setBookPages((prev) => [
-                ...prev,
-                {
-                    id: Date.now().toString(),
-                    type: "text",
-                    content: text,
-                    imageUrl: dataUrl,
-                },
-            ]);
-            scrollToCard()
-            // setActiveTab("book");
-        } catch (error) {
-            console.error("Error generating image for book:", error);
+            return dataUrl;
         } finally {
             console.error = originalConsoleError;
         }
+    }
+
+    const handleDownload = async () => {
+        const pageElement = document.querySelector('.preview-page');
+
+        if (!pageElement) return;
+
+        const dataUrl = await capturePageAsImage(pageElement as HTMLDivElement);
+        const link = document.createElement("a");
+        const fileName = paginatedText.length > 1
+            ? `handwritten-text-page-${currentPreviewPage + 1}.png`
+            : "handwritten-text.png";
+        link.download = fileName;
+        link.href = dataUrl;
+        link.click();
+    }
+
+    const downloadAllPages = async () => {
+        // Temporarily show all pages to capture them
+        const originalPage = currentPreviewPage;
+
+        for (let i = 0; i < paginatedText.length; i++) {
+            setCurrentPreviewPage(i);
+            // Wait for render
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const pageElement = document.querySelector('.preview-page');
+            if (pageElement) {
+                const dataUrl = await capturePageAsImage(pageElement as HTMLDivElement);
+                const link = document.createElement("a");
+                link.download = `handwritten-text-page-${i + 1}.png`;
+                link.href = dataUrl;
+                link.click();
+                // Small delay between downloads
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+        }
+
+        // Restore original page
+        setCurrentPreviewPage(originalPage);
+    }
+
+    const addToBook = async () => {
+        const originalPage = currentPreviewPage;
+
+        for (let i = 0; i < paginatedText.length; i++) {
+            setCurrentPreviewPage(i);
+            // Wait for render
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            const pageElement = document.querySelector('.preview-page');
+            if (pageElement) {
+                const dataUrl = await capturePageAsImage(pageElement as HTMLDivElement);
+                setBookPages((prev) => [
+                    ...prev,
+                    {
+                        id: `${Date.now()}-${i}`,
+                        type: "text",
+                        content: paginatedText[i],
+                        imageUrl: dataUrl,
+                    },
+                ]);
+            }
+        }
+
+        // Restore original page
+        setCurrentPreviewPage(originalPage);
+        scrollToCard();
     };
 
     const addImageToBook = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -180,7 +302,6 @@ export default function HandwritingConverter() {
                 },
             ])
             scrollToCard()
-            // setActiveTab("book")
         }
         reader.readAsDataURL(file)
     }
@@ -202,7 +323,6 @@ export default function HandwritingConverter() {
             const page = bookPages[i]
             if (i > 0) pdf.addPage()
 
-            // Add image to PDF
             if (page.imageUrl) {
                 pdf.addImage(
                     page.imageUrl,
@@ -235,33 +355,136 @@ export default function HandwritingConverter() {
         const cardElement = document.getElementById("book");
         if (cardElement) {
             cardElement.scrollIntoView({
-                behavior: "smooth", // For smooth scrolling
-                block: "start",     // Aligns the element to the top of the viewport
+                behavior: "smooth",
+                block: "start",
             });
         }
     };
 
+    const renderPage = (pageText: string, pageIndex: number) => (
+        <div
+            key={pageIndex}
+            className="preview-page"
+            style={{
+                width: `${pageWidth}px`,
+                height: `${pageHeight}px`,
+                backgroundColor: pageBackground,
+                position: "relative",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+            }}
+        >
+            {showMargin && (
+                <>
+                    <div
+                        style={{
+                            position: "absolute",
+                            top: 0,
+                            left: `${leftMargin}px`,
+                            width: "1px",
+                            height: "100%",
+                            backgroundColor: marginColor,
+                            pointerEvents: "none",
+                        }}
+                    />
+                    <div
+                        style={{
+                            position: "absolute",
+                            top: `${topMargin}px`,
+                            left: 0,
+                            width: "100%",
+                            height: "1px",
+                            backgroundColor: marginColor,
+                            pointerEvents: "none",
+                        }}
+                    />
+                </>
+            )}
+
+            {showPageLines && (
+                <div
+                    style={{
+                        position: "absolute",
+                        top: `${topMargin}px`,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        pointerEvents: "none",
+                    }}
+                >
+                    {Array.from({
+                        length: Math.floor((pageHeight - topMargin) / lineSpacing),
+                    }).map((_, index) => (
+                        <div
+                            key={index}
+                            style={{
+                                position: "absolute",
+                                top: `${index * lineSpacing}px`,
+                                left: 0,
+                                right: 0,
+                                height: "1px",
+                                backgroundColor: lineColor,
+                            }}
+                        />
+                    ))}
+                </div>
+            )}
+
+            <div
+                style={{
+                    position: "absolute",
+                    top: `${topMargin + verticalPosition}px`,
+                    left: `${leftMargin + 5}px`,
+                    maxWidth: `${availableWidth}px`,
+                    fontFamily: font,
+                    fontSize: `${fontSize}px`,
+                    color: inkColor,
+                    wordSpacing: `${wordSpacing}px`,
+                    letterSpacing: `${letterSpacing}px`,
+                    whiteSpace: "pre-wrap",
+                    overflowWrap: "break-word",
+                    lineHeight: `${lineSpacing}px`,
+                }}
+            >
+                {pageText}
+            </div>
+
+            {/*{paginatedText.length > 1 && (*/}
+            {/*    <div*/}
+            {/*        style={{*/}
+            {/*            position: "absolute",*/}
+            {/*            bottom: "10px",*/}
+            {/*            right: "20px",*/}
+            {/*            fontSize: "12px",*/}
+            {/*            color: inkColor,*/}
+            {/*            opacity: 0.5,*/}
+            {/*        }}*/}
+            {/*    >*/}
+            {/*        Page {pageIndex + 1} of {paginatedText.length}*/}
+            {/*    </div>*/}
+            {/*)}*/}
+        </div>
+    );
+
     return (
         <div className="flex flex-col">
             <div className="mb-4">
-                <h2 className="text-xl font-bold text-center">{t(`${textToHandwriting}.page.title`)}</h2>
-                <p className="text-center text-sm text-muted-foreground">{t(`${textToHandwriting}.page.description`)}</p>
+                <h2 className="text-xl font-bold text-center">Text to Handwriting</h2>
+                <p className="text-center text-sm text-muted-foreground">Easily convert typed text into realistic handwriting</p>
             </div>
 
-            {/*Editor*/}
             <div className="flex flex-col lg:flex-row gap-8">
                 <div className="w-full lg:w-1/3 space-y-4">
                     <div className="space-y-2">
-                        <Label htmlFor="text">{t(`${textToHandwriting}.page.yourText`)}</Label>
-                        <Textarea id="text" value={text} onChange={(e) => setText(e.target.value)} className="min-h-[150px]" />
+                        <Label htmlFor="text">Your Text</Label>
+                        <Textarea id="text" value={text} onChange={(e) => setText(e.target.value)} className="min-h-[150px] max-h-[500px]" />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                            <Label htmlFor="font">{t(`${textToHandwriting}.page.font`)}</Label>
+                            <Label htmlFor="font">Handwriting Font</Label>
                             <Select value={font} onValueChange={setFont}>
-                                <SelectTrigger id="font">
-                                    <SelectValue placeholder={t(`${textToHandwriting}.page.selFont`)} />
+                                <SelectTrigger id="font" className="w-[100%]">
+                                    <SelectValue placeholder="Select font" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     {HANDWRITING_FONTS.map((fontObj) => (
@@ -278,10 +501,10 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="pageSize">{t(`${textToHandwriting}.page.pageSize`)}</Label>
+                            <Label htmlFor="pageSize">Page Size</Label>
                             <Select value={pageSize} onValueChange={setPageSize}>
                                 <SelectTrigger id="pageSize">
-                                    <SelectValue placeholder={t(`${textToHandwriting}.page.pageSize`)} />
+                                    <SelectValue placeholder="Select page size" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     {Object.keys(PAGE_SIZES).map((size) => (
@@ -294,7 +517,7 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="fontSize">{t(`${textToHandwriting}.page.fontSize`)}: {fontSize}px</Label>
+                            <Label htmlFor="fontSize">Font Size: {fontSize}px</Label>
                             <Slider
                                 id="fontSize"
                                 min={8}
@@ -306,7 +529,7 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="lineSpacing">{t(`${textToHandwriting}.page.lineSpacing`)}: {lineSpacing}px</Label>
+                            <Label htmlFor="lineSpacing">Line Spacing: {lineSpacing}px</Label>
                             <Slider
                                 id="lineSpacing"
                                 min={16}
@@ -318,7 +541,7 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="verticalPosition">{t(`${textToHandwriting}.page.verticalPosition`)}: {verticalPosition}px</Label>
+                            <Label htmlFor="verticalPosition">Vertical Position: {verticalPosition}px</Label>
                             <Slider
                                 id="verticalPosition"
                                 min={0}
@@ -330,7 +553,7 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="wordSpacing">{t(`${textToHandwriting}.page.wordSpacing`)}: {wordSpacing}px</Label>
+                            <Label htmlFor="wordSpacing">Word Spacing: {wordSpacing}px</Label>
                             <Slider
                                 id="wordSpacing"
                                 min={0}
@@ -342,7 +565,7 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="letterSpacing">{t(`${textToHandwriting}.page.letterSpacing`)}: {letterSpacing}px</Label>
+                            <Label htmlFor="letterSpacing">Letter Spacing: {letterSpacing}px</Label>
                             <Slider
                                 id="letterSpacing"
                                 min={0}
@@ -354,7 +577,7 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="leftMargin">{t(`${textToHandwriting}.page.leftMargin`)}: {leftMargin}px</Label>
+                            <Label htmlFor="leftMargin">Left Margin: {leftMargin}px</Label>
                             <Slider
                                 id="leftMargin"
                                 min={0}
@@ -366,7 +589,7 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="topMargin">{t(`${textToHandwriting}.page.topMargin`)}: {topMargin}px</Label>
+                            <Label htmlFor="topMargin">Top Margin: {topMargin}px</Label>
                             <Slider
                                 id="topMargin"
                                 min={0}
@@ -378,20 +601,11 @@ export default function HandwritingConverter() {
                         </div>
 
                         <div className="space-y-2">
-                            {/*<Label htmlFor="topBorder">Top Border: {topBorder}px</Label>*/}
-                            {/*<Slider*/}
-                            {/*    id="topBorder"*/}
-                            {/*    min={0}*/}
-                            {/*    max={100}*/}
-                            {/*    step={1}*/}
-                            {/*    value={[topBorder]}*/}
-                            {/*    onValueChange={(value) => setTopBorder(value[0])}*/}
-                            {/*/>*/}
                         </div>
 
                         <div className="space-y-2">
                             <ColorPickerPopover
-                                label={t(`${textToHandwriting}.page.inkColor`)}
+                                label="Ink Color"
                                 value={inkColor}
                                 onChange={setInkColor}
                                 presets={["#1a237e", "#c82705", "#059f20",
@@ -399,10 +613,9 @@ export default function HandwritingConverter() {
                             />
                         </div>
 
-
                         <div className="space-y-2">
                             <ColorPickerPopover
-                                label={t(`${textToHandwriting}.page.pageBackground`)}
+                                label="Page Background"
                                 value={pageBackground}
                                 onChange={setPageBackground}
                                 presets={["#ffffff", "#d6d5d5", "#e1dbbb"]}
@@ -411,7 +624,7 @@ export default function HandwritingConverter() {
 
                         <div className="space-y-2">
                             <ColorPickerPopover
-                                label={t(`${textToHandwriting}.page.marginColor`)}
+                                label="Margin Color"
                                 value={marginColor}
                                 onChange={setMarginColor}
                                 presets={["#ff0000", "#aaccff", "#000000"]}
@@ -420,7 +633,7 @@ export default function HandwritingConverter() {
 
                         <div className="space-y-2">
                             <ColorPickerPopover
-                                label={t(`${textToHandwriting}.page.lineColor`)}
+                                label="Line Color"
                                 value={lineColor}
                                 onChange={setLineColor}
                                 presets={["#aaccff", "#ff0000", "#000000"]}
@@ -431,174 +644,99 @@ export default function HandwritingConverter() {
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center space-x-2">
                             <Switch id="showMargin" checked={showMargin} onCheckedChange={setShowMargin} />
-                            <Label htmlFor="showMargin">{t(`${textToHandwriting}.page.showMargin`)}</Label>
+                            <Label htmlFor="showMargin">Show Margin</Label>
                         </div>
 
                         <div className="flex items-center space-x-2">
                             <Switch id="showPageLines" checked={showPageLines} onCheckedChange={setShowPageLines} />
-                            <Label htmlFor="showPageLines">{t(`${textToHandwriting}.page.showPageLines`)}</Label>
+                            <Label htmlFor="showPageLines">Show Page Lines</Label>
                         </div>
                     </div>
                 </div>
 
                 <div className="w-full lg:w-2/3 flex items-center flex-col max-w-full">
-                    <div className="flex space-x-2 justify-end">
+                    <div className="flex space-x-2 justify-end w-full mb-2">
                         <Button onClick={addToBook} variant="outline">
-                            <Book className="mr-2 h-4 w-4" /> {t(`${textToHandwriting}.page.addToBook`)}
+                            <Book className="mr-2 h-4 w-4" /> Add {paginatedText.length > 1 ? 'All Pages' : 'to Book'}
                         </Button>
                         <Button onClick={handleDownload}>
-                            <Download className="mr-2 h-4 w-4" /> {t(`${textToHandwriting}.page.downloadAsImage`)}
+                            <Download className="mr-2 h-4 w-4" /> Download Current Page
                         </Button>
-                        {/*<div className="relative">*/}
-                        {/*    <Button onClick={() => fileInputRef.current?.click()} variant="outline" className="w-full">*/}
-                        {/*        <ImageIcon className="mr-2 h-4 w-4" /> Add Image to Book*/}
-                        {/*    </Button>*/}
-                        {/*    <input type="file" ref={fileInputRef} onChange={addImageToBook} accept="image/*" className="hidden" />*/}
-                        {/*</div>*/}
+                        {paginatedText.length > 1 && (
+                            <Button onClick={downloadAllPages} variant="outline">
+                                <Download className="mr-2 h-4 w-4" /> Download All {paginatedText.length} Pages
+                            </Button>
+                        )}
                     </div>
-                    <div className="my-2">
+                    <div className="my-2 w-full">
                         <Alert variant="default">
                             <Info/>
                             <AlertDescription>
-                                {t(`${textToHandwriting}.page.note`)}
+                                {paginatedText.length > 1
+                                    ? `Your text has been split into ${paginatedText.length} pages. Use the navigation buttons to preview each page.`
+                                    : "If lines or text overlap, adjust the settings. To download multiple pages, use \"Add to Book\" and scroll down to download."
+                                }
                             </AlertDescription>
                         </Alert>
                     </div>
-                    <div className="relative overflow-auto max-h-[80vh] border rounded-md p-4 max-w-full bg-[var(--muted)]">
+
+                    {/* Pagination Controls */}
+                    {paginatedText.length > 1 && (
+                        <div className="flex items-center gap-4 mb-4">
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                onClick={() => setCurrentPreviewPage(Math.max(0, currentPreviewPage - 1))}
+                                disabled={currentPreviewPage === 0}
+                            >
+                                Previous
+                            </Button>
+                            <span className="text-sm font-medium">
+                                Page {currentPreviewPage + 1} of {paginatedText.length}
+                            </span>
+                            <Button
+                                variant="outline"
+                                size="sm"
+                                onClick={() => setCurrentPreviewPage(Math.min(paginatedText.length - 1, currentPreviewPage + 1))}
+                                disabled={currentPreviewPage === paginatedText.length - 1}
+                            >
+                                Next
+                            </Button>
+                        </div>
+                    )}
+
+                    <div className="relative overflow-auto max-h-[1172px] border rounded-md p-4 max-w-full bg-[var(--muted)]">
                         {loading ? (
                             <div className="flex items-center justify-center" style={{ width: pageWidth, height: pageHeight }}>
                                 <RefreshCw className="animate-spin h-8 w-8 text-gray-500" />
                             </div>
                         ) : (
-                            <div
-                                ref={pageRef}
-                                style={{
-                                    width: `${pageWidth}px`,
-                                    height: `${pageHeight}px`,
-                                    backgroundColor: pageBackground,
-                                    position: "relative",
-                                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                                }}
-                            >
-                                {showMargin && (
-                                    <>
-                                        {/* Left margin line */}
-                                        <div
-                                            style={{
-                                                position: "absolute",
-                                                top: 0,
-                                                left: `${leftMargin}px`,
-                                                width: "1px",
-                                                height: "100%",
-                                                backgroundColor: marginColor,
-                                                pointerEvents: "none",
-                                            }}
-                                        />
-                                        {/* Top margin line */}
-                                        <div
-                                            style={{
-                                                position: "absolute",
-                                                top: `${topMargin}px`,
-                                                left: 0,
-                                                width: "100%",
-                                                height: "1px",
-                                                backgroundColor: marginColor,
-                                                pointerEvents: "none",
-                                            }}
-                                        />
-                                    </>
-                                )}
-
-                                {/* Top border line */}
-                                {(showMargin && topMargin > 0) && (
-                                    <div
-                                        style={{
-                                            position: "absolute",
-                                            top: `${topMargin}px`,
-                                            left: 0,
-                                            zIndex: 1,
-                                            width: "100%",
-                                            height: "1px",
-                                            backgroundColor: marginColor,
-                                            pointerEvents: "none",
-                                        }}
-                                    />
-                                )}
-
-                                {showPageLines && (
-                                    <div
-                                        style={{
-                                            position: "absolute",
-                                            top: `${Math.max(topMargin, topMargin)}px`,
-                                            left: 0,
-                                            right: 0,
-                                            bottom: 0,
-                                            pointerEvents: "none",
-                                        }}
-                                    >
-                                        {Array.from({
-                                            length: Math.floor((pageHeight - Math.max(topMargin, topMargin)) / lineSpacing),
-                                        }).map((_, index) => (
-                                            <div
-                                                key={index}
-                                                style={{
-                                                    position: "absolute",
-                                                    top: `${index * lineSpacing}px`,
-                                                    left: 0,
-                                                    right: 0,
-                                                    height: "1px",
-                                                    backgroundColor: lineColor,
-                                                }}
-                                            />
-                                        ))}
-                                    </div>
-                                )}
-
-                                <div
-                                    style={{
-                                        position: "absolute",
-                                        top: `${topMargin + verticalPosition}px`,
-                                        left: `${leftMargin + 5}px`,
-                                        maxWidth: `${pageWidth - leftMargin - 20}px`,
-                                        fontFamily: font,
-                                        fontSize: `${fontSize}px`,
-                                        color: inkColor,
-                                        wordSpacing: `${wordSpacing}px`,
-                                        letterSpacing: `${letterSpacing}px`,
-                                        whiteSpace: "pre-wrap",
-                                        overflowWrap: "break-word",
-                                        lineHeight: `${lineSpacing}px`,
-                                    }}
-                                >
-                                    {text}
-                                </div>
-
-
-                            </div>
+                            <>
+                                {renderPage(paginatedText[currentPreviewPage] || text, currentPreviewPage)}
+                            </>
                         )}
                     </div>
                 </div>
             </div>
 
-            {/*Result*/}
             <div id="book" className="py-10">
                 <Card className="bg-background">
                     <CardContent>
                         <div className="space-y-6">
                             <div className="flex flex-wrap gap-4 justify-end">
                                 <Button onClick={downloadBookAsPDF} disabled={bookPages.length === 0}>
-                                    <FileText className="mr-2 h-4 w-4" /> {t(`${textToHandwriting}.page.downloadAsPdf`)}
+                                    <FileText className="mr-2 h-4 w-4" /> Download as PDF
                                 </Button>
                                 <Button onClick={downloadBookAsImages} disabled={bookPages.length === 0} variant="outline">
-                                    <Download className="mr-2 h-4 w-4" /> {t(`${textToHandwriting}.page.downloadAllImages`)}
+                                    <Download className="mr-2 h-4 w-4" /> Download All Images
                                 </Button>
                             </div>
 
                             {bookPages.length === 0 ? (
                                 <div className="text-center py-12 border rounded-md">
                                     <Book className="mx-auto h-12 w-12 text-gray-300 mb-4" />
-                                    <h3 className="text-lg font-medium">{t(`${textToHandwriting}.page.emptyBook`)}</h3>
-                                    <p className="text-muted-foreground">{t(`${textToHandwriting}.page.empBookDes`)}</p>
+                                    <h3 className="text-lg font-medium">Your book is empty</h3>
+                                    <p className="text-muted-foreground">Add pages from the editor or upload images to create your book</p>
                                 </div>
                             ) : (
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -622,9 +760,9 @@ export default function HandwritingConverter() {
                                                 </Button>
                                             </div>
                                             <CardContent className="p-4">
-                                                <p className="font-medium">{t(`${textToHandwriting}.page.page`)} {index + 1}</p>
+                                                <p className="font-medium">Page {index + 1}</p>
                                                 <p className="text-sm text-muted-foreground">
-                                                    {page.type === "text" ? t(`${textToHandwriting}.page.handwrittenText`) : t(`${textToHandwriting}.page.image`)}
+                                                    {page.type === "text" ? "Handwritten Text" : "Image"}
                                                 </p>
                                             </CardContent>
                                         </Card>

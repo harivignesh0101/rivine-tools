@@ -1,15 +1,15 @@
 import React from "react";
-import { Spotlight } from "@/components/ui/spotlight";
-import { appName, siteUrl, toolsCards } from "@/config/site-config";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Link from "next/link";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { appName, siteUrl, toolsCards } from "@/config/site-config";
 import { getLocalizedPath } from "@/i18n/get-localized-path";
 import { home } from "@/config/i18n-constants";
 import {generateAlternates} from "@/lib/utils";
 import ToolsHomeContent from "@/components/custom/home/home-content";
+import {Spotlight} from "@/components/ui/spotlight";
+import {HoverEffect} from "@/components/ui/card-hover-effect";
 
 type PageProps = {
     params: Promise<{ locale: string }>;
@@ -20,12 +20,17 @@ export default async function Home({ params }: PageProps) {
     const resolvedParams = await params; // Await the Promise
     const { locale } = resolvedParams; // Extract locale from resolved params
     const t = await getTranslations({ locale }); // Pass locale to getTranslations
+    const localizedCards = toolsCards.map((card) => ({
+        ...card,
+        link: getLocalizedPath({ slug: card.link, locale }),
+    }));
 
     return (
         <div className="relative z-0 -mt-20">
             <div
                 className="h-[90vh] w-full rounded-md flex items-center justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden"
             >
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
                 <Spotlight />
                 <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20">
                     <h1
@@ -53,7 +58,7 @@ export default async function Home({ params }: PageProps) {
 
             <div id="tools" className="py-20">
                 <div className="max-w-5xl mx-auto px-8">
-                    <HoverEffect items={toolsCards} />
+                    <HoverEffect items={localizedCards} />
                 </div>
             </div>
 
